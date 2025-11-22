@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Base de conhecimento sobre linguagens de programação e tecnologias">
+    <meta name="keywords" content="programação, linguagens, javascript, python, desenvolvimento">
+    <title>Base de Conhecimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>Base de Conhecimento</h1>
+        <p class="subtitle">Explore, aprenda e domine novas tecnologias.</p>
+
+        <div class="search-container">
+            <input type="text" id="input-busca" placeholder="Digite uma linguagem (ex: JavaScript)"
+                aria-label="Campo de busca de linguagens">
+            <button id="btn-search" aria-label="Pesquisar linguagens">Pesquisar</button>
+            <button id="btn-clear" class="btn-clear" aria-label="Limpar busca">Limpar</button>
+        </div>
+
+        <div class="filters-container">
+            <div class="sort-container">
+                <label for="sort-select">Ordenar por:</label>
+                <select id="sort-select" aria-label="Ordenar lista de linguagens">
+                    <option value="titulo">Nome (A-Z)</option>
+                    <option value="ano_criacao">Ano (Mais recente)</option>
+                    <option value="ano_criacao_asc">Ano (Mais antigo)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="categories-container">
+            <button class="btn-category active" data-category="todos">Todos</button>
+            <button class="btn-category" data-category="linguagens">Linguagens</button>
+            <button class="btn-category" data-category="frameworks">Frameworks</button>
+            <button class="btn-category" data-category="bancos-dados">Bancos de Dados</button>
+            <button class="btn-category" data-category="devops">DevOps</button>
+            <button class="btn-category" data-category="ia">IA</button>
+        </div>
+
+        <div id="contador-resultados" class="resultado-contador"></div>
+    </header>
+
+    <main>
+        <section class="card-container" id="card-container">
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                <p>Carregando base de conhecimento...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <span class="developer-name">Marcel Andrade</span></p>
+        <div class="social-links">
+            <a href="https://github.com/andradmarcel" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/andradmarcel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
