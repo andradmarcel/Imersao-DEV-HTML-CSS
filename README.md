@@ -2,7 +2,11 @@
 
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
 
+> 🚀 **Acesse o projeto online:** [https://andradmarcel.github.io/Imersao-DEV-HTML-CSS/](https://andradmarcel.github.io/Imersao-DEV-HTML-CSS/)
+
 Uma aplicação web interativa e moderna para explorar, aprender e descobrir informações sobre diversas linguagens de programação e tecnologias. Com um design inspirado no estilo **Cyberpunk**, este projeto oferece uma experiência visual imersiva e funcional.
+
+> **Nota**: Este projeto está configurado para ser hospedado via GitHub Pages utilizando a pasta `docs/`.
 
 ---
 
@@ -41,41 +45,43 @@ Este projeto foi desenvolvido utilizando tecnologias web modernas, sem dependên
 ## 📂 Estrutura do Projeto
 
 ```text
-base-de-conhecimento/
-├── assets/          # Imagens e recursos estáticos
-├── app.js           # Lógica principal da aplicação (Busca, Filtros, Renderização)
-├── data.json        # Base de dados das tecnologias
-├── index.html       # Estrutura principal da página
-└── styles.css       # Estilos globais e tema visual
+/
+├── docs/                # Aplicação Web (GitHub Pages)
+│   ├── assets/          # Imagens e recursos estáticos
+│   ├── app.js           # Lógica principal
+│   ├── data.json        # Base de dados
+│   ├── index.html       # Página principal
+│   └── styles.css       # Estilos
+└── README.md            # Documentação
 ```
 
 ---
 
 ## 🔧 Como Executar
 
-1.  **Clone o repositório** (ou baixe os arquivos):
+1.  **Clone o repositório**:
     ```bash
     git clone https://github.com/andradmarcel/base-de-conhecimento.git
     ```
-2.  **Acesse a pasta do projeto**:
+2.  **Acesse a pasta da aplicação**:
     ```bash
-    cd base-de-conhecimento
+    cd docs
     ```
 3.  **Abra o projeto**:
-    *   Você pode abrir o arquivo `index.html` diretamente no seu navegador.
-    *   **Recomendado**: Utilize uma extensão como "Live Server" no VS Code para evitar bloqueios de CORS ao carregar o arquivo JSON localmente.
+    *   Abra o arquivo `index.html` no seu navegador.
+    *   **Recomendado**: Use o "Live Server" no VS Code para evitar problemas de CORS com o arquivo JSON.
 
 ---
 
 ## 🤝 Contribuição
 
-Contribuições são bem-vindas! Se você quiser adicionar uma nova linguagem ou melhorar o código:
+Contribuições são bem-vindas!
 
 1.  Faça um Fork do projeto.
-2.  Crie uma Branch para sua feature (`git checkout -b feature/NovaLinguagem`).
-3.  Adicione suas mudanças no `data.json` ou no código.
-4.  Faça o Commit (`git commit -m 'Adiciona linguagem Rust'`).
-5.  Faça o Push (`git push origin feature/NovaLinguagem`).
+2.  Crie uma Branch (`git checkout -b feature/NovaFeature`).
+3.  Faça suas alterações na pasta `docs/`.
+4.  Faça o Commit (`git commit -m 'Adiciona nova feature'`).
+5.  Faça o Push (`git push origin feature/NovaFeature`).
 6.  Abra um Pull Request.
 
 ---
