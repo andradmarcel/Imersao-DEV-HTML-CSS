@@ -1,0 +1,7 @@
+node-example-base-content-main/.gitignore
+node-example-base-content-main/baseDeConhecimento.json
+node-example-base-content-main/gerador.js
+node-example-base-content-main/package-lock.json
+node-example-base-content-main/package.json
+node-example-base-content-main/README.md
+package-lock.json

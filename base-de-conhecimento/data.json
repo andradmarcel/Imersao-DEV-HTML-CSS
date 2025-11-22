@@ -1,0 +1,1334 @@
+[
+  {
+    "nome": "React",
+    "descricao": "Biblioteca JavaScript declarativa e eficiente para construir interfaces de usuário.",
+    "data_criacao": "2013",
+    "link": "https://reactjs.org/",
+    "desenvolvedor": "Meta",
+    "icon": "fab fa-react",
+    "tags": [
+      "Frontend",
+      "JavaScript",
+      "UI Library",
+      "Web Development"
+    ]
+  },
+  {
+    "nome": "Python",
+    "descricao": "Linguagem de programação de alto nível, interpretada e de propósito geral, amplamente usada em dados e backend.",
+    "data_criacao": "1991",
+    "link": "https://www.python.org/",
+    "desenvolvedor": "Python Software Foundation",
+    "icon": "fab fa-python",
+    "tags": [
+      "Programming Language",
+      "Backend",
+      "Data Science",
+      "Scripting",
+      "AI/ML"
+    ]
+  },
+  {
+    "nome": "Kubernetes (K8s)",
+    "descricao": "Sistema de orquestração de containers open-source, usado para automatizar deploy, escalonamento e gerenciamento de aplicações.",
+    "data_criacao": "2014",
+    "link": "https://kubernetes.io/",
+    "desenvolvedor": "Cloud Native Computing Foundation",
+    "icon": "fas fa-dharmachakra",
+    "tags": [
+      "DevOps",
+      "Orchestration",
+      "Cloud Native",
+      "Containerization"
+    ]
+  },
+  {
+    "nome": "Docker",
+    "descricao": "Plataforma que permite a criação, deploy e execução de aplicações em containers isolados.",
+    "data_criacao": "2013",
+    "link": "https://www.docker.com/",
+    "desenvolvedor": "Docker, Inc.",
+    "icon": "fab fa-docker",
+    "tags": [
+      "Containerization",
+      "DevOps",
+      "Virtualization",
+      "Tools"
+    ]
+  },
+  {
+    "nome": "TypeScript",
+    "descricao": "Superset de JavaScript que adiciona tipagem estática opcional, compilando para JavaScript puro.",
+    "data_criacao": "2012",
+    "link": "https://www.typescriptlang.org/",
+    "desenvolvedor": "Microsoft",
+    "icon": "fas fa-code",
+    "tags": [
+      "Language",
+      "Static Typing",
+      "Frontend",
+      "Backend"
+    ]
+  },
+  {
+    "nome": "Go (Golang)",
+    "descricao": "Linguagem de programação compilada desenvolvida pelo Google, focada em simplicidade, eficiência e concorrência.",
+    "data_criacao": "2009",
+    "link": "https://golang.org/",
+    "desenvolvedor": "Google",
+    "icon": "fab fa-google",
+    "tags": [
+      "Programming Language",
+      "Backend",
+      "Systems Programming",
+      "Cloud Computing"
+    ]
+  },
+  {
+    "nome": "Rust",
+    "descricao": "Linguagem de programação de sistemas focada em segurança, especialmente concorrência e gerenciamento de memória.",
+    "data_criacao": "2010",
+    "link": "https://www.rust-lang.org/",
+    "desenvolvedor": "Rust Foundation",
+    "icon": "fas fa-cogs",
+    "tags": [
+      "Systems Programming",
+      "Performance",
+      "Memory Safety",
+      "Low Level"
+    ]
+  },
+  {
+    "nome": "Node.js",
+    "descricao": "Runtime JavaScript open-source e multi-plataforma para execução de código JS no lado do servidor.",
+    "data_criacao": "2009",
+    "link": "https://nodejs.org/",
+    "desenvolvedor": "OpenJS Foundation",
+    "icon": "fab fa-node-js",
+    "tags": [
+      "Runtime",
+      "Backend",
+      "JavaScript",
+      "Server Side"
+    ]
+  },
+  {
+    "nome": "PostgreSQL",
+    "descricao": "Sistema de gerenciamento de banco de dados relacional (RDBMS) open-source robusto e extensível.",
+    "data_criacao": "1996",
+    "link": "https://www.postgresql.org/",
+    "desenvolvedor": "PostgreSQL Global Development Group",
+    "icon": "fas fa-database",
+    "tags": [
+      "Database",
+      "SQL",
+      "Relational",
+      "Open Source"
+    ]
+  },
+  {
+    "nome": "MongoDB",
+    "descricao": "Banco de dados NoSQL orientado a documentos, conhecido por sua flexibilidade de esquema.",
+    "data_criacao": "2009",
+    "link": "https://www.mongodb.com/",
+    "desenvolvedor": "MongoDB Inc.",
+    "icon": "fas fa-database",
+    "tags": [
+      "Database",
+      "NoSQL",
+      "Document Store",
+      "Scalability"
+    ]
+  },
+  {
+    "nome": "Next.js",
+    "descricao": "Framework de React que facilita Server-Side Rendering (SSR) e Static Site Generation (SSG).",
+    "data_criacao": "2016",
+    "link": "https://nextjs.org/",
+    "desenvolvedor": "Vercel",
+    "icon": "fas fa-layer-group",
+    "tags": [
+      "Frontend Framework",
+      "React",
+      "Full Stack",
+      "SSR"
+    ]
+  },
+  {
+    "nome": "Terraform",
+    "descricao": "Ferramenta de Infraestrutura como Código (IaC) que permite provisionar e gerenciar infraestrutura em nuvem.",
+    "data_criacao": "2014",
+    "link": "https://www.terraform.io/",
+    "desenvolvedor": "HashiCorp",
+    "icon": "fas fa-cloud",
+    "tags": [
+      "DevOps",
+      "IaC",
+      "Cloud Computing",
+      "Provisioning"
+    ]
+  },
+  {
+    "nome": "Svelte",
+    "descricao": "Compilador que move o trabalho de framework para a etapa de build, gerando código de UI altamente otimizado.",
+    "data_criacao": "2016",
+    "link": "https://svelte.dev/",
+    "desenvolvedor": "Rich Harris",
+    "icon": "fas fa-code",
+    "tags": [
+      "Frontend Framework",
+      "Compiler",
+      "JavaScript",
+      "UI"
+    ]
+  },
+  {
+    "nome": "Vue.js",
+    "descricao": "Framework JavaScript progressivo para construir interfaces de usuário de forma incremental.",
+    "data_criacao": "2014",
+    "link": "https://vuejs.org/",
+    "desenvolvedor": "Evan You",
+    "icon": "fab fa-vuejs",
+    "tags": [
+      "Frontend Framework",
+      "JavaScript",
+      "UI Library",
+      "Web Development"
+    ]
+  },
+  {
+    "nome": "Django",
+    "descricao": "Framework web Python de alto nível que incentiva o desenvolvimento rápido e design limpo e pragmático.",
+    "data_criacao": "2005",
+    "link": "https://www.djangoproject.com/",
+    "desenvolvedor": "Django Software Foundation",
+    "icon": "fab fa-python",
+    "tags": [
+      "Web Framework",
+      "Python",
+      "Backend",
+      "MVC"
+    ]
+  },
+  {
+    "nome": "FastAPI",
+    "descricao": "Framework web moderno e rápido para construir APIs com Python, baseado em tipagem padrão do Python.",
+    "data_criacao": "2018",
+    "link": "https://fastapi.tiangolo.com/",
+    "desenvolvedor": "Sebastián Ramírez",
+    "icon": "fas fa-bolt",
+    "tags": [
+      "Python",
+      "Backend",
+      "API",
+      "Asynchronous"
+    ]
+  },
+  {
+    "nome": "GraphQL",
+    "descricao": "Linguagem de consulta para APIs desenvolvida pelo Facebook, permitindo a busca exata dos dados necessários.",
+    "data_criacao": "2015",
+    "link": "https://graphql.org/",
+    "desenvolvedor": "Meta",
+    "icon": "fas fa-project-diagram",
+    "tags": [
+      "API",
+      "Query Language",
+      "Data Fetching",
+      "Backend"
+    ]
+  },
+  {
+    "nome": "Prometheus",
+    "descricao": "Toolkit open-source de monitoramento e alerta altamente escalável para ambientes cloud native.",
+    "data_criacao": "2012",
+    "link": "https://prometheus.io/",
+    "desenvolvedor": "Cloud Native Computing Foundation",
+    "icon": "fas fa-chart-line",
+    "tags": [
+      "Monitoring",
+      "Observability",
+      "DevOps",
+      "Metrics"
+    ]
+  },
+  {
+    "nome": "Apache Kafka",
+    "descricao": "Plataforma de streaming distribuída para publicação, subscrição, armazenamento e processamento de fluxos de registros.",
+    "data_criacao": "2011",
+    "link": "https://kafka.apache.org/",
+    "desenvolvedor": "Apache Software Foundation",
+    "icon": "fas fa-comments",
+    "tags": [
+      "Data Streaming",
+      "Messaging Queue",
+      "Distributed System",
+      "Big Data"
+    ]
+  },
+  {
+    "nome": "WebAssembly (Wasm)",
+    "descricao": "Formato de instrução binária de baixo nível para a web, permitindo a execução de código de linguagens não-JS no navegador.",
+    "data_criacao": "2017",
+    "link": "https://webassembly.org/",
+    "desenvolvedor": "W3C",
+    "icon": "fas fa-microchip",
+    "tags": [
+      "Browser Technology",
+      "Performance",
+      "Compilation",
+      "Low Level"
+    ]
+  },
+  {
+    "nome": "Tailwind CSS",
+    "descricao": "Framework CSS utility-first que permite construir designs rapidamente, aplicando classes diretamente no markup.",
+    "data_criacao": "2017",
+    "link": "https://tailwindcss.com/",
+    "desenvolvedor": "Tailwind Labs",
+    "icon": "fab fa-css3",
+    "tags": [
+      "CSS Framework",
+      "Frontend",
+      "Styling",
+      "Utility-first"
+    ]
+  },
+  {
+    "nome": "Spring Boot",
+    "descricao": "Framework para facilitar a criação de aplicações Java stand-alone, prontas para produção.",
+    "data_criacao": "2014",
+    "link": "https://spring.io/projects/spring-boot",
+    "desenvolvedor": "VMware",
+    "icon": "fab fa-java",
+    "tags": [
+      "Java",
+      "Backend",
+      "Microservices",
+      "Enterprise"
+    ]
+  },
+  {
+    "nome": "Serverless (FaaS)",
+    "descricao": "Modelo de computação em nuvem onde o provedor gerencia dinamicamente a alocação de recursos da máquina.",
+    "data_criacao": "2014",
+    "link": "https://aws.amazon.com/serverless/",
+    "desenvolvedor": "Various",
+    "icon": "fas fa-cloud",
+    "tags": [
+      "Cloud Computing",
+      "Architecture",
+      "FaaS",
+      "Scalability"
+    ]
+  },
+  {
+    "nome": "GitHub Actions",
+    "descricao": "Ferramenta de CI/CD e automação que permite construir, testar e deployar código diretamente do GitHub.",
+    "data_criacao": "2018",
+    "link": "https://github.com/features/actions",
+    "desenvolvedor": "GitHub",
+    "icon": "fab fa-github",
+    "tags": [
+      "CI/CD",
+      "DevOps",
+      "Automation",
+      "Workflow"
+    ]
+  },
+  {
+    "nome": "Helm",
+    "descricao": "Gerenciador de pacotes para Kubernetes, facilitando o deploy e gerenciamento de aplicações.",
+    "data_criacao": "2016",
+    "link": "https://helm.sh/",
+    "desenvolvedor": "Cloud Native Computing Foundation",
+    "icon": "fas fa-ship",
+    "tags": [
+      "Kubernetes",
+      "DevOps",
+      "Package Manager",
+      "Orchestration"
+    ]
+  },
+  {
+    "nome": "Redis",
+    "descricao": "Estrutura de dados em memória, utilizada como cache, banco de dados e message broker.",
+    "data_criacao": "2009",
+    "link": "https://redis.io/",
+    "desenvolvedor": "Redis Ltd",
+    "icon": "fas fa-database",
+    "tags": [
+      "Database",
+      "Caching",
+      "In-memory",
+      "NoSQL"
+    ]
+  },
+  {
+    "nome": "Deno",
+    "descricao": "Runtime seguro para JavaScript e TypeScript, desenvolvido pelos criadores do Node.js, focando em segurança e padrões web.",
+    "data_criacao": "2018",
+    "link": "https://deno.com/",
+    "desenvolvedor": "Ryan Dahl",
+    "icon": "fas fa-shield-alt",
+    "tags": [
+      "Runtime",
+      "JavaScript",
+      "TypeScript",
+      "Backend"
+    ]
+  },
+  {
+    "nome": "PyTorch",
+    "descricao": "Framework de aprendizado de máquina otimizado para Deep Learning, desenvolvido pelo Facebook AI Research.",
+    "data_criacao": "2016",
+    "link": "https://pytorch.org/",
+    "desenvolvedor": "Meta AI",
+    "icon": "fas fa-brain",
+    "tags": [
+      "Machine Learning",
+      "Deep Learning",
+      "AI",
+      "Python"
+    ]
+  },
+  {
+    "nome": "TensorFlow",
+    "descricao": "Plataforma open-source para machine learning, com foco em produção e modelos escaláveis.",
+    "data_criacao": "2015",
+    "link": "https://www.tensorflow.org/",
+    "desenvolvedor": "Google Brain",
+    "icon": "fas fa-brain",
+    "tags": [
+      "Machine Learning",
+      "AI",
+      "Deep Learning",
+      "Google"
+    ]
+  },
+  {
+    "nome": "Solidity",
+    "descricao": "Linguagem de programação orientada a contratos para implementação de lógica em blockchains como Ethereum.",
+    "data_criacao": "2014",
+    "link": "https://soliditylang.org/",
+    "desenvolvedor": "Ethereum Foundation",
+    "icon": "fab fa-ethereum",
+    "tags": [
+      "Blockchain",
+      "Smart Contracts",
+      "Web3",
+      "Ethereum"
+    ]
+  },
+  {
+    "nome": "Ethers.js",
+    "descricao": "Biblioteca JavaScript completa e compacta para interagir com o ecossistema Ethereum e criar carteiras.",
+    "data_criacao": "2017",
+    "link": "https://docs.ethers.org/",
+    "desenvolvedor": "Richard Moore",
+    "icon": "fab fa-ethereum",
+    "tags": [
+      "Web3",
+      "JavaScript",
+      "Ethereum",
+      "Blockchain"
+    ]
+  },
+  {
+    "nome": "Qubit",
+    "descricao": "A unidade básica de informação na computação quântica, que pode existir em múltiplos estados simultaneamente.",
+    "data_criacao": "2000",
+    "link": "https://en.wikipedia.org/wiki/Qubit",
+    "desenvolvedor": "Physics",
+    "icon": "fas fa-atom",
+    "tags": [
+      "Quantum Computing",
+      "Concept",
+      "Physics",
+      "Emerging Tech"
+    ]
+  },
+  {
+    "nome": "Llama (Meta AI)",
+    "descricao": "Família de Large Language Models (LLMs) desenvolvida pela Meta, conhecida por seu alto desempenho e licença aberta.",
+    "data_criacao": "2023",
+    "link": "https://ai.meta.com/llama/",
+    "desenvolvedor": "Meta AI",
+    "icon": "fas fa-robot",
+    "tags": [
+      "AI",
+      "LLM",
+      "Generative AI",
+      "Large Model"
+    ]
+  },
+  {
+    "nome": "Istio",
+    "descricao": "Malha de serviços (Service Mesh) open-source que fornece uma forma de controlar como microsserviços interagem.",
+    "data_criacao": "2017",
+    "link": "https://istio.io/",
+    "desenvolvedor": "Cloud Native Computing Foundation",
+    "icon": "fas fa-network-wired",
+    "tags": [
+      "Service Mesh",
+      "Microservices",
+      "DevOps",
+      "Networking"
+    ]
+  },
+  {
+    "nome": "Blitz.js",
+    "descricao": "Framework fullstack baseado em Next.js que visa a experiência de 'zero-API', simplificando a comunicação frontend/backend.",
+    "data_criacao": "2020",
+    "link": "https://blitzjs.com/",
+    "desenvolvedor": "Brandon Bayer",
+    "icon": "fas fa-bolt",
+    "tags": [
+      "Full Stack",
+      "React",
+      "Framework",
+      "Rapid Development"
+    ]
+  },
+  {
+    "nome": "Supabase",
+    "descricao": "Plataforma BaaS (Backend as a Service) open-source que oferece funcionalidades como banco de dados Postgres, autenticação e armazenamento.",
+    "data_criacao": "2020",
+    "link": "https://supabase.com/",
+    "desenvolvedor": "Supabase Inc",
+    "icon": "fas fa-database",
+    "tags": [
+      "BaaS",
+      "Database",
+      "Open Source",
+      "API"
+    ]
+  },
+  {
+    "nome": "Vite",
+    "descricao": "Ferramenta de build frontend que utiliza ES modules nativos para oferecer desenvolvimento e hot module replacement (HMR) extremamente rápidos.",
+    "data_criacao": "2020",
+    "link": "https://vitejs.dev/",
+    "desenvolvedor": "Evan You",
+    "icon": "fas fa-bolt",
+    "tags": [
+      "Build Tool",
+      "Frontend",
+      "Bundler",
+      "JavaScript"
+    ]
+  },
+  {
+    "nome": "NestJS",
+    "descricao": "Framework progressivo para backend baseado em Node.js e TypeScript, construído para escalabilidade e arquitetura modular.",
+    "data_criacao": "2017",
+    "link": "https://nestjs.com/",
+    "desenvolvedor": "Kamil Myśliwiec",
+    "icon": "fab fa-node-js",
+    "tags": [
+      "Backend Framework",
+      "Node.js",
+      "TypeScript",
+      "Microservices"
+    ]
+  },
+  {
+    "nome": "Ruby on Rails",
+    "descricao": "Framework web que segue a arquitetura MVC (Model-View-Controller) e promove a convenção sobre a configuração.",
+    "data_criacao": "2004",
+    "link": "https://rubyonrails.org/",
+    "desenvolvedor": "David Heinemeier Hansson",
+    "icon": "fab fa-gem",
+    "tags": [
+      "Web Framework",
+      "Ruby",
+      "Backend",
+      "MVC"
+    ]
+  },
+  {
+    "nome": "C#",
+    "descricao": "Linguagem de programação orientada a objetos, multiparadigma, desenvolvida pela Microsoft, rodando na plataforma .NET.",
+    "data_criacao": "2000",
+    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+    "desenvolvedor": "Microsoft",
+    "icon": "fas fa-code",
+    "tags": [
+      "Programming Language",
+      "Microsoft",
+      "Backend",
+      ".NET"
+    ]
+  },
+  {
+    "nome": "Unity",
+    "descricao": "Motor de desenvolvimento de jogos 3D e 2D multiplataforma, amplamente usado para realidade virtual e aumentada.",
+    "data_criacao": "2005",
+    "link": "https://unity.com/",
+    "desenvolvedor": "Unity Technologies",
+    "icon": "fab fa-unity",
+    "tags": [
+      "Game Engine",
+      "C#",
+      "3D",
+      "XR",
+      "Development"
+    ]
+  },
+  {
+    "nome": "GitOps",
+    "descricao": "Modelo operacional que utiliza o Git como fonte única de verdade para descrever o estado desejado de um sistema.",
+    "data_criacao": "2017",
+    "link": "https://www.gitops.tech/",
+    "desenvolvedor": "Weaveworks",
+    "icon": "fab fa-git-alt",
+    "tags": [
+      "DevOps",
+      "CI/CD",
+      "Automation",
+      "Architecture"
+    ]
+  },
+  {
+    "nome": "Snowflake",
+    "descricao": "Data Warehouse como serviço baseado em nuvem, conhecido por sua arquitetura de separação de armazenamento e computação.",
+    "data_criacao": "2012",
+    "link": "https://www.snowflake.com/",
+    "desenvolvedor": "Snowflake Inc.",
+    "icon": "fas fa-snowflake",
+    "tags": [
+      "Data Warehouse",
+      "Cloud Computing",
+      "Data Analytics",
+      "Big Data"
+    ]
+  },
+  {
+    "nome": "Microservices",
+    "descricao": "Abordagem arquitetural onde um software é composto por serviços pequenos, independentes e fracamente acoplados.",
+    "data_criacao": "2009",
+    "link": "https://martinfowler.com/articles/microservices.html",
+    "desenvolvedor": "Architecture",
+    "icon": "fas fa-cubes",
+    "tags": [
+      "Architecture",
+      "Software Design",
+      "Distributed System",
+      "Scalability"
+    ]
+  },
+  {
+    "nome": "Ansible",
+    "descricao": "Ferramenta de automação de código aberto para provisionamento de software, gerenciamento de configuração e implantação de aplicativos.",
+    "data_criacao": "2012",
+    "link": "https://www.ansible.com/",
+    "desenvolvedor": "Red Hat",
+    "icon": "fas fa-terminal",
+    "tags": [
+      "Automation",
+      "DevOps",
+      "Configuration Management",
+      "IaC"
+    ]
+  },
+  {
+    "nome": "WebGPU",
+    "descricao": "Uma API gráfica web moderna projetada para expor recursos de hardware avançados e permitir computação paralela na GPU.",
+    "data_criacao": "2020",
+    "link": "https://www.w3.org/TR/webgpu/",
+    "desenvolvedor": "W3C",
+    "icon": "fas fa-desktop",
+    "tags": [
+      "Graphics API",
+      "Web Standard",
+      "Performance",
+      "3D"
+    ]
+  },
+  {
+    "nome": "Kotlin",
+    "descricao": "Linguagem de programação estaticamente tipada que roda na JVM e é totalmente interoperável com Java, sendo a linguagem preferida para Android.",
+    "data_criacao": "2011",
+    "link": "https://kotlinlang.org/",
+    "desenvolvedor": "JetBrains",
+    "icon": "fab fa-android",
+    "tags": [
+      "Programming Language",
+      "JVM",
+      "Android",
+      "Backend"
+    ]
+  },
+  {
+    "nome": "Flutter",
+    "descricao": "UI toolkit do Google para construir aplicações nativas compiladas de forma rápida e eficiente para mobile, web e desktop.",
+    "data_criacao": "2017",
+    "link": "https://flutter.dev/",
+    "desenvolvedor": "Google",
+    "icon": "fab fa-google",
+    "tags": [
+      "Mobile Development",
+      "UI Toolkit",
+      "Dart",
+      "Cross-platform"
+    ]
+  },
+  {
+    "nome": "Zig",
+    "descricao": "Linguagem de programação de propósito geral e baixo nível, focada em simplicidade, robustez e substituição de C.",
+    "data_criacao": "2016",
+    "link": "https://ziglang.org/",
+    "desenvolvedor": "Andrew Kelley",
+    "icon": "fas fa-bolt",
+    "tags": [
+      "Systems Programming",
+      "Low Level",
+      "Performance",
+      "Language"
+    ]
+  },
+  {
+    "nome": "GPT-4 (OpenAI)",
+    "descricao": "Modelo de linguagem grande (LLM) multimodal avançado, capaz de processar texto e imagens para gerar respostas.",
+    "data_criacao": "2023",
+    "link": "https://openai.com/gpt-4",
+    "desenvolvedor": "OpenAI",
+    "icon": "fas fa-robot",
+    "tags": [
+      "AI",
+      "LLM",
+      "Generative AI",
+      "NLP"
+    ]
+  },
+  {
+    "nome": "JavaScript",
+    "descricao": "Linguagem de script essencial para o desenvolvimento web, executada no lado do cliente e do servidor (Node.js).",
+    "data_criacao": "1995",
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "desenvolvedor": "Netscape",
+    "icon": "fab fa-js",
+    "tags": [
+      "Linguagem",
+      "Frontend",
+      "Backend",
+      "Web"
+    ]
+  },
+  {
+    "nome": "Angular",
+    "descricao": "Plataforma e framework completo da Google para construir aplicações web e móveis complexas em larga escala.",
+    "data_criacao": "2016",
+    "link": "https://angular.io/",
+    "desenvolvedor": "Google",
+    "icon": "fab fa-angular",
+    "tags": [
+      "Frontend",
+      "Framework",
+      "Google",
+      "TypeScript"
+    ]
+  },
+  {
+    "nome": "AWS Lambda",
+    "descricao": "Serviço de computação serverless da AWS que permite executar código sem provisionar ou gerenciar servidores (FaaS).",
+    "data_criacao": "2014",
+    "link": "https://aws.amazon.com/lambda/",
+    "desenvolvedor": "AWS",
+    "icon": "fab fa-aws",
+    "tags": [
+      "Cloud",
+      "Serverless",
+      "Funções",
+      "AWS"
+    ]
+  },
+  {
+    "nome": "Swift",
+    "descricao": "Linguagem de programação poderosa e moderna da Apple para desenvolvimento de aplicativos iOS, macOS e tvOS.",
+    "data_criacao": "2014",
+    "link": "https://www.swift.org/",
+    "desenvolvedor": "Apple",
+    "icon": "fab fa-swift",
+    "tags": [
+      "Linguagem",
+      "Mobile",
+      "Apple",
+      "Performance"
+    ]
+  },
+  {
+    "nome": "Pandas",
+    "descricao": "Biblioteca Python fundamental para manipulação e análise de dados, usando estruturas de dados como DataFrames.",
+    "data_criacao": "2008",
+    "link": "https://pandas.pydata.org/",
+    "desenvolvedor": "NumFOCUS",
+    "icon": "fas fa-table",
+    "tags": [
+      "Ciência de Dados",
+      "Python",
+      "Análise",
+      "Biblioteca"
+    ]
+  },
+  {
+    "nome": "Apache Spark",
+    "descricao": "Motor de processamento unificado e distribuído para análise de dados em larga escala e computação em cluster.",
+    "data_criacao": "2014",
+    "link": "https://spark.apache.org/",
+    "desenvolvedor": "Apache Software Foundation",
+    "icon": "fas fa-fire",
+    "tags": [
+      "Big Data",
+      "Processamento",
+      "Cluster",
+      "Apache"
+    ]
+  },
+  {
+    "nome": "Elixir",
+    "descricao": "Linguagem funcional construída sobre a máquina virtual Erlang (BEAM), focada em concorrência, tolerância a falhas e sistemas distribuídos.",
+    "data_criacao": "2012",
+    "link": "https://elixir-lang.org/",
+    "desenvolvedor": "José Valim",
+    "icon": "fas fa-flask",
+    "tags": [
+      "Linguagem",
+      "Funcional",
+      "Backend",
+      "Concorrência"
+    ]
+  },
+  {
+    "nome": "Phoenix Framework",
+    "descricao": "Framework web de alta performance construído em Elixir, ideal para construir sistemas em tempo real (como chats e dashboards).",
+    "data_criacao": "2014",
+    "link": "https://www.phoenixframework.org/",
+    "desenvolvedor": "Chris McCord",
+    "icon": "fas fa-fire",
+    "tags": [
+      "Backend",
+      "Framework",
+      "Elixir",
+      "Tempo Real"
+    ]
+  },
+  {
+    "nome": "Astro",
+    "descricao": "Framework web moderno focado em velocidade e otimização de performance, utilizando a arquitetura de 'ilhas de componentes'.",
+    "data_criacao": "2021",
+    "link": "https://astro.build/",
+    "desenvolvedor": "Astro",
+    "icon": "fas fa-rocket",
+    "tags": [
+      "Frontend",
+      "Framework",
+      "Performance",
+      "Ilhas de Componentes"
+    ]
+  },
+  {
+    "nome": "Prisma",
+    "descricao": "ORM (Object-Relational Mapper) de próxima geração para Node.js e TypeScript que simplifica o acesso ao banco de dados.",
+    "data_criacao": "2018",
+    "link": "https://www.prisma.io/",
+    "desenvolvedor": "Prisma Data",
+    "icon": "fas fa-database",
+    "tags": [
+      "Backend",
+      "ORM",
+      "TypeScript",
+      "Banco de Dados"
+    ]
+  },
+  {
+    "nome": "LangChain",
+    "descricao": "Framework para desenvolver aplicações complexas e contextuais alimentadas por grandes modelos de linguagem (LLMs).",
+    "data_criacao": "2022",
+    "link": "https://www.langchain.com/",
+    "desenvolvedor": "Harrison Chase",
+    "icon": "fas fa-link",
+    "tags": [
+      "IA/ML",
+      "LLMs",
+      "Framework",
+      "GenAI"
+    ]
+  },
+  {
+    "nome": "Hugging Face",
+    "descricao": "Plataforma líder em modelos de Machine Learning, conjuntos de dados e bibliotecas para Processamento de Linguagem Natural (NLP).",
+    "data_criacao": "2016",
+    "link": "https://huggingface.co/",
+    "desenvolvedor": "Hugging Face",
+    "icon": "fas fa-grin-stars",
+    "tags": [
+      "IA/ML",
+      "NLP",
+      "Modelos",
+      "Comunidade"
+    ]
+  },
+  {
+    "nome": "Observabilidade",
+    "descricao": "Conceito de medir o estado interno de um sistema a partir de seus outputs externos (logs, métricas e traces).",
+    "data_criacao": "2000",
+    "link": "https://www.honeycomb.io/observability",
+    "desenvolvedor": "Concept",
+    "icon": "fas fa-eye",
+    "tags": [
+      "Conceito",
+      "DevOps",
+      "Monitoramento",
+      "Arquitetura"
+    ]
+  },
+  {
+    "nome": "Kafkacat",
+    "descricao": "Ferramenta de linha de comando para produzir, consumir e manipular dados em tópicos do Apache Kafka.",
+    "data_criacao": "2013",
+    "link": "https://github.com/edenhill/kcat",
+    "desenvolvedor": "Magnus Edenhill",
+    "icon": "fas fa-terminal",
+    "tags": [
+      "Ferramenta",
+      "Streaming",
+      "Kafka",
+      "CLI"
+    ]
+  },
+  {
+    "nome": "Java",
+    "descricao": "Linguagem orientada a objetos e baseada em classes, projetada para ter o menor número possível de dependências.",
+    "data_criacao": "1995",
+    "link": "https://docs.oracle.com/en/java/",
+    "desenvolvedor": "Oracle",
+    "icon": "fab fa-java",
+    "tags": [
+      "Backend",
+      "Enterprise",
+      "Mobile",
+      "Orientada a Objetos"
+    ]
+  },
+  {
+    "nome": "C++",
+    "descricao": "Linguagem de uso geral criada como uma extensão da linguagem C, adicionando recursos de orientação a objetos.",
+    "data_criacao": "1985",
+    "link": "https://devdocs.io/cpp/",
+    "desenvolvedor": "Bjarne Stroustrup",
+    "icon": "fas fa-code",
+    "tags": [
+      "Sistemas",
+      "Performance",
+      "Games",
+      "Baixo Nível"
+    ]
+  },
+  {
+    "nome": "PHP",
+    "descricao": "Linguagem de script open source de uso geral, muito utilizada para o desenvolvimento web e embutida em HTML.",
+    "data_criacao": "1994",
+    "link": "https://www.php.net/docs.php",
+    "desenvolvedor": "Rasmus Lerdorf",
+    "icon": "fab fa-php",
+    "tags": [
+      "Web",
+      "Backend",
+      "Scripting",
+      "Servidor"
+    ]
+  },
+  {
+    "nome": "Ruby",
+    "descricao": "Linguagem dinâmica e orientada a objetos, focada na simplicidade e produtividade. Famosa pelo framework Rails.",
+    "data_criacao": "1995",
+    "link": "https://www.ruby-lang.org/pt/",
+    "desenvolvedor": "Yukihiro Matsumoto",
+    "icon": "fab fa-gem",
+    "tags": [
+      "Backend",
+      "Web",
+      "Scripting",
+      "Produtividade"
+    ]
+  },
+  {
+    "nome": "R",
+    "descricao": "Linguagem e ambiente para computação estatística e gráficos. Muito usada em ciência de dados.",
+    "data_criacao": "1993",
+    "link": "https://www.r-project.org/",
+    "desenvolvedor": "R Core Team",
+    "icon": "fas fa-chart-bar",
+    "tags": [
+      "Ciência de Dados",
+      "Estatística",
+      "Análise",
+      "Visualização"
+    ]
+  },
+  {
+    "nome": "SQL",
+    "descricao": "Linguagem padrão para armazenar, manipular e recuperar dados em bancos de dados relacionais.",
+    "data_criacao": "1974",
+    "link": "https://developer.mozilla.org/pt-BR/docs/Glossary/SQL",
+    "desenvolvedor": "ISO/IEC",
+    "icon": "fas fa-database",
+    "tags": [
+      "Banco de Dados",
+      "Query",
+      "Backend",
+      "Dados"
+    ]
+  },
+  {
+    "nome": "Perl",
+    "descricao": "Família de linguagens de script de alto nível, interpretadas e dinâmicas. Conhecida por sua capacidade de processamento de texto.",
+    "data_criacao": "1987",
+    "link": "https://www.perl.org/",
+    "desenvolvedor": "Larry Wall",
+    "icon": "fas fa-code",
+    "tags": [
+      "Scripting",
+      "Texto",
+      "Automação",
+      "Web"
+    ]
+  },
+  {
+    "nome": "Scala",
+    "descricao": "Linguagem que combina programação orientada a objetos e funcional em uma única linguagem concisa e de alto nível.",
+    "data_criacao": "2004",
+    "link": "https://docs.scala-lang.org/",
+    "desenvolvedor": "Martin Odersky",
+    "icon": "fas fa-code",
+    "tags": [
+      "Funcional",
+      "Orientada a Objetos",
+      "JVM",
+      "Backend"
+    ]
+  },
+  {
+    "nome": "Dart",
+    "descricao": "Linguagem otimizada para clientes, para desenvolvimento rápido de apps em qualquer plataforma. Base do Flutter.",
+    "data_criacao": "2011",
+    "link": "https://dart.dev/guides",
+    "desenvolvedor": "Google",
+    "icon": "fas fa-bullseye",
+    "tags": [
+      "Mobile",
+      "Flutter",
+      "Frontend",
+      "Multiplataforma"
+    ]
+  },
+  {
+    "nome": "Lua",
+    "descricao": "Linguagem de script poderosa, eficiente e leve, projetada para ser embutida em aplicações.",
+    "data_criacao": "1993",
+    "link": "https://www.lua.org/manual/5.4/",
+    "desenvolvedor": "PUC-Rio",
+    "icon": "fas fa-moon",
+    "tags": [
+      "Scripting",
+      "Games",
+      "Embarcado",
+      "Leve"
+    ]
+  },
+  {
+    "nome": "Assembly",
+    "descricao": "Linguagem de baixo nível que representa diretamente as instruções da arquitetura da máquina.",
+    "data_criacao": "1949",
+    "link": "https://pt.wikipedia.org/wiki/Linguagem_assembly",
+    "desenvolvedor": "Various",
+    "icon": "fas fa-microchip",
+    "tags": [
+      "Baixo Nível",
+      "Hardware",
+      "Sistemas",
+      "Embarcado"
+    ]
+  },
+  {
+    "nome": "Shell Script",
+    "descricao": "Programa de computador projetado para ser executado pelo shell do Unix/Linux. Essencial para automação.",
+    "data_criacao": "1971",
+    "link": "https://www.gnu.org/software/bash/manual/",
+    "desenvolvedor": "Various",
+    "icon": "fas fa-terminal",
+    "tags": [
+      "Automação",
+      "Linux",
+      "Unix",
+      "Scripting"
+    ]
+  },
+  {
+    "nome": "Objective-C",
+    "descricao": "Linguagem orientada a objetos de propósito geral que adiciona mensagens estilo Smalltalk à linguagem C.",
+    "data_criacao": "1984",
+    "link": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+    "desenvolvedor": "Brad Cox",
+    "icon": "fab fa-apple",
+    "tags": [
+      "Mobile",
+      "iOS",
+      "Apple",
+      "Legado"
+    ]
+  },
+  {
+    "nome": "Visual Basic .NET",
+    "descricao": "Linguagem de programação orientada a objetos implementada na estrutura .NET.",
+    "data_criacao": "2001",
+    "link": "https://learn.microsoft.com/pt-br/dotnet/visual-basic/",
+    "desenvolvedor": "Microsoft",
+    "icon": "fab fa-windows",
+    "tags": [
+      "Backend",
+      ".NET",
+      "Windows",
+      "Enterprise"
+    ]
+  },
+  {
+    "nome": "MATLAB",
+    "descricao": "Ambiente de computação numérica e linguagem de programação de quarta geração.",
+    "data_criacao": "1984",
+    "link": "https://www.mathworks.com/help/matlab/",
+    "desenvolvedor": "MathWorks",
+    "icon": "fas fa-calculator",
+    "tags": [
+      "Científico",
+      "Matemática",
+      "Engenharia",
+      "Análise"
+    ]
+  },
+  {
+    "nome": "Groovy",
+    "descricao": "Linguagem ágil e dinâmica para a plataforma Java, com recursos inspirados em Python, Ruby e Smalltalk.",
+    "data_criacao": "2003",
+    "link": "https://groovy-lang.org/documentation.html",
+    "desenvolvedor": "Apache Software Foundation",
+    "icon": "fab fa-java",
+    "tags": [
+      "JVM",
+      "Scripting",
+      "Backend",
+      "Dinâmica"
+    ]
+  },
+  {
+    "nome": "Haskell",
+    "descricao": "Linguagem de programação puramente funcional, padronizada e de propósito geral.",
+    "data_criacao": "1990",
+    "link": "https://www.haskell.org/documentation/",
+    "desenvolvedor": "Haskell Committee",
+    "icon": "fas fa-code",
+    "tags": [
+      "Funcional",
+      "Acadêmico",
+      "Tipagem Forte",
+      "Puro"
+    ]
+  },
+  {
+    "nome": "Go",
+    "descricao": "Linguagem de programação compilada desenvolvida pelo Google, conhecida por sua simplicidade e eficiência em concorrência e sistemas de rede.",
+    "data_criacao": "2009",
+    "link": "https://golang.org/",
+    "desenvolvedor": "Google",
+    "icon": "fas fa-golang",
+    "tags": [
+      "Linguagem",
+      "Backend",
+      "Concorrência",
+      "Nuvem"
+    ]
+  },
+  {
+    "nome": "Kubernetes",
+    "descricao": "Sistema de orquestração de containers open-source, automatizando a implantação, dimensionamento e gerenciamento de aplicações.",
+    "data_criacao": "2014",
+    "link": "https://kubernetes.io/",
+    "desenvolvedor": "Google",
+    "icon": "fas fa-cubes",
+    "tags": [
+      "Orquestração",
+      "Containers",
+      "Cloud Native",
+      "DevOps"
+    ]
+  },
+  {
+    "nome": "Git",
+    "descricao": "Sistema de controle de versão distribuído, projetado para lidar com tudo, desde projetos pequenos a muito grandes, com velocidade e eficiência.",
+    "data_criacao": "2005",
+    "link": "https://git-scm.com/",
+    "desenvolvedor": "Linus Torvalds",
+    "icon": "fab fa-git-alt",
+    "tags": [
+      "Controle de Versão",
+      "Ferramenta",
+      "Colaboração",
+      "Software"
+    ]
+  },
+  {
+    "nome": "Generative AI",
+    "descricao": "Subcampo da IA que se concentra em modelos (como LLMs e modelos de imagem) que podem criar novos conteúdos, como texto, imagens ou código.",
+    "data_criacao": "2020",
+    "link": "https://openai.com/",
+    "desenvolvedor": "Diversos (OpenAI, Google)",
+    "icon": "fas fa-magic",
+    "tags": [
+      "Conceito",
+      "Inteligência Artificial",
+      "LLMs",
+      "Criação de Conteúdo"
+    ]
+  },
+  {
+    "nome": "Phoenix",
+    "descricao": "Framework web de alta performance escrito em Elixir, ideal para aplicações em tempo real e de baixa latência.",
+    "data_criacao": "2015",
+    "link": "https://www.phoenixframework.org/",
+    "desenvolvedor": "Plataformatec",
+    "icon": "fas fa-feather-alt",
+    "tags": [
+      "Framework Web",
+      "Elixir",
+      "Backend",
+      "Tempo Real"
+    ]
+  },
+  {
+    "nome": "Serverless",
+    "descricao": "Modelo de computação em nuvem onde o provedor gerencia a infraestrutura, permitindo que os desenvolvedores foquem apenas no código (FaaS).",
+    "data_criacao": "2014",
+    "link": "https://aws.amazon.com/serverless/",
+    "desenvolvedor": "Amazon Web Services (AWS)",
+    "icon": "fas fa-cloud",
+    "tags": [
+      "Arquitetura",
+      "Computação em Nuvem",
+      "FaaS",
+      "DevOps"
+    ]
+  },
+  {
+    "nome": "Apache Cassandra",
+    "descricao": "Banco de dados NoSQL de código aberto e distribuído, projetado para lidar com grandes volumes de dados em muitos servidores com alta disponibilidade.",
+    "data_criacao": "2008",
+    "link": "https://cassandra.apache.org/",
+    "desenvolvedor": "Apache Software Foundation",
+    "icon": "fas fa-database",
+    "tags": [
+      "Banco de Dados",
+      "NoSQL",
+      "Alta Disponibilidade",
+      "Big Data"
+    ]
+  },
+  {
+    "nome": "Neo4j",
+    "descricao": "Sistema de gerenciamento de banco de dados nativo de grafo, focado em armazenar, gerenciar e analisar dados altamente conectados.",
+    "data_criacao": "2007",
+    "link": "https://neo4j.com/",
+    "desenvolvedor": "Neo4j Inc.",
+    "icon": "fas fa-project-diagram",
+    "tags": [
+      "Banco de Dados",
+      "Grafo",
+      "Cypher",
+      "NoSQL"
+    ]
+  },
+  {
+    "nome": "OAuth 2.0",
+    "descricao": "Protocolo de autorização que permite que aplicações de terceiros obtenham acesso limitado aos serviços HTTP de um usuário.",
+    "data_criacao": "2012",
+    "link": "https://oauth.net/2/",
+    "desenvolvedor": "IETF",
+    "icon": "fas fa-key",
+    "tags": [
+      "Protocolo",
+      "Segurança",
+      "Autorização",
+      "APIs"
+    ]
+  },
+  {
+    "nome": "CockroachDB",
+    "descricao": "Banco de dados SQL distribuído, tolerante a falhas e escalável horizontalmente, construído para a nuvem.",
+    "data_criacao": "2015",
+    "link": "https://www.cockroachlabs.com/",
+    "desenvolvedor": "Cockroach Labs",
+    "icon": "fas fa-database",
+    "tags": [
+      "Banco de Dados",
+      "SQL",
+      "Distribuído",
+      "Cloud Native"
+    ]
+  },
+  {
+    "nome": "WebRTC",
+    "descricao": "Tecnologia que permite comunicação em tempo real peer-to-peer (P2P) para áudio, vídeo e dados em navegadores web e aplicações móveis.",
+    "data_criacao": "2011",
+    "link": "https://webrtc.org/",
+    "desenvolvedor": "Google/W3C",
+    "icon": "fas fa-video",
+    "tags": [
+      "Protocolo",
+      "Tempo Real",
+      "P2P",
+      "Frontend"
+    ]
+  },
+  {
+    "nome": "Julia",
+    "descricao": "Linguagem de alto nível e alta performance projetada para computação científica, aprendizado de máquina e análise numérica.",
+    "data_criacao": "2012",
+    "link": "https://julialang.org/",
+    "desenvolvedor": "MIT",
+    "icon": "fas fa-calculator",
+    "tags": [
+      "Linguagem",
+      "Computação Científica",
+      "Data Science",
+      "Performance"
+    ]
+  },
+  {
+    "nome": "Jupyter",
+    "descricao": "Conjunto de ferramentas e formatos de arquivo (notebooks) para computação interativa, usado amplamente em ciência de dados e pesquisa.",
+    "data_criacao": "2014",
+    "link": "https://jupyter.org/",
+    "desenvolvedor": "Project Jupyter",
+    "icon": "fas fa-book",
+    "tags": [
+      "Ferramenta",
+      "Data Science",
+      "Python",
+      "Notebooks"
+    ]
+  },
+  {
+    "nome": "Sass",
+    "descricao": "Pré-processador CSS que adiciona recursos como variáveis, aninhamento, mixins e funções, facilitando a escrita e manutenção de folhas de estilo.",
+    "data_criacao": "2006",
+    "link": "https://sass-lang.com/",
+    "desenvolvedor": "Hampton Catlin",
+    "icon": "fab fa-sass",
+    "tags": [
+      "CSS",
+      "Pré-processador",
+      "Frontend",
+      "Design"
+    ]
+  }
+]
