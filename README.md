@@ -9,7 +9,8 @@ Uma aplicação web interativa e moderna para explorar, aprender e descobrir inf
 ## ✨ Funcionalidades
 
 *   **🔍 Busca Inteligente**: Pesquise por nome, descrição ou tags das tecnologias.
-*   **🏷️ Filtros por Tags**: Clique nas tags para filtrar tecnologias relacionadas (ex: `backend`, `mobile`, `web`).
+*   **📂 Categorias**: Filtre rapidamente por Linguagens, Frameworks, Bancos de Dados, DevOps e IA.
+*   **🏷️ Tags Interativas**: Clique nas tags para filtrar tecnologias relacionadas (ex: `backend`, `mobile`, `web`).
 *   **🔃 Ordenação Dinâmica**: Ordene os resultados por Nome (A-Z) ou Ano de Criação (Mais recente/Mais antigo).
 *   **📱 Design Responsivo**: Layout adaptável para desktops, tablets e dispositivos móveis.
 *   **🎨 Tema Cyberpunk**: Interface visual rica com efeitos de neon, glassmorphism e animações suaves.
@@ -45,9 +46,10 @@ base-de-conhecimento/
 ├── app.js           # Lógica principal da aplicação (Busca, Filtros, Renderização)
 ├── data.json        # Base de dados das tecnologias
 ├── index.html       # Estrutura principal da página
-├── styles.css       # Estilos globais e tema visual
-└── README.md        # Documentação do projeto
+└── styles.css       # Estilos globais e tema visual
 ```
+
+---
 
 ## 🔧 Como Executar
 
@@ -62,6 +64,8 @@ base-de-conhecimento/
 3.  **Abra o projeto**:
     *   Você pode abrir o arquivo `index.html` diretamente no seu navegador.
     *   **Recomendado**: Utilize uma extensão como "Live Server" no VS Code para evitar bloqueios de CORS ao carregar o arquivo JSON localmente.
+
+---
 
 ## 🤝 Contribuição
 
