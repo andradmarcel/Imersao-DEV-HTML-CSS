@@ -5,7 +5,8 @@
     const state = {
         dados: [],
         dadosFiltrados: [], // Mantemos uma cópia filtrada/ordenada
-        categoriaSelecionada: 'todos'
+        categoriaSelecionada: 'todos',
+        foiPesquisado: false // Novo estado para controlar visibilidade inicial
     };
 
     // Cache de elementos do DOM (Melhora performance)
@@ -276,6 +277,8 @@
         DOM.contador.textContent = `${lista.length} ${lista.length === 1 ? 'resultado encontrado' : 'resultados encontrados'}`;
 
         if (lista.length === 0) {
+            // Se não foi pesquisado e não tem filtro, a mensagem é diferente (controlada pelo processarDados)
+            // Mas aqui é quando o filtro não retorna nada.
             const msg = document.createElement('p');
             msg.style.cssText = "color: var(--cp-neon-cyan); text-align: center;";
             msg.textContent = "Nenhum resultado encontrado.";
@@ -292,6 +295,24 @@
         const termo = DOM.inputBusca.value.toLowerCase();
         const criterio = DOM.selectOrdenacao.value;
         const categoria = state.categoriaSelecionada;
+
+        // Lógica de Visibilidade:
+        // Só mostra se:
+        // 1. Tem texto digitado (termo !== '')
+        // 2. Tem categoria selecionada (diferente de 'todos')
+        // 3. O botão pesquisar foi clicado (state.foiPesquisado === true)
+        const temFiltro = termo !== '' || categoria !== 'todos';
+
+        if (!temFiltro && !state.foiPesquisado) {
+            // Se não tem filtro e não foi pesquisado, esconde tudo (ou mostra msg inicial)
+            DOM.container.innerHTML = '';
+            const msgInicial = document.createElement('p');
+            msgInicial.classList.add('initial-message');
+            msgInicial.textContent = "Digite algo ou clique em pesquisar para ver as tecnologias.";
+            DOM.container.appendChild(msgInicial);
+            DOM.contador.textContent = ''; // Limpa contador
+            return;
+        }
 
         // Filtrar
         let resultados = state.dados.filter(dado => {
@@ -335,10 +356,19 @@
 
     const setupListeners = () => {
         // Busca em tempo real (com Debounce de 300ms)
-        DOM.inputBusca.addEventListener('input', debounce(processarDados, 300));
+        const debouncedProcessar = debounce(processarDados, 300);
+        DOM.inputBusca.addEventListener('input', () => {
+            // Ao digitar, resetamos o "foiPesquisado" para que a lógica dependa do texto
+            // Se o usuário apagar tudo, volta a esconder.
+            state.foiPesquisado = false;
+            debouncedProcessar();
+        });
 
         // Botão Pesquisar
-        DOM.btnSearch.addEventListener('click', processarDados);
+        DOM.btnSearch.addEventListener('click', () => {
+            state.foiPesquisado = true; // Força a exibição
+            processarDados();
+        });
 
         // Ordenação
         DOM.selectOrdenacao.addEventListener('change', processarDados);
@@ -346,6 +376,7 @@
         // Limpar
         DOM.btnClear.addEventListener('click', () => {
             DOM.inputBusca.value = '';
+            state.foiPesquisado = false; // Reseta estado
             processarDados();
         });
 
@@ -355,6 +386,15 @@
                 DOM.botoesCategoria.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 state.categoriaSelecionada = btn.dataset.category;
+
+                // Se clicou em "Todos", força mostrar tudo.
+                // Se clicou em outra categoria, o filtro de categoria já vai exibir.
+                if (state.categoriaSelecionada === 'todos') {
+                    state.foiPesquisado = true;
+                } else {
+                    state.foiPesquisado = false;
+                }
+
                 processarDados();
             });
         });
@@ -364,6 +404,7 @@
             const tagElement = e.target.closest('.tag');
             if (tagElement) {
                 DOM.inputBusca.value = tagElement.dataset.tag;
+                state.foiPesquisado = false; // Deixa o filtro de texto atuar
                 processarDados();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
@@ -374,6 +415,7 @@
             if (e.target.classList.contains('tag')) {
                 fecharDetalhes();
                 DOM.inputBusca.value = e.target.dataset.tag;
+                state.foiPesquisado = false; // Deixa o filtro de texto atuar
                 processarDados();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
@@ -405,7 +447,15 @@
             state.dados = await response.json();
 
             setupListeners();
-            processarDados(); // Render inicial
+
+            // Remove o loading, mas não renderiza nada inicialmente
+            DOM.container.innerHTML = '';
+
+            // Opcional: Mostrar mensagem de "Comece a pesquisar"
+            const msgInicial = document.createElement('p');
+            msgInicial.classList.add('initial-message');
+            msgInicial.textContent = "Digite algo ou clique em pesquisar para ver as tecnologias.";
+            DOM.container.appendChild(msgInicial);
         } catch (error) {
             console.error('Erro crítico na aplicação:', error);
             DOM.container.innerHTML = `

@@ -818,6 +818,38 @@ footer a:hover {
     color: var(--cp-neon-cyan);
 }
 
+/* Initial Message Style */
+.initial-message {
+    grid-column: 1 / -1;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 3rem;
+
+    background: linear-gradient(to right,
+            #ffffff 0%,
+            #ffffff 40%,
+            var(--cp-neon-cyan) 50%,
+            #ffffff 60%,
+            #ffffff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+    animation: shine 3s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .initial-message {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
 /* Related Techs */
 .related-grid {
     display: grid;
