@@ -88,6 +88,10 @@
                 const span = document.createElement('span');
                 span.classList.add('tag');
                 span.textContent = tag;
+                // Adicionando atributos para funcionalidade de clique
+                span.dataset.tag = tag;
+                span.setAttribute('role', 'button');
+                span.setAttribute('tabindex', '0');
                 DOM_MODAL.tags.appendChild(span);
             });
         }
@@ -319,9 +323,19 @@
         renderizar(resultados);
     };
 
+    // Função de Debounce para otimizar a busca
+    const debounce = (func, wait) => {
+        let timeout;
+        return function (...args) {
+            const context = this;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    };
+
     const setupListeners = () => {
-        // Busca em tempo real
-        DOM.inputBusca.addEventListener('input', processarDados);
+        // Busca em tempo real (com Debounce de 300ms)
+        DOM.inputBusca.addEventListener('input', debounce(processarDados, 300));
 
         // Botão Pesquisar
         DOM.btnSearch.addEventListener('click', processarDados);
@@ -345,21 +359,23 @@
             });
         });
 
-        // Event Delegation para as Tags
+        // Event Delegation para as Tags (Container Principal)
         DOM.container.addEventListener('click', (e) => {
-            if (e.target.classList.contains('tag')) {
-                DOM.inputBusca.value = e.target.dataset.tag;
+            const tagElement = e.target.closest('.tag');
+            if (tagElement) {
+                DOM.inputBusca.value = tagElement.dataset.tag;
                 processarDados();
-                // Scroll suave para o topo para ver os resultados
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
 
-        // Acessibilidade para Tags (Enter key)
-        DOM.container.addEventListener('keydown', (e) => {
-            if (e.target.classList.contains('tag') && e.key === 'Enter') {
+        // Event Delegation para as Tags do Modal
+        DOM_MODAL.tags.addEventListener('click', (e) => {
+            if (e.target.classList.contains('tag')) {
+                fecharDetalhes();
                 DOM.inputBusca.value = e.target.dataset.tag;
                 processarDados();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
 
