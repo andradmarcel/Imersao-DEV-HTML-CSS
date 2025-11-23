@@ -6,8 +6,6 @@
 
 Uma aplicação web interativa e moderna para explorar, aprender e descobrir informações sobre diversas linguagens de programação e tecnologias. Com um design inspirado no estilo **Cyberpunk**, este projeto oferece uma experiência visual imersiva e funcional.
 
-> **Nota**: Este projeto está configurado para ser hospedado via GitHub Pages utilizando a pasta `docs/`.
-
 ---
 
 ## ✨ Funcionalidades
@@ -62,13 +60,13 @@ Este projeto foi desenvolvido utilizando tecnologias web modernas, sem dependên
 
 ```text
 /
-├── docs/                # Aplicação Web (GitHub Pages)
+├── docs/                # Código fonte e GitHub Pages
 │   ├── assets/          # Imagens e recursos estáticos
-│   ├── app.js           # Lógica principal
-│   ├── data.json        # Base de dados
+│   ├── app.js           # Lógica principal da aplicação
+│   ├── data.json        # Base de dados (95 tecnologias)
 │   ├── index.html       # Página principal
-│   └── styles.css       # Estilos
-└── README.md            # Documentação
+│   └── styles.css       # Estilos (tema Cyberpunk)
+└── README.md            # Documentação do projeto
 ```
 
 ---
@@ -77,11 +75,11 @@ Este projeto foi desenvolvido utilizando tecnologias web modernas, sem dependên
 
 1.  **Clone o repositório**:
     ```bash
-    git clone https://github.com/andradmarcel/base-de-conhecimento.git
+    git clone https://github.com/andradmarcel/Imersao-DEV-HTML-CSS.git
     ```
-2.  **Acesse a pasta da aplicação**:
+2.  **Acesse a pasta do projeto**:
     ```bash
-    cd docs
+    cd Imersao-DEV-HTML-CSS/docs
     ```
 3.  **Abra o projeto**:
     *   Abra o arquivo `index.html` no seu navegador.
