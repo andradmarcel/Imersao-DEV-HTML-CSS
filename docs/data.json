@@ -2,7 +2,7 @@
   {
     "nome": "React",
     "descricao": "Biblioteca JavaScript declarativa e eficiente.",
-    "descricao_detalhada": "O React revolucionou o desenvolvimento frontend ao introduzir o conceito de Virtual DOM e a arquitetura baseada em componentes reutilizáveis.",
+    "descricao_detalhada": "O React revolucionou o frontend com o Virtual DOM e a arquitetura baseada em componentes. Sua filosofia declarativa e o ecossistema de Hooks permitem criar interfaces complexas com gestão de estado previsível e alta performance.",
     "data_criacao": "2013",
     "link": "https://reactjs.org/",
     "desenvolvedor": "Meta",
@@ -34,7 +34,7 @@
   {
     "nome": "Python",
     "descricao": "Linguagem de alto nível e propósito geral.",
-    "descricao_detalhada": "Python destaca-se pela sintaxe limpa e legibilidade. É a linguagem dominante em Ciência de Dados e IA.",
+    "descricao_detalhada": "Famosa pela sintaxe limpa, Python tornou-se a 'lingua franca' da Ciência de Dados e IA devido a bibliotecas como NumPy e Pandas. No backend, é robusta e escalável, impulsionando gigantes da tecnologia.",
     "data_criacao": "1991",
     "link": "https://www.python.org/",
     "desenvolvedor": "PSF",
@@ -60,13 +60,14 @@
     ],
     "tecnologias_relacionadas": [
       "Django",
+      "FastAPI",
       "Pandas"
     ]
   },
   {
     "nome": "Kubernetes",
     "descricao": "Orquestração de containers.",
-    "descricao_detalhada": "Kubernetes automatiza a implantação, o dimensionamento e o gerenciamento de aplicativos em contêineres.",
+    "descricao_detalhada": "Kubernetes é o sistema operacional da nuvem. Ele abstrai a infraestrutura, garantindo que clusters de containers funcionem com alta disponibilidade, escalabilidade automática e recuperação de falhas (self-healing).",
     "data_criacao": "2014",
     "link": "https://kubernetes.io/",
     "desenvolvedor": "CNCF",
@@ -97,7 +98,7 @@
   {
     "nome": "Docker",
     "descricao": "Plataforma de containers.",
-    "descricao_detalhada": "Docker permite empacotar uma aplicação com todas as suas dependências em uma unidade padronizada.",
+    "descricao_detalhada": "Docker resolveu o problema 'funciona na minha máquina' ao padronizar o empacotamento de software. Containers isolam a aplicação e suas dependências, garantindo consistência entre desenvolvimento, teste e produção.",
     "data_criacao": "2013",
     "link": "https://www.docker.com/",
     "desenvolvedor": "Docker Inc",
@@ -128,7 +129,7 @@
   {
     "nome": "TypeScript",
     "descricao": "Superset tipado de JavaScript.",
-    "descricao_detalhada": "TypeScript adiciona tipagem estática opcional ao JavaScript. Isso permite ferramentas melhores e detecção de erros.",
+    "descricao_detalhada": "TypeScript adiciona segurança de tipos ao JavaScript, prevenindo erros em tempo de compilação. É essencial para projetos de grande escala, servindo como documentação viva e melhorando drasticamente a experiência de desenvolvimento (DX).",
     "data_criacao": "2012",
     "link": "https://www.typescriptlang.org/",
     "desenvolvedor": "Microsoft",
@@ -159,7 +160,7 @@
   {
     "nome": "Go",
     "descricao": "Linguagem eficiente e concorrente.",
-    "descricao_detalhada": "Go é uma linguagem open source famosa por sua performance e modelo de concorrência (goroutines).",
+    "descricao_detalhada": "Criada pelo Google para resolver problemas de escala. Go combina a performance de C com a legibilidade de Python. Seu modelo de concorrência (Goroutines) a torna ideal para sistemas distribuídos e ferramentas de infraestrutura.",
     "data_criacao": "2009",
     "link": "https://go.dev/",
     "desenvolvedor": "Google",
@@ -190,7 +191,7 @@
   {
     "nome": "Rust",
     "descricao": "Segurança e performance de sistemas.",
-    "descricao_detalhada": "Rust garante segurança de memória sem garbage collector e fornece abstrações de custo zero.",
+    "descricao_detalhada": "Rust oferece performance de baixo nível sem os perigos de gerenciamento de memória manual. Seu sistema de 'ownership' previne erros críticos, tornando-a ideal para motores de jogos, sistemas operacionais e ferramentas CLI de alta performance.",
     "data_criacao": "2010",
     "link": "https://www.rust-lang.org/",
     "desenvolvedor": "Rust Foundation",
@@ -221,7 +222,7 @@
   {
     "nome": "Node.js",
     "descricao": "Runtime JS server-side.",
-    "descricao_detalhada": "Node.js é um runtime JavaScript construído sobre o motor V8 do Chrome.",
+    "descricao_detalhada": "Node.js levou o JavaScript para o servidor. Construído sobre a engine V8 e usando I/O não-bloqueante (Event Loop), é extremamente eficiente para aplicações em tempo real, APIs e microsserviços que exigem alta concorrência.",
     "data_criacao": "2009",
     "link": "https://nodejs.org/",
     "desenvolvedor": "OpenJS",
@@ -253,7 +254,7 @@
   {
     "nome": "PostgreSQL",
     "descricao": "Banco de dados relacional avançado.",
-    "descricao_detalhada": "PostgreSQL é um poderoso sistema de banco de dados relacional de código aberto.",
+    "descricao_detalhada": "O 'Postgres' é o banco relacional open-source mais avançado do mundo. Conhecido por sua conformidade ACID, extensibilidade e suporte a tipos de dados complexos (como JSON e Geoespacial), é a escolha padrão para dados críticos.",
     "data_criacao": "1996",
     "link": "https://www.postgresql.org/",
     "desenvolvedor": "PostgreSQL Group",
@@ -285,7 +286,7 @@
   {
     "nome": "MongoDB",
     "descricao": "Banco de dados NoSQL de documentos.",
-    "descricao_detalhada": "MongoDB é um banco de dados de documentos que oferece escalabilidade e flexibilidade.",
+    "descricao_detalhada": "MongoDB armazena dados em documentos flexíveis tipo JSON. É projetado para desenvolvimento ágil e escala horizontal, sendo ideal para dados não estruturados, catálogos de produtos e aplicações que exigem iteração rápida de esquema.",
     "data_criacao": "2009",
     "link": "https://www.mongodb.com/",
     "desenvolvedor": "MongoDB Inc",
@@ -316,7 +317,7 @@
   {
     "nome": "Next.js",
     "descricao": "Framework React para produção.",
-    "descricao_detalhada": "Next.js permite funcionalidades como renderização do lado do servidor e geração de sites estáticos.",
+    "descricao_detalhada": "O framework React definitivo para produção. Oferece renderização híbrida (SSR e SSG), roteamento automático e otimização de imagens, resolvendo problemas de SEO e performance inicial de SPAs tradicionais.",
     "data_criacao": "2016",
     "link": "https://nextjs.org/",
     "desenvolvedor": "Vercel",
@@ -348,7 +349,7 @@
   {
     "nome": "Terraform",
     "descricao": "Infraestrutura como código.",
-    "descricao_detalhada": "Terraform permite definir infraestrutura como código para construir, alterar e versionar infraestrutura.",
+    "descricao_detalhada": "Permite definir e provisionar infraestrutura de data center usando uma linguagem declarativa. É agnóstico de nuvem, permitindo gerenciar recursos da AWS, Azure e Google Cloud em um único fluxo de trabalho auditável.",
     "data_criacao": "2014",
     "link": "https://www.terraform.io/",
     "desenvolvedor": "HashiCorp",
@@ -379,7 +380,7 @@
   {
     "nome": "Svelte",
     "descricao": "Framework UI compilado.",
-    "descricao_detalhada": "Svelte muda o trabalho para a etapa de compilação, gerando código imperativo otimizado.",
+    "descricao_detalhada": "Svelte muda o trabalho para a etapa de compilação, gerando código imperativo altamente otimizado que atualiza o DOM cirurgicamente. O resultado são apps mais rápidos e leves, sem a sobrecarga de um Virtual DOM.",
     "data_criacao": "2016",
     "link": "https://svelte.dev/",
     "desenvolvedor": "Rich Harris",
@@ -410,7 +411,7 @@
   {
     "nome": "Vue.js",
     "descricao": "Framework JavaScript Progressivo.",
-    "descricao_detalhada": "Vue é um framework acessível e versátil para construção de interfaces web.",
+    "descricao_detalhada": "Projetado para ser adotável incrementalmente, Vue possui uma curva de aprendizado suave e uma arquitetura versátil. Combina o melhor dos mundos: a reatividade intuitiva e templates HTML com o poder de componentes e Virtual DOM.",
     "data_criacao": "2014",
     "link": "https://vuejs.org/",
     "desenvolvedor": "Evan You",
@@ -441,7 +442,7 @@
   {
     "nome": "Django",
     "descricao": "Framework web para perfeccionistas.",
-    "descricao_detalhada": "Django é um framework web Python de alto nível que incentiva o desenvolvimento rápido.",
+    "descricao_detalhada": "Django segue a filosofia 'batteries-included', fornecendo ORM, autenticação e admin panel prontos para uso. É a escolha ideal para desenvolvimento rápido, seguro e pragmático de aplicações complexas.",
     "data_criacao": "2005",
     "link": "https://www.djangoproject.com/",
     "desenvolvedor": "DSF",
@@ -473,7 +474,7 @@
   {
     "nome": "FastAPI",
     "descricao": "Framework web moderno e rápido.",
-    "descricao_detalhada": "FastAPI é um framework web para construção de APIs com Python 3.6+ focado em alta performance.",
+    "descricao_detalhada": "Framework Python para APIs de alta performance. Baseado em padrões modernos (Type Hints, AsyncIO), oferece validação de dados automática e gera documentação interativa (Swagger) sem esforço extra.",
     "data_criacao": "2018",
     "link": "https://fastapi.tiangolo.com/",
     "desenvolvedor": "Tiangolo",
@@ -505,7 +506,7 @@
   {
     "nome": "GraphQL",
     "descricao": "Linguagem de consulta para API.",
-    "descricao_detalhada": "GraphQL é uma linguagem de consulta para APIs que permite ao cliente solicitar exatamente os dados de que precisa.",
+    "descricao_detalhada": "GraphQL permite que o cliente peça exatamente os dados que precisa, resolvendo os problemas de 'over-fetching' e 'under-fetching' das APIs REST tradicionais. Facilita a evolução da API sem versionamento rígido.",
     "data_criacao": "2015",
     "link": "https://graphql.org/",
     "desenvolvedor": "Meta",
@@ -536,7 +537,7 @@
   {
     "nome": "Prometheus",
     "descricao": "Monitoramento e alerta.",
-    "descricao_detalhada": "Prometheus é um sistema de monitoramento e alerta open-source focado em métricas de séries temporais.",
+    "descricao_detalhada": "Padrão ouro para monitoramento em Cloud Native. Usa um modelo de 'pull' para coletar métricas e uma linguagem de consulta poderosa (PromQL), sendo essencial para observabilidade em clusters Kubernetes.",
     "data_criacao": "2012",
     "link": "https://prometheus.io/",
     "desenvolvedor": "CNCF",
@@ -566,9 +567,40 @@
     ]
   },
   {
+    "nome": "Apache Kafka",
+    "descricao": "Plataforma de streaming de eventos.",
+    "descricao_detalhada": "Kafka é o sistema nervoso central de dados modernos. É uma plataforma distribuída de alto throughput e baixa latência para manipulação de feeds de dados em tempo real, desacoplando produtores e consumidores de dados.",
+    "data_criacao": "2011",
+    "link": "https://kafka.apache.org/",
+    "desenvolvedor": "Apache",
+    "icon": "devicon-apachekafka-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Streaming",
+      "Event Sourcing"
+    ],
+    "tags": [
+      "Big Data",
+      "Streaming",
+      "Distributed"
+    ],
+    "exemplo_codigo": "producer.send(record)",
+    "links_uteis": [
+      {
+        "nome": "Docs",
+        "url": "https://kafka.apache.org/documentation/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Java",
+      "RabbitMQ"
+    ]
+  },
+  {
     "nome": "WebAssembly",
     "descricao": "Binário para a web.",
-    "descricao_detalhada": "WebAssembly (Wasm) é um formato de instrução binária que permite execução de código em velocidade quase nativa.",
+    "descricao_detalhada": "WebAssembly (Wasm) permite executar código de linguagens como C++, Rust e Go no navegador com performance quase nativa. Abre portas para jogos, edição de vídeo e aplicações pesadas rodarem diretamente na web.",
     "data_criacao": "2017",
     "link": "https://webassembly.org/",
     "desenvolvedor": "W3C",
@@ -599,7 +631,7 @@
   {
     "nome": "Tailwind CSS",
     "descricao": "Framework CSS utilitário.",
-    "descricao_detalhada": "Tailwind é um framework CSS 'utility-first' que permite construir designs personalizados rapidamente.",
+    "descricao_detalhada": "Tailwind adota uma abordagem 'utility-first'. Em vez de componentes pré-fabricados, oferece classes de baixo nível que permitem construir designs totalmente customizados rapidamente, direto no HTML, sem lutar contra a especificidade do CSS.",
     "data_criacao": "2017",
     "link": "https://tailwindcss.com/",
     "desenvolvedor": "Tailwind Labs",
@@ -630,7 +662,7 @@
   {
     "nome": "Spring Boot",
     "descricao": "Framework Java produtivo.",
-    "descricao_detalhada": "Spring Boot simplifica a criação de aplicações Spring stand-alone e prontas para produção.",
+    "descricao_detalhada": "Spring Boot revoluciona o desenvolvimento Java com 'convenção sobre configuração'. Ele elimina o boilerplate, oferecendo servidores embutidos e configurações automáticas para criar microsserviços e apps web robustos em minutos.",
     "data_criacao": "2014",
     "link": "https://spring.io/projects/spring-boot",
     "desenvolvedor": "VMware",
@@ -661,7 +693,7 @@
   {
     "nome": "Serverless",
     "descricao": "Computação sem servidores.",
-    "descricao_detalhada": "Modelo onde o provedor de nuvem gerencia a alocação de recursos dinamicamente.",
+    "descricao_detalhada": "Modelo onde você foca apenas no código, e o provedor de nuvem gerencia toda a infraestrutura. Permite escalabilidade automática (do zero ao infinito) e um modelo de custo 'pague pelo uso', ideal para eventos esporádicos.",
     "data_criacao": "2014",
     "link": "https://aws.amazon.com/serverless/",
     "desenvolvedor": "AWS",
@@ -692,7 +724,7 @@
   {
     "nome": "GitHub Actions",
     "descricao": "Automação de workflow.",
-    "descricao_detalhada": "GitHub Actions permite criar workflows customizados de CI/CD e automação diretamente no repositório GitHub.",
+    "descricao_detalhada": "Plataforma de CI/CD integrada diretamente ao GitHub. Permite automatizar fluxos de trabalho de software (build, test, deploy) reagindo a qualquer evento do repositório, como Push ou Pull Requests.",
     "data_criacao": "2018",
     "link": "https://github.com/features/actions",
     "desenvolvedor": "GitHub",
@@ -723,7 +755,7 @@
   {
     "nome": "Helm",
     "descricao": "Gerenciador de pacotes K8s.",
-    "descricao_detalhada": "Helm ajuda a definir, instalar e atualizar aplicações Kubernetes complexas usando 'charts'.",
+    "descricao_detalhada": "Helm é o 'apt-get' do Kubernetes. Ele ajuda a definir, instalar e atualizar aplicações K8s complexas usando 'Charts', facilitando o gerenciamento de versões e o compartilhamento de configurações de infraestrutura.",
     "data_criacao": "2016",
     "link": "https://helm.sh/",
     "desenvolvedor": "CNCF",
@@ -754,7 +786,7 @@
   {
     "nome": "Redis",
     "descricao": "Estrutura de dados em memória.",
-    "descricao_detalhada": "Redis é um armazenamento em memória usado como banco de dados, cache e message broker.",
+    "descricao_detalhada": "Redis é um armazenamento chave-valor em memória extremamente rápido. Suporta estruturas de dados complexas e é a escolha padrão para cache, filas de mensagens e aplicações que exigem latência de sub-milissegundos.",
     "data_criacao": "2009",
     "link": "https://redis.io/",
     "desenvolvedor": "Redis Ltd",
@@ -785,7 +817,7 @@
   {
     "nome": "Deno",
     "descricao": "Runtime seguro para JS/TS.",
-    "descricao_detalhada": "Deno é um runtime moderno para JavaScript e TypeScript que foca em segurança e produtividade.",
+    "descricao_detalhada": "Criado pelo autor do Node.js para corrigir seus erros de design. Deno é seguro por padrão (sem acesso a rede/disco sem permissão), suporta TypeScript nativamente e usa URLs para dependências, dispensando o package.json.",
     "data_criacao": "2018",
     "link": "https://deno.land/",
     "desenvolvedor": "Ryan Dahl",
@@ -816,7 +848,7 @@
   {
     "nome": "PyTorch",
     "descricao": "Framework de Deep Learning.",
-    "descricao_detalhada": "PyTorch é uma biblioteca de aprendizado de máquina open-source baseada na biblioteca Torch.",
+    "descricao_detalhada": "Favorito na pesquisa acadêmica, o PyTorch utiliza grafos computacionais dinâmicos, o que facilita o debug e a experimentação rápida em Deep Learning e Inteligência Artificial.",
     "data_criacao": "2016",
     "link": "https://pytorch.org/",
     "desenvolvedor": "Meta AI",
@@ -847,7 +879,7 @@
   {
     "nome": "TensorFlow",
     "descricao": "Plataforma de ML end-to-end.",
-    "descricao_detalhada": "TensorFlow é uma plataforma open-source completa para machine learning, facilitando a construção e deploy.",
+    "descricao_detalhada": "Plataforma completa do Google para ML. Conhecida por sua robustez em produção e deploy (TensorFlow Lite, Serving), é amplamente usada na indústria para colocar modelos de IA no mundo real.",
     "data_criacao": "2015",
     "link": "https://www.tensorflow.org/",
     "desenvolvedor": "Google",
@@ -878,7 +910,7 @@
   {
     "nome": "Solidity",
     "descricao": "Linguagem para Smart Contracts.",
-    "descricao_detalhada": "Solidity é uma linguagem orientada a objetos para escrever contratos inteligentes em plataformas blockchain.",
+    "descricao_detalhada": "Linguagem orientada a contratos para a Ethereum Virtual Machine (EVM). É a base da Web3, permitindo escrever lógica de negócios descentralizada, tokens e DApps.",
     "data_criacao": "2014",
     "link": "https://soliditylang.org/",
     "desenvolvedor": "Ethereum",
@@ -909,7 +941,7 @@
   {
     "nome": "Ethers.js",
     "descricao": "Biblioteca Ethereum.",
-    "descricao_detalhada": "Ethers.js é uma biblioteca completa e compacta para interagir com a Blockchain Ethereum.",
+    "descricao_detalhada": "Biblioteca compacta e segura para interagir com a Blockchain Ethereum. Preferida por muitos devs Web3 por sua API simples e suporte completo a Typescript e wallets.",
     "data_criacao": "2016",
     "link": "https://docs.ethers.org/",
     "desenvolvedor": "Richard Moore",
@@ -940,7 +972,7 @@
   {
     "nome": "Qubit",
     "descricao": "Bit quântico.",
-    "descricao_detalhada": "Na computação quântica, um qubit é a unidade básica de informação, capaz de representar 0 e 1 simultaneamente.",
+    "descricao_detalhada": "A unidade fundamental da computação quântica. Diferente do bit clássico (0 ou 1), o Qubit usa superposição para representar múltiplos estados simultaneamente, prometendo poder computacional exponencial para certos problemas.",
     "data_criacao": "1995",
     "link": "https://en.wikipedia.org/wiki/Qubit",
     "desenvolvedor": "Physics",
@@ -971,7 +1003,7 @@
   {
     "nome": "Llama",
     "descricao": "LLM da Meta AI.",
-    "descricao_detalhada": "LLaMA é uma família de grandes modelos de linguagem (LLMs) lançada pela Meta AI.",
+    "descricao_detalhada": "Modelo de linguagem da Meta que democratizou a IA Generativa. Ao ser disponibilizado para pesquisa, impulsionou uma explosão de inovações open-source, permitindo rodar LLMs poderosos em hardware local.",
     "data_criacao": "2023",
     "link": "https://ai.facebook.com/blog/large-language-model-llama-meta-ai/",
     "desenvolvedor": "Meta AI",
@@ -1003,7 +1035,7 @@
   {
     "nome": "Istio",
     "descricao": "Service Mesh.",
-    "descricao_detalhada": "Istio é uma malha de serviço aberta que fornece uma maneira uniforme de conectar, gerenciar e proteger microsserviços.",
+    "descricao_detalhada": "Adiciona uma camada de infraestrutura transparente para gerenciar comunicação entre microsserviços. Fornece recursos avançados como mTLS (segurança), roteamento de tráfego e observabilidade sem alterar o código da aplicação.",
     "data_criacao": "2017",
     "link": "https://istio.io/",
     "desenvolvedor": "Google, IBM, Lyft",
@@ -1034,7 +1066,7 @@
   {
     "nome": "Blitz.js",
     "descricao": "Framework Fullstack React.",
-    "descricao_detalhada": "Blitz é um framework fullstack construído sobre Next.js que abstrai a camada de API.",
+    "descricao_detalhada": "Construído sobre Next.js, o Blitz traz a experiência 'Zero-API'. Ele abstrai a comunicação cliente-servidor, permitindo importar funções do backend diretamente no frontend, similar à produtividade do Ruby on Rails.",
     "data_criacao": "2020",
     "link": "https://blitzjs.com/",
     "desenvolvedor": "Brandon Bayer",
@@ -1065,7 +1097,7 @@
   {
     "nome": "Supabase",
     "descricao": "Alternativa Open Source ao Firebase.",
-    "descricao_detalhada": "Supabase fornece backend como serviço (BaaS) com banco de dados Postgres, autenticação e APIs em tempo real.",
+    "descricao_detalhada": "Backend-as-a-Service (BaaS) construído sobre PostgreSQL. Oferece banco de dados, autenticação, armazenamento e APIs em tempo real instantâneas, combinando a facilidade do Firebase com o poder do SQL.",
     "data_criacao": "2020",
     "link": "https://supabase.com/",
     "desenvolvedor": "Supabase",
@@ -1097,7 +1129,7 @@
   {
     "nome": "Vite",
     "descricao": "Build tool de próxima geração.",
-    "descricao_detalhada": "Vite é uma ferramenta de build que oferece um servidor de desenvolvimento extremamente rápido e builds otimizados.",
+    "descricao_detalhada": "Substituto moderno do Webpack. Usa ES Modules nativos do navegador para oferecer um servidor de desenvolvimento com inicialização instantânea e Hot Module Replacement (HMR) ultra-rápido, independente do tamanho do projeto.",
     "data_criacao": "2020",
     "link": "https://vitejs.dev/",
     "desenvolvedor": "Evan You",
@@ -1128,7 +1160,7 @@
   {
     "nome": "NestJS",
     "descricao": "Framework Node.js estruturado.",
-    "descricao_detalhada": "NestJS é um framework para construir aplicações Node.js eficientes e escaláveis, fortemente inspirado no Angular.",
+    "descricao_detalhada": "Traz padrões de arquitetura sólidos (Módulos, Controllers, Injeção de Dependência) para o Node.js. Inspirado no Angular, é excelente para construir backends escaláveis e organizados em nível empresarial.",
     "data_criacao": "2017",
     "link": "https://nestjs.com/",
     "desenvolvedor": "Kamil Mysliwiec",
@@ -1160,7 +1192,7 @@
   {
     "nome": "Ruby on Rails",
     "descricao": "Framework web produtivo.",
-    "descricao_detalhada": "Rails é um framework web MVC que segue o princípio 'Convenção sobre Configuração', otimizado para produtividade.",
+    "descricao_detalhada": "O framework que definiu o desenvolvimento web moderno com 'Convention over Configuration'. Famoso por permitir que startups construam MVPs complexos em tempo recorde, priorizando a felicidade do desenvolvedor.",
     "data_criacao": "2004",
     "link": "https://rubyonrails.org/",
     "desenvolvedor": "DHH",
@@ -1192,7 +1224,7 @@
   {
     "nome": "C#",
     "descricao": "Linguagem multiparadigma da Microsoft.",
-    "descricao_detalhada": "C# é uma linguagem moderna e segura para tipos, base da plataforma .NET, usada em enterprise, jogos e mobile.",
+    "descricao_detalhada": "A espinha dorsal do ecossistema .NET. É uma linguagem moderna, segura e versátil, usada para tudo: desde backends corporativos de alta performance até desenvolvimento de jogos com Unity.",
     "data_criacao": "2000",
     "link": "https://docs.microsoft.com/en-us/dotnet/csharp/",
     "desenvolvedor": "Microsoft",
@@ -1222,9 +1254,41 @@
     ]
   },
   {
+    "nome": "Unity",
+    "descricao": "Motor de jogos.",
+    "descricao_detalhada": "A plataforma de desenvolvimento de jogos mais popular do mundo. Permite criar experiências 3D e 2D interativas para quase qualquer dispositivo (Mobile, PC, Consoles, VR) usando C#.",
+    "data_criacao": "2005",
+    "link": "https://unity.com/",
+    "desenvolvedor": "Unity Technologies",
+    "icon": "devicon-unity-plain",
+    "licenca": "Proprietária",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Game Dev",
+      "AR/VR",
+      "Simulation"
+    ],
+    "tags": [
+      "Game Engine",
+      "3D",
+      "C#"
+    ],
+    "exemplo_codigo": "void Update() {}",
+    "links_uteis": [
+      {
+        "nome": "Manual",
+        "url": "https://docs.unity3d.com/Manual/index.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "C#",
+      "Unreal Engine"
+    ]
+  },
+  {
     "nome": "GitOps",
     "descricao": "Operações por Pull Request.",
-    "descricao_detalhada": "GitOps é uma prática de usar Git como fonte única da verdade para infraestrutura e deploy de aplicações.",
+    "descricao_detalhada": "A evolução da Infraestrutura como Código. Usa o Git como a única fonte de verdade para a infraestrutura e aplicações. Um agente (como ArgoCD) garante que o estado do cluster Kubernetes seja igual ao do repositório.",
     "data_criacao": "2017",
     "link": "https://www.gitops.tech/",
     "desenvolvedor": "Weaveworks",
@@ -1255,7 +1319,7 @@
   {
     "nome": "Snowflake",
     "descricao": "Data Cloud.",
-    "descricao_detalhada": "Snowflake é uma plataforma de data warehouse em nuvem que separa computação de armazenamento.",
+    "descricao_detalhada": "Data Warehouse construído para a nuvem. Inovou ao separar armazenamento de computação, permitindo escalar ambos de forma independente e analisar petabytes de dados com SQL padrão.",
     "data_criacao": "2012",
     "link": "https://www.snowflake.com/",
     "desenvolvedor": "Snowflake Inc",
@@ -1286,7 +1350,7 @@
   {
     "nome": "Microservices",
     "descricao": "Estilo arquitetural.",
-    "descricao_detalhada": "Arquitetura onde uma aplicação é estruturada como uma coleção de serviços pequenos e independentes.",
+    "descricao_detalhada": "Abordagem onde uma aplicação é composta por pequenos serviços independentes que se comunicam via APIs. Permite deploy independente, escalabilidade granular e uso de diferentes tecnologias em cada serviço.",
     "data_criacao": "2011",
     "link": "https://microservices.io/",
     "desenvolvedor": "Community",
@@ -1317,7 +1381,7 @@
   {
     "nome": "Ansible",
     "descricao": "Automação de TI.",
-    "descricao_detalhada": "Ansible é uma ferramenta de automação simples e sem agentes para gerenciamento de configuração e deploy.",
+    "descricao_detalhada": "Ferramenta de automação simples e poderosa que não requer agentes instalados ('agentless'). Usa YAML para descrever tarefas de configuração, deploy e orquestração, facilitando a gestão de múltiplos servidores.",
     "data_criacao": "2012",
     "link": "https://www.ansible.com/",
     "desenvolvedor": "Red Hat",
@@ -1348,7 +1412,7 @@
   {
     "nome": "WebGPU",
     "descricao": "API gráfica web moderna.",
-    "descricao_detalhada": "WebGPU é uma API futura da web para gráficos acelerados e computação, sucessora do WebGL.",
+    "descricao_detalhada": "Sucessora do WebGL, expõe o poder das GPUs modernas para a Web. Permite renderização 3D avançada e computação de propósito geral na GPU (GPGPU) com muito menos overhead e maior performance.",
     "data_criacao": "2017",
     "link": "https://www.w3.org/TR/webgpu/",
     "desenvolvedor": "W3C",
@@ -1379,7 +1443,7 @@
   {
     "nome": "Kotlin",
     "descricao": "Linguagem moderna para JVM.",
-    "descricao_detalhada": "Kotlin é uma linguagem concisa e segura, totalmente interoperável com Java e oficial para Android.",
+    "descricao_detalhada": "A linguagem oficial do Android. Moderna, concisa e segura (null-safety), ela roda na JVM e é 100% interoperável com Java, corrigindo muitos dos problemas de verbosidade do seu antecessor.",
     "data_criacao": "2011",
     "link": "https://kotlinlang.org/",
     "desenvolvedor": "JetBrains",
@@ -1410,7 +1474,7 @@
   {
     "nome": "Flutter",
     "descricao": "UI Toolkit para mobile e web.",
-    "descricao_detalhada": "Flutter permite criar aplicativos nativos bonitos para mobile, web e desktop a partir de uma única base de código.",
+    "descricao_detalhada": "Kit do Google para criar apps nativos compilados para Mobile, Web e Desktop com uma única base de código (Dart). Diferente de outras soluções híbridas, ele desenha cada pixel na tela, garantindo performance de 60fps.",
     "data_criacao": "2017",
     "link": "https://flutter.dev/",
     "desenvolvedor": "Google",
@@ -1441,7 +1505,7 @@
   {
     "nome": "Zig",
     "descricao": "Linguagem de sistemas moderna.",
-    "descricao_detalhada": "Zig é uma linguagem de programação de sistemas focada em robustez, otimização e clareza.",
+    "descricao_detalhada": "Sucessora espiritual do C. Focada em simplicidade (sem macros ocultas, sem alocação de memória escondida) e performance. Possui interoperabilidade perfeita com C e um compilador poderoso.",
     "data_criacao": "2016",
     "link": "https://ziglang.org/",
     "desenvolvedor": "Andrew Kelley",
@@ -1472,7 +1536,7 @@
   {
     "nome": "GPT-4",
     "descricao": "Modelo de linguagem avançado.",
-    "descricao_detalhada": "GPT-4 é um modelo multimodal de grande escala da OpenAI, capaz de raciocínio complexo e geração de código.",
+    "descricao_detalhada": "O estado da arte em IA Generativa (LLM) da OpenAI. Multimodal (texto/imagem) e capaz de raciocínio complexo, codificação e análise, redefinindo o que é possível na interação humano-computador.",
     "data_criacao": "2023",
     "link": "https://openai.com/gpt-4",
     "desenvolvedor": "OpenAI",
@@ -1504,7 +1568,7 @@
   {
     "nome": "JavaScript",
     "descricao": "A linguagem da Web.",
-    "descricao_detalhada": "JavaScript é a linguagem de programação onipresente da web, usada no frontend e backend (Node.js).",
+    "descricao_detalhada": "A linguagem mais onipresente do mundo. Originalmente apenas para navegadores, hoje roda em servidores (Node.js), robôs e IoT. Sua natureza assíncrona e orientada a eventos a torna fundamental para a web moderna.",
     "data_criacao": "1995",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     "desenvolvedor": "Brendan Eich",
@@ -1536,7 +1600,7 @@
   {
     "nome": "Angular",
     "descricao": "Plataforma web do Google.",
-    "descricao_detalhada": "Angular é uma plataforma e framework para construção de aplicações web escaláveis.",
+    "descricao_detalhada": "Plataforma completa para desenvolvimento web. Usa TypeScript por padrão e oferece uma arquitetura opinativa (MVC) com injeção de dependência robusta, ideal para aplicações corporativas complexas.",
     "data_criacao": "2016",
     "link": "https://angular.io/",
     "desenvolvedor": "Google",
@@ -1567,11 +1631,11 @@
   {
     "nome": "AWS Lambda",
     "descricao": "Computação serverless.",
-    "descricao_detalhada": "AWS Lambda permite executar código sem provisionar ou gerenciar servidores, pagando apenas pelo tempo de computação.",
+    "descricao_detalhada": "Pioneiro do FaaS (Function as a Service). Permite rodar código sem provisionar servidores, cobrando apenas pelos milissegundos de execução. Escala do zero a milhares de requisições instantaneamente.",
     "data_criacao": "2014",
     "link": "https://aws.amazon.com/lambda/",
     "desenvolvedor": "AWS",
-    "icon": "fab fa-aws",
+    "icon": "devicon-amazonwebservices-plain",
     "licenca": "Proprietária",
     "popularidade": "Muito Alta",
     "casos_uso": [
@@ -1598,7 +1662,7 @@
   {
     "nome": "Swift",
     "descricao": "Linguagem da Apple.",
-    "descricao_detalhada": "Swift é uma linguagem de programação rápida e segura para desenvolvimento no ecossistema Apple.",
+    "descricao_detalhada": "Sucessora do Objective-C, projetada para ser rápida, segura e moderna. Possui recursos como gerenciamento automático de memória e segurança de tipos, sendo a escolha principal para iOS e macOS.",
     "data_criacao": "2014",
     "link": "https://swift.org/",
     "desenvolvedor": "Apple",
@@ -1627,13 +1691,44 @@
     ]
   },
   {
+    "nome": "Pandas",
+    "descricao": "Análise de dados em Python.",
+    "descricao_detalhada": "Biblioteca essencial para Data Science. Introduziu os DataFrames, permitindo manipulação e análise de dados estruturados (como planilhas Excel) de forma programática e extremamente performática.",
+    "data_criacao": "2008",
+    "link": "https://pandas.pydata.org/",
+    "desenvolvedor": "Wes McKinney",
+    "icon": "devicon-pandas-plain",
+    "licenca": "BSD",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Data Science",
+      "Analysis"
+    ],
+    "tags": [
+      "Data Science",
+      "Python",
+      "Library"
+    ],
+    "exemplo_codigo": "import pandas as pd",
+    "links_uteis": [
+      {
+        "nome": "Docs",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "NumPy"
+    ]
+  },
+  {
     "nome": "Apache Spark",
     "descricao": "Processamento de Big Data.",
-    "descricao_detalhada": "Apache Spark é um mecanismo unificado de análise para processamento de dados em larga escala.",
+    "descricao_detalhada": "Engine unificada para processamento de dados em larga escala. Diferente do Hadoop MapReduce, processa dados em memória, sendo até 100x mais rápido para cargas de trabalho de ETL e Machine Learning.",
     "data_criacao": "2014",
     "link": "https://spark.apache.org/",
     "desenvolvedor": "Apache",
-    "icon": "fas fa-fire",
+    "icon": "devicon-apachespark-plain",
     "licenca": "Apache 2.0",
     "popularidade": "Alta",
     "casos_uso": [
@@ -1660,7 +1755,7 @@
   {
     "nome": "Elixir",
     "descricao": "Linguagem concorrente na BEAM.",
-    "descricao_detalhada": "Elixir é uma linguagem funcional projetada para construir aplicações escaláveis e de fácil manutenção.",
+    "descricao_detalhada": "Linguagem funcional que roda na máquina virtual Erlang (BEAM), famosa por tolerância a falhas e baixa latência. Ideal para sistemas distribuídos e aplicações de tempo real massivas (como WhatsApp/Discord).",
     "data_criacao": "2011",
     "link": "https://elixir-lang.org/",
     "desenvolvedor": "José Valim",
@@ -1691,7 +1786,7 @@
   {
     "nome": "Phoenix",
     "descricao": "Framework web para Elixir.",
-    "descricao_detalhada": "Phoenix é um framework web que oferece alta produtividade sem comprometer a velocidade e o tempo real.",
+    "descricao_detalhada": "Traz a produtividade do Rails para o mundo de alta performance do Elixir. Com o recurso LiveView, permite criar SPAs interativas e ricas renderizadas no servidor, sem necessidade de JavaScript complexo no cliente.",
     "data_criacao": "2014",
     "link": "https://www.phoenixframework.org/",
     "desenvolvedor": "Chris McCord",
@@ -1722,11 +1817,11 @@
   {
     "nome": "Astro",
     "descricao": "Framework web para conteúdo.",
-    "descricao_detalhada": "Astro é um framework web tudo-em-um projetado para velocidade, entregando menos JavaScript.",
+    "descricao_detalhada": "Focado em performance. Renderiza HTML estático por padrão e hidrata componentes interativos (React, Vue, Svelte) apenas quando necessário ('Islands Architecture'), garantindo sites extremamente leves e rápidos.",
     "data_criacao": "2021",
     "link": "https://astro.build/",
     "desenvolvedor": "Astro",
-    "icon": "fas fa-rocket",
+    "icon": "devicon-astro-plain",
     "licenca": "MIT",
     "popularidade": "Crescente",
     "casos_uso": [
@@ -1753,7 +1848,7 @@
   {
     "nome": "Prisma",
     "descricao": "ORM moderno.",
-    "descricao_detalhada": "Prisma é um ORM de próxima geração para Node.js e TypeScript que simplifica o acesso ao banco de dados.",
+    "descricao_detalhada": "ORM de nova geração que foca em Developer Experience. Gera um cliente de banco de dados auto-completável e type-safe baseado no seu schema, prevenindo erros de SQL em tempo de desenvolvimento.",
     "data_criacao": "2019",
     "link": "https://www.prisma.io/",
     "desenvolvedor": "Prisma Data",
@@ -1784,7 +1879,7 @@
   {
     "nome": "LangChain",
     "descricao": "Framework para LLMs.",
-    "descricao_detalhada": "LangChain facilita a construção de aplicações que utilizam modelos de linguagem grandes (LLMs).",
+    "descricao_detalhada": "A 'cola' para aplicações de IA Generativa. Fornece abstrações para conectar LLMs a outras fontes de dados (PDFs, APIs) e manter o contexto da conversa, essencial para criar chatbots inteligentes.",
     "data_criacao": "2022",
     "link": "https://langchain.com/",
     "desenvolvedor": "Harrison Chase",
@@ -1815,7 +1910,7 @@
   {
     "nome": "Hugging Face",
     "descricao": "Hub de IA.",
-    "descricao_detalhada": "Hugging Face é a plataforma central para compartilhamento de modelos de machine learning, datasets e demos.",
+    "descricao_detalhada": "O 'GitHub do Machine Learning'. Plataforma central para compartilhar modelos, datasets e demos. Sua biblioteca 'Transformers' padronizou o acesso a modelos de estado da arte em NLP e Visão Computacional.",
     "data_criacao": "2016",
     "link": "https://huggingface.co/",
     "desenvolvedor": "Hugging Face",
@@ -1846,7 +1941,7 @@
   {
     "nome": "Observabilidade",
     "descricao": "Capacidade de entender o sistema.",
-    "descricao_detalhada": "Observabilidade é a medida de quão bem os estados internos de um sistema podem ser inferidos a partir de suas saídas externas.",
+    "descricao_detalhada": "Vai além do monitoramento (saber se algo falhou). Baseada nos três pilares: Logs, Métricas e Tracing, permite entender *por que* algo falhou, essencial em sistemas distribuídos complexos.",
     "data_criacao": "N/A",
     "link": "https://en.wikipedia.org/wiki/Observability",
     "desenvolvedor": "Concept",
@@ -1877,7 +1972,7 @@
   {
     "nome": "Kafkacat",
     "descricao": "CLI para Kafka.",
-    "descricao_detalhada": "kafkacat (kcat) é uma ferramenta genérica de linha de comando não-JVM para produção e consumo de mensagens Kafka.",
+    "descricao_detalhada": "Ferramenta essencial para debugging de Kafka. É um produtor/consumidor de linha de comando leve e rápido (não-JVM), funcionando como um 'netcat' ou 'curl' para streams de dados.",
     "data_criacao": "2015",
     "link": "https://github.com/edenhill/kcat",
     "desenvolvedor": "Magnus Edenhill",
@@ -1908,7 +2003,7 @@
   {
     "nome": "Java",
     "descricao": "Linguagem robusta e portável.",
-    "descricao_detalhada": "Java é uma linguagem orientada a objetos projetada para ter o mínimo de dependências de implementação possível.",
+    "descricao_detalhada": "A base do software corporativo moderno. Famosa pelo lema 'Write Once, Run Anywhere' (graças à JVM), oferece robustez, tipagem forte e um ecossistema massivo para sistemas de grande escala.",
     "data_criacao": "1995",
     "link": "https://www.java.com/",
     "desenvolvedor": "Oracle",
@@ -1940,7 +2035,7 @@
   {
     "nome": "C++",
     "descricao": "Linguagem de alto desempenho.",
-    "descricao_detalhada": "C++ é uma linguagem de uso geral que oferece recursos de manipulação de memória de baixo nível.",
+    "descricao_detalhada": "Oferece controle total sobre hardware e memória. É a escolha para onde performance é crítica: motores de jogos, sistemas operacionais, navegadores e sistemas de trading de alta frequência.",
     "data_criacao": "1985",
     "link": "https://isocpp.org/",
     "desenvolvedor": "Bjarne Stroustrup",
@@ -1972,7 +2067,7 @@
   {
     "nome": "PHP",
     "descricao": "Scripting para web.",
-    "descricao_detalhada": "PHP é uma linguagem de script popular de uso geral que é especialmente adequada para o desenvolvimento web.",
+    "descricao_detalhada": "A linguagem que impulsiona grande parte da web (WordPress, Facebook). Focada em gerar HTML dinâmico, evoluiu significativamente com tipagem e JIT, mantendo-se relevante para desenvolvimento web rápido.",
     "data_criacao": "1994",
     "link": "https://www.php.net/",
     "desenvolvedor": "Rasmus Lerdorf",
@@ -2003,7 +2098,7 @@
   {
     "nome": "Ruby",
     "descricao": "Linguagem dinâmica e elegante.",
-    "descricao_detalhada": "Ruby é uma linguagem de programação dinâmica e de código aberto com foco na simplicidade e produtividade.",
+    "descricao_detalhada": "Projetada para a felicidade do desenvolvedor. Sua sintaxe elegante e capacidades de metaprogramação permitiram a criação de frameworks poderosos como Rails, que priorizam a produtividade.",
     "data_criacao": "1995",
     "link": "https://www.ruby-lang.org/",
     "desenvolvedor": "Yukihiro Matsumoto",
@@ -2034,7 +2129,7 @@
   {
     "nome": "R",
     "descricao": "Computação estatística.",
-    "descricao_detalhada": "R é uma linguagem e ambiente para computação estatística e gráficos.",
+    "descricao_detalhada": "Linguagem especializada em estatística e gráficos. Amplamente usada na academia e pesquisa para análise de dados complexos e visualização, com um ecossistema rico de pacotes estatísticos.",
     "data_criacao": "1993",
     "link": "https://www.r-project.org/",
     "desenvolvedor": "R Core Team",
@@ -2065,7 +2160,7 @@
   {
     "nome": "SQL",
     "descricao": "Linguagem de consulta estruturada.",
-    "descricao_detalhada": "SQL é a linguagem padrão para armazenar, manipular e recuperar dados em bancos de dados relacionais.",
+    "descricao_detalhada": "A linguagem universal dos dados. Baseada em álgebra relacional, permite definir, manipular e consultar dados em bancos relacionais com integridade e precisão.",
     "data_criacao": "1974",
     "link": "https://en.wikipedia.org/wiki/SQL",
     "desenvolvedor": "ISO/IEC",
@@ -2096,7 +2191,7 @@
   {
     "nome": "Perl",
     "descricao": "Linguagem de processamento de texto.",
-    "descricao_detalhada": "Perl é uma família de linguagens de script de alto nível, interpretadas e dinâmicas.",
+    "descricao_detalhada": "O 'canivete suíço' das linguagens de script. Histórica no gerenciamento de sistemas Unix e bioinformática devido à sua capacidade inigualável de processamento de texto e expressões regulares.",
     "data_criacao": "1987",
     "link": "https://www.perl.org/",
     "desenvolvedor": "Larry Wall",
@@ -2127,7 +2222,7 @@
   {
     "nome": "Scala",
     "descricao": "Linguagem escalável para JVM.",
-    "descricao_detalhada": "Scala combina programação orientada a objetos e funcional em uma linguagem concisa e de tipagem estática.",
+    "descricao_detalhada": "Combina programação orientada a objetos e funcional na JVM. Projetada para ser concisa e escalável, é a linguagem escolhida para grandes sistemas de processamento de dados como Apache Spark.",
     "data_criacao": "2004",
     "link": "https://www.scala-lang.org/",
     "desenvolvedor": "Martin Odersky",
@@ -2158,7 +2253,7 @@
   {
     "nome": "Dart",
     "descricao": "Linguagem otimizada para UI.",
-    "descricao_detalhada": "Dart é uma linguagem otimizada para clientes para aplicativos rápidos em qualquer plataforma, usada pelo Flutter.",
+    "descricao_detalhada": "Linguagem do Google otimizada para construção de interfaces rápidas. Base do Flutter, compila para código nativo (ARM/x86) para mobile e JavaScript para web, oferecendo alta performance.",
     "data_criacao": "2011",
     "link": "https://dart.dev/",
     "desenvolvedor": "Google",
@@ -2189,7 +2284,7 @@
   {
     "nome": "Lua",
     "descricao": "Linguagem de script leve.",
-    "descricao_detalhada": "Lua é uma linguagem de script poderosa, eficiente, leve e incorporável.",
+    "descricao_detalhada": "Pequena, rápida e facilmente incorporável em aplicações C/C++. É o padrão da indústria de jogos (Roblox, WoW) e sistemas embarcados para scripting de lógica e configuração.",
     "data_criacao": "1993",
     "link": "https://www.lua.org/",
     "desenvolvedor": "PUC-Rio",
@@ -2220,7 +2315,7 @@
   {
     "nome": "Assembly",
     "descricao": "Linguagem de baixo nível.",
-    "descricao_detalhada": "Linguagem assembly é qualquer linguagem de programação de baixo nível com uma correspondência muito forte entre as instruções e a arquitetura.",
+    "descricao_detalhada": "A interface direta com o hardware. Cada instrução corresponde praticamente 1:1 ao código de máquina. Usada hoje para otimização extrema, drivers e sistemas operacionais onde cada ciclo de CPU conta.",
     "data_criacao": "1949",
     "link": "https://en.wikipedia.org/wiki/Assembly_language",
     "desenvolvedor": "Various",
@@ -2251,7 +2346,7 @@
   {
     "nome": "Shell Script",
     "descricao": "Scripting para Unix.",
-    "descricao_detalhada": "Scripts de shell são programas projetados para serem executados pelo shell do Unix, usados para automação de arquivos e sistemas.",
+    "descricao_detalhada": "A cola que une o sistema operacional. Scripts de shell (Bash/Zsh) são essenciais para DevOps e SysAdmins automatizarem tarefas de arquivo, execução de programas e pipelines de CI/CD.",
     "data_criacao": "1971",
     "link": "https://www.gnu.org/software/bash/",
     "desenvolvedor": "GNU",
@@ -2282,7 +2377,7 @@
   {
     "nome": "Objective-C",
     "descricao": "Linguagem legada da Apple.",
-    "descricao_detalhada": "Objective-C era a principal linguagem de programação usada pela Apple para OS X e iOS antes do Swift.",
+    "descricao_detalhada": "A linguagem que construiu o iOS e macOS antes do Swift. Superset de C com orientação a objetos inspirada em Smalltalk. Ainda vital para manutenção de grandes bases de código legadas da Apple.",
     "data_criacao": "1984",
     "link": "https://developer.apple.com/",
     "desenvolvedor": "Brad Cox",
@@ -2313,7 +2408,7 @@
   {
     "nome": "Visual Basic .NET",
     "descricao": "Linguagem .NET acessível.",
-    "descricao_detalhada": "Visual Basic é uma linguagem orientada a objetos implementada no .NET Framework, focada em facilidade de uso.",
+    "descricao_detalhada": "Linguagem orientada a objetos focada em legibilidade e facilidade de uso. Embora menos popular que C#, ainda sustenta muitas aplicações corporativas legadas no ecossistema Microsoft.",
     "data_criacao": "2001",
     "link": "https://docs.microsoft.com/en-us/dotnet/visual-basic/",
     "desenvolvedor": "Microsoft",
@@ -2344,7 +2439,7 @@
   {
     "nome": "MATLAB",
     "descricao": "Computação numérica.",
-    "descricao_detalhada": "MATLAB é uma plataforma de programação e computação numérica usada para análise de dados, desenvolvimento de algoritmos e modelagem.",
+    "descricao_detalhada": "Padrão na engenharia e academia para simulação e análise numérica. Excelente para processamento de sinais, sistemas de controle e prototipagem rápida de algoritmos matemáticos.",
     "data_criacao": "1984",
     "link": "https://www.mathworks.com/products/matlab.html",
     "desenvolvedor": "MathWorks",
@@ -2375,7 +2470,7 @@
   {
     "nome": "Groovy",
     "descricao": "Linguagem dinâmica para JVM.",
-    "descricao_detalhada": "Groovy é uma linguagem poderosa, opcionalmente tipada e dinâmica para a plataforma Java, usada em scripting e builds.",
+    "descricao_detalhada": "Linguagem ágil para a JVM que se integra perfeitamente com Java. Muito usada para scripting, testes e automação de builds (Gradle e Jenkins Pipelines).",
     "data_criacao": "2003",
     "link": "https://groovy-lang.org/",
     "desenvolvedor": "Apache",
@@ -2406,7 +2501,7 @@
   {
     "nome": "Haskell",
     "descricao": "Linguagem puramente funcional.",
-    "descricao_detalhada": "Haskell é uma linguagem de programação puramente funcional, estaticamente tipada e de uso geral, conhecida por seu sistema de tipos.",
+    "descricao_detalhada": "Famosa pelo rigor matemático e sistema de tipos avançado. Força código seguro e sem efeitos colaterais, sendo usada em setores críticos como finanças e desenvolvimento de compiladores.",
     "data_criacao": "1990",
     "link": "https://www.haskell.org/",
     "desenvolvedor": "Haskell Committee",
@@ -2437,7 +2532,7 @@
   {
     "nome": "Git",
     "descricao": "Controle de versão.",
-    "descricao_detalhada": "Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com projetos de todos os tamanhos.",
+    "descricao_detalhada": "O padrão mundial para versionamento de código. Diferente de sistemas centralizados, o Git é distribuído, permitindo branching/merging barato e colaboração assíncrona eficiente.",
     "data_criacao": "2005",
     "link": "https://git-scm.com/",
     "desenvolvedor": "Linus Torvalds",
@@ -2468,7 +2563,7 @@
   {
     "nome": "Apache Cassandra",
     "descricao": "Banco NoSQL Wide-column.",
-    "descricao_detalhada": "Cassandra é um banco de dados NoSQL distribuído projetado para lidar com grandes quantidades de dados em muitos servidores, sem ponto único de falha.",
+    "descricao_detalhada": "Banco distribuído mestre-mestre projetado para alta disponibilidade e escalabilidade linear. Perfeito para gravas massivas de dados em múltiplos datacenters sem ponto único de falha.",
     "data_criacao": "2008",
     "link": "https://cassandra.apache.org/",
     "desenvolvedor": "Apache",
@@ -2499,7 +2594,7 @@
   {
     "nome": "Neo4j",
     "descricao": "Banco de dados em grafo.",
-    "descricao_detalhada": "Neo4j é um sistema de gerenciamento de banco de dados gráfico nativo, ideal para dados altamente conectados.",
+    "descricao_detalhada": "Armazena dados como nós e relacionamentos, não tabelas. Incrivelmente eficiente para dados altamente conectados (redes sociais, detecção de fraude, recomendação) onde JOINs relacionais seriam lentos.",
     "data_criacao": "2007",
     "link": "https://neo4j.com/",
     "desenvolvedor": "Neo4j Inc",
@@ -2530,7 +2625,7 @@
   {
     "nome": "OAuth 2.0",
     "descricao": "Protocolo de autorização.",
-    "descricao_detalhada": "OAuth 2.0 é o protocolo padrão da indústria para autorização, permitindo acesso seguro a recursos.",
+    "descricao_detalhada": "O padrão da indústria para acesso seguro delegados. Permite que aplicações acessem dados de usuários em outros serviços (como 'Login com Google') sem compartilhar senhas.",
     "data_criacao": "2012",
     "link": "https://oauth.net/2/",
     "desenvolvedor": "IETF",
@@ -2561,7 +2656,7 @@
   {
     "nome": "CockroachDB",
     "descricao": "SQL distribuído.",
-    "descricao_detalhada": "CockroachDB é um banco de dados SQL distribuído nativo da nuvem, projetado para resiliência e consistência.",
+    "descricao_detalhada": "Banco SQL construído para a nuvem. Combina a consistência e familiaridade do SQL com a escalabilidade horizontal e resiliência a falhas de datacenters inteiros dos bancos NoSQL.",
     "data_criacao": "2015",
     "link": "https://www.cockroachlabs.com/",
     "desenvolvedor": "Cockroach Labs",
@@ -2592,7 +2687,7 @@
   {
     "nome": "WebRTC",
     "descricao": "Comunicação em tempo real.",
-    "descricao_detalhada": "WebRTC permite recursos de comunicação em tempo real (RTC) em navegadores e aplicativos móveis através de APIs simples.",
+    "descricao_detalhada": "Permite comunicação de áudio, vídeo e dados peer-to-peer diretamente no navegador, sem plugins. A tecnologia base por trás de ferramentas como Google Meet, Zoom Web e Discord.",
     "data_criacao": "2011",
     "link": "https://webrtc.org/",
     "desenvolvedor": "Google",
@@ -2623,7 +2718,7 @@
   {
     "nome": "Julia",
     "descricao": "Linguagem de alta performance.",
-    "descricao_detalhada": "Julia é uma linguagem dinâmica de alto nível e alto desempenho para computação técnica.",
+    "descricao_detalhada": "Resolve o 'problema das duas linguagens': fácil como Python, rápida como C. Projetada especificamente para computação científica, machine learning e simulações numéricas de alto desempenho.",
     "data_criacao": "2012",
     "link": "https://julialang.org/",
     "desenvolvedor": "MIT",
@@ -2654,7 +2749,7 @@
   {
     "nome": "Jupyter",
     "descricao": "Computação interativa.",
-    "descricao_detalhada": "Jupyter permite criar e compartilhar documentos com código, equações e visualizações.",
+    "descricao_detalhada": "Ambiente de notebooks interativos que mistura código executável, visualizações e texto narrativo. Ferramenta essencial para cientistas de dados explorarem, documentarem e compartilharem suas análises.",
     "data_criacao": "2014",
     "link": "https://jupyter.org/",
     "desenvolvedor": "Project Jupyter",
@@ -2685,7 +2780,7 @@
   {
     "nome": "Sass",
     "descricao": "CSS com superpoderes.",
-    "descricao_detalhada": "Sass é a linguagem de extensão CSS mais madura e poderosa, permitindo variáveis, aninhamento e mixins.",
+    "descricao_detalhada": "Pré-processador que estende o CSS com variáveis, aninhamento, mixins e herança. Facilita a manutenção de folhas de estilo complexas e grandes sistemas de design.",
     "data_criacao": "2006",
     "link": "https://sass-lang.com/",
     "desenvolvedor": "Hampton Catlin",
