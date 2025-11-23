@@ -1,2482 +1,2716 @@
 [
   {
     "nome": "React",
-    "descricao": "Biblioteca JavaScript declarativa e eficiente para construir interfaces de usuário.",
+    "descricao": "Biblioteca JavaScript declarativa e eficiente.",
+    "descricao_detalhada": "O React revolucionou o desenvolvimento frontend ao introduzir o conceito de Virtual DOM e a arquitetura baseada em componentes reutilizáveis.",
     "data_criacao": "2013",
     "link": "https://reactjs.org/",
     "desenvolvedor": "Meta",
-    "icon": "fab fa-react",
+    "icon": "devicon-react-original",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "SPA",
+      "Dashboards",
+      "Social Media"
+    ],
     "tags": [
       "Frontend",
       "JavaScript",
-      "UI Library",
-      "Web Development"
+      "UI Library"
     ],
-    "exemplo_codigo": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  return (\n    <button onClick={() => setCount(count + 1)}>\n      Clicked {count} times\n    </button>\n  );\n}",
+    "exemplo_codigo": "function App() { return <h1>Hello</h1>; }",
     "links_uteis": [
       {
-        "nome": "Documentação Oficial",
+        "nome": "Docs",
         "url": "https://react.dev/"
-      },
-      {
-        "nome": "GitHub",
-        "url": "https://github.com/facebook/react"
       }
     ],
     "tecnologias_relacionadas": [
       "Next.js",
-      "Vue.js",
-      "Angular"
+      "Vue.js"
     ]
   },
   {
     "nome": "Python",
-    "descricao": "Linguagem de programação de alto nível, interpretada e de propósito geral, amplamente usada em dados e backend.",
+    "descricao": "Linguagem de alto nível e propósito geral.",
+    "descricao_detalhada": "Python destaca-se pela sintaxe limpa e legibilidade. É a linguagem dominante em Ciência de Dados e IA.",
     "data_criacao": "1991",
     "link": "https://www.python.org/",
-    "desenvolvedor": "Python Software Foundation",
-    "icon": "fab fa-python",
-    "tags": [
-      "Programming Language",
-      "Backend",
+    "desenvolvedor": "PSF",
+    "icon": "devicon-python-plain",
+    "licenca": "PSFL",
+    "popularidade": "Extrema",
+    "casos_uso": [
       "Data Science",
-      "Scripting",
+      "Backend",
       "AI/ML"
     ],
-    "exemplo_codigo": "def greet(name):\n    return f'Hello, {name}!'\n\nprint(greet('World'))",
+    "tags": [
+      "Backend",
+      "Data Science",
+      "AI"
+    ],
+    "exemplo_codigo": "print('Hello World')",
     "links_uteis": [
       {
-        "nome": "Python.org",
+        "nome": "Site",
         "url": "https://www.python.org/"
-      },
-      {
-        "nome": "Docs",
-        "url": "https://docs.python.org/3/"
       }
     ],
     "tecnologias_relacionadas": [
       "Django",
-      "FastAPI",
       "Pandas"
     ]
   },
   {
-    "nome": "Kubernetes (K8s)",
-    "descricao": "Sistema de orquestração de containers open-source, usado para automatizar deploy, escalonamento e gerenciamento de aplicações.",
+    "nome": "Kubernetes",
+    "descricao": "Orquestração de containers.",
+    "descricao_detalhada": "Kubernetes automatiza a implantação, o dimensionamento e o gerenciamento de aplicativos em contêineres.",
     "data_criacao": "2014",
     "link": "https://kubernetes.io/",
-    "desenvolvedor": "Cloud Native Computing Foundation",
-    "icon": "fas fa-dharmachakra",
+    "desenvolvedor": "CNCF",
+    "icon": "devicon-kubernetes-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Padrão",
+    "casos_uso": [
+      "Orquestração",
+      "Escalabilidade"
+    ],
     "tags": [
       "DevOps",
-      "Orchestration",
       "Cloud Native",
-      "Containerization"
+      "Containers"
     ],
-    "exemplo_codigo": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.14.2\n    ports:\n    - containerPort: 80",
+    "exemplo_codigo": "apiVersion: v1\nkind: Pod",
     "links_uteis": [
       {
-        "nome": "Kubernetes Docs",
+        "nome": "Docs",
         "url": "https://kubernetes.io/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "Docker",
-      "Helm",
-      "Istio"
+      "Helm"
     ]
   },
   {
     "nome": "Docker",
-    "descricao": "Plataforma que permite a criação, deploy e execução de aplicações em containers isolados.",
+    "descricao": "Plataforma de containers.",
+    "descricao_detalhada": "Docker permite empacotar uma aplicação com todas as suas dependências em uma unidade padronizada.",
     "data_criacao": "2013",
     "link": "https://www.docker.com/",
-    "desenvolvedor": "Docker, Inc.",
-    "icon": "fab fa-docker",
+    "desenvolvedor": "Docker Inc",
+    "icon": "devicon-docker-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Essencial",
+    "casos_uso": [
+      "Ambientes Dev",
+      "CI/CD"
+    ],
     "tags": [
-      "Containerization",
+      "Containers",
       "DevOps",
-      "Virtualization",
       "Tools"
     ],
-    "exemplo_codigo": "FROM node:14\nWORKDIR /app\nCOPY . .\nRUN npm install\nCMD [\"node\", \"index.js\"]",
+    "exemplo_codigo": "FROM node:14",
     "links_uteis": [
       {
-        "nome": "Docker Docs",
+        "nome": "Docs",
         "url": "https://docs.docker.com/"
       }
     ],
     "tecnologias_relacionadas": [
       "Kubernetes",
-      "Podman",
-      "Containerd"
+      "Podman"
     ]
   },
   {
     "nome": "TypeScript",
-    "descricao": "Superset de JavaScript que adiciona tipagem estática opcional, compilando para JavaScript puro.",
+    "descricao": "Superset tipado de JavaScript.",
+    "descricao_detalhada": "TypeScript adiciona tipagem estática opcional ao JavaScript. Isso permite ferramentas melhores e detecção de erros.",
     "data_criacao": "2012",
     "link": "https://www.typescriptlang.org/",
     "desenvolvedor": "Microsoft",
-    "icon": "fas fa-code",
+    "icon": "devicon-typescript-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Enterprise Apps",
+      "Backend Node"
+    ],
     "tags": [
       "Language",
-      "Static Typing",
       "Frontend",
       "Backend"
     ],
-    "exemplo_codigo": "interface User {\n  id: number;\n  name: string;\n}\n\nfunction logUser(user: User) {\n  console.log(`User: ${user.name}`);\n}",
+    "exemplo_codigo": "const user: string = 'Name';",
     "links_uteis": [
       {
-        "nome": "TypeScript Lang",
+        "nome": "Docs",
         "url": "https://www.typescriptlang.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "JavaScript",
-      "Node.js",
       "Angular"
     ]
   },
   {
-    "nome": "Go (Golang)",
-    "descricao": "Linguagem de programação compilada desenvolvida pelo Google, focada em simplicidade, eficiência e concorrência.",
+    "nome": "Go",
+    "descricao": "Linguagem eficiente e concorrente.",
+    "descricao_detalhada": "Go é uma linguagem open source famosa por sua performance e modelo de concorrência (goroutines).",
     "data_criacao": "2009",
-    "link": "https://golang.org/",
+    "link": "https://go.dev/",
     "desenvolvedor": "Google",
-    "icon": "fab fa-google",
-    "tags": [
-      "Programming Language",
-      "Backend",
-      "Systems Programming",
-      "Cloud Computing"
+    "icon": "devicon-go-plain",
+    "licenca": "BSD",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Microserviços",
+      "Cloud Tools"
     ],
-    "exemplo_codigo": "package main\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, Go!\")\n}",
+    "tags": [
+      "Backend",
+      "Systems",
+      "Cloud"
+    ],
+    "exemplo_codigo": "fmt.Println(\"Hello\")",
     "links_uteis": [
       {
-        "nome": "Go Docs",
-        "url": "https://golang.org/doc/"
+        "nome": "Docs",
+        "url": "https://go.dev/doc/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Rust",
-      "Kubernetes",
-      "Docker"
+      "Docker",
+      "Kubernetes"
     ]
   },
   {
     "nome": "Rust",
-    "descricao": "Linguagem de programação de sistemas focada em segurança, especialmente concorrência e gerenciamento de memória.",
+    "descricao": "Segurança e performance de sistemas.",
+    "descricao_detalhada": "Rust garante segurança de memória sem garbage collector e fornece abstrações de custo zero.",
     "data_criacao": "2010",
     "link": "https://www.rust-lang.org/",
     "desenvolvedor": "Rust Foundation",
-    "icon": "fas fa-cogs",
+    "icon": "devicon-rust-plain",
+    "licenca": "MIT/Apache",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "Systems",
+      "WebAssembly"
+    ],
     "tags": [
-      "Systems Programming",
+      "Systems",
       "Performance",
-      "Memory Safety",
       "Low Level"
     ],
-    "exemplo_codigo": "fn main() {\n    println!(\"Hello, world!\");\n}",
+    "exemplo_codigo": "fn main() { println!(\"Hi\"); }",
     "links_uteis": [
       {
-        "nome": "Rust Lang",
+        "nome": "Docs",
         "url": "https://www.rust-lang.org/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Go",
       "C++",
       "WebAssembly"
     ]
   },
   {
     "nome": "Node.js",
-    "descricao": "Runtime JavaScript open-source e multi-plataforma para execução de código JS no lado do servidor.",
+    "descricao": "Runtime JS server-side.",
+    "descricao_detalhada": "Node.js é um runtime JavaScript construído sobre o motor V8 do Chrome.",
     "data_criacao": "2009",
     "link": "https://nodejs.org/",
-    "desenvolvedor": "OpenJS Foundation",
-    "icon": "fab fa-node-js",
+    "desenvolvedor": "OpenJS",
+    "icon": "devicon-nodejs-plain",
+    "licenca": "MIT",
+    "popularidade": "Massiva",
+    "casos_uso": [
+      "API",
+      "Real-time",
+      "SSR"
+    ],
     "tags": [
       "Runtime",
       "Backend",
-      "JavaScript",
-      "Server Side"
+      "JavaScript"
     ],
-    "exemplo_codigo": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.end('Hello World');\n});\n\nserver.listen(3000);",
+    "exemplo_codigo": "http.createServer()",
     "links_uteis": [
       {
-        "nome": "Node.js Docs",
-        "url": "https://nodejs.org/en/docs/"
+        "nome": "Docs",
+        "url": "https://nodejs.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "JavaScript",
-      "Express",
-      "NestJS"
+      "Express"
     ]
   },
   {
     "nome": "PostgreSQL",
-    "descricao": "Sistema de gerenciamento de banco de dados relacional (RDBMS) open-source robusto e extensível.",
+    "descricao": "Banco de dados relacional avançado.",
+    "descricao_detalhada": "PostgreSQL é um poderoso sistema de banco de dados relacional de código aberto.",
     "data_criacao": "1996",
     "link": "https://www.postgresql.org/",
-    "desenvolvedor": "PostgreSQL Global Development Group",
-    "icon": "fas fa-database",
+    "desenvolvedor": "PostgreSQL Group",
+    "icon": "devicon-postgresql-plain",
+    "licenca": "PostgreSQL",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Relacional",
+      "GIS",
+      "Enterprise"
+    ],
     "tags": [
       "Database",
       "SQL",
-      "Relational",
-      "Open Source"
+      "Relational"
     ],
-    "exemplo_codigo": "SELECT * FROM users WHERE active = true;",
+    "exemplo_codigo": "SELECT * FROM users;",
     "links_uteis": [
       {
-        "nome": "PostgreSQL Docs",
+        "nome": "Docs",
         "url": "https://www.postgresql.org/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "SQL",
-      "MySQL",
       "Supabase"
     ]
   },
   {
     "nome": "MongoDB",
-    "descricao": "Banco de dados NoSQL orientado a documentos, conhecido por sua flexibilidade de esquema.",
+    "descricao": "Banco de dados NoSQL de documentos.",
+    "descricao_detalhada": "MongoDB é um banco de dados de documentos que oferece escalabilidade e flexibilidade.",
     "data_criacao": "2009",
     "link": "https://www.mongodb.com/",
-    "desenvolvedor": "MongoDB Inc.",
-    "icon": "fas fa-database",
+    "desenvolvedor": "MongoDB Inc",
+    "icon": "devicon-mongodb-plain",
+    "licenca": "SSPL",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Big Data",
+      "Catalogos"
+    ],
     "tags": [
       "Database",
       "NoSQL",
-      "Document Store",
-      "Scalability"
+      "Document"
     ],
-    "exemplo_codigo": "db.collection('users').find({ active: true })",
+    "exemplo_codigo": "db.users.find({})",
     "links_uteis": [
       {
-        "nome": "MongoDB Docs",
+        "nome": "Docs",
         "url": "https://www.mongodb.com/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "NoSQL",
-      "Node.js",
       "Express"
     ]
   },
   {
     "nome": "Next.js",
-    "descricao": "Framework de React que facilita Server-Side Rendering (SSR) e Static Site Generation (SSG).",
+    "descricao": "Framework React para produção.",
+    "descricao_detalhada": "Next.js permite funcionalidades como renderização do lado do servidor e geração de sites estáticos.",
     "data_criacao": "2016",
     "link": "https://nextjs.org/",
     "desenvolvedor": "Vercel",
-    "icon": "fas fa-layer-group",
-    "tags": [
-      "Frontend Framework",
-      "React",
-      "Full Stack",
-      "SSR"
+    "icon": "devicon-nextjs-plain",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "SSR",
+      "Static Sites",
+      "SEO"
     ],
-    "exemplo_codigo": "export default function Page() {\n  return <h1>Hello, Next.js!</h1>\n}",
+    "tags": [
+      "Frontend",
+      "React",
+      "Full Stack"
+    ],
+    "exemplo_codigo": "export default function Page() {}",
     "links_uteis": [
       {
-        "nome": "Next.js Docs",
+        "nome": "Docs",
         "url": "https://nextjs.org/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "React",
-      "Vercel",
-      "TypeScript"
+      "Vercel"
     ]
   },
   {
     "nome": "Terraform",
-    "descricao": "Ferramenta de Infraestrutura como Código (IaC) que permite provisionar e gerenciar infraestrutura em nuvem.",
+    "descricao": "Infraestrutura como código.",
+    "descricao_detalhada": "Terraform permite definir infraestrutura como código para construir, alterar e versionar infraestrutura.",
     "data_criacao": "2014",
     "link": "https://www.terraform.io/",
     "desenvolvedor": "HashiCorp",
-    "icon": "fas fa-cloud",
+    "icon": "devicon-terraform-plain",
+    "licenca": "BSL",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Provisioning",
+      "Multi-cloud"
+    ],
     "tags": [
       "DevOps",
       "IaC",
-      "Cloud Computing",
-      "Provisioning"
+      "Cloud"
     ],
-    "exemplo_codigo": "resource \"aws_instance\" \"web\" {\n  ami           = \"ami-12345678\"\n  instance_type = \"t2.micro\"\n}",
+    "exemplo_codigo": "resource \"aws_instance\" \"web\" {}",
     "links_uteis": [
       {
-        "nome": "Terraform Docs",
+        "nome": "Docs",
         "url": "https://www.terraform.io/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "Ansible",
-      "AWS",
-      "Kubernetes"
+      "AWS"
     ]
   },
   {
     "nome": "Svelte",
-    "descricao": "Compilador que move o trabalho de framework para a etapa de build, gerando código de UI altamente otimizado.",
+    "descricao": "Framework UI compilado.",
+    "descricao_detalhada": "Svelte muda o trabalho para a etapa de compilação, gerando código imperativo otimizado.",
     "data_criacao": "2016",
     "link": "https://svelte.dev/",
     "desenvolvedor": "Rich Harris",
-    "icon": "fas fa-code",
+    "icon": "devicon-svelte-plain",
+    "licenca": "MIT",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "High Perf Apps",
+      "Web Components"
+    ],
     "tags": [
-      "Frontend Framework",
+      "Frontend",
       "Compiler",
-      "JavaScript",
       "UI"
     ],
-    "exemplo_codigo": "<script>\n  let count = 0;\n</script>\n\n<button on:click={() => count += 1}>\n  Clicks: {count}\n</button>",
+    "exemplo_codigo": "<script>let count = 0;</script>",
     "links_uteis": [
       {
-        "nome": "Svelte Docs",
+        "nome": "Docs",
         "url": "https://svelte.dev/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "Vue.js",
-      "React",
       "Vite"
     ]
   },
   {
     "nome": "Vue.js",
-    "descricao": "Framework JavaScript progressivo para construir interfaces de usuário de forma incremental.",
+    "descricao": "Framework JavaScript Progressivo.",
+    "descricao_detalhada": "Vue é um framework acessível e versátil para construção de interfaces web.",
     "data_criacao": "2014",
     "link": "https://vuejs.org/",
     "desenvolvedor": "Evan You",
-    "icon": "fab fa-vuejs",
-    "tags": [
-      "Frontend Framework",
-      "JavaScript",
-      "UI Library",
-      "Web Development"
+    "icon": "devicon-vuejs-plain",
+    "licenca": "MIT",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "SPA",
+      "Interfaces"
     ],
-    "exemplo_codigo": "<template>\n  <button @click=\"count++\">Count is: {{ count }}</button>\n</template>\n<script>\nexport default {\n  data() {\n    return { count: 0 }\n  }\n}\n</script>",
+    "tags": [
+      "Frontend",
+      "JavaScript",
+      "Framework"
+    ],
+    "exemplo_codigo": "<template>{{ msg }}</template>",
     "links_uteis": [
       {
-        "nome": "Vue.js Docs",
-        "url": "https://vuejs.org/guide/introduction.html"
+        "nome": "Docs",
+        "url": "https://vuejs.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "React",
-      "Angular",
-      "Nuxt.js"
+      "Angular"
     ]
   },
   {
     "nome": "Django",
-    "descricao": "Framework web Python de alto nível que incentiva o desenvolvimento rápido e design limpo e pragmático.",
+    "descricao": "Framework web para perfeccionistas.",
+    "descricao_detalhada": "Django é um framework web Python de alto nível que incentiva o desenvolvimento rápido.",
     "data_criacao": "2005",
     "link": "https://www.djangoproject.com/",
-    "desenvolvedor": "Django Software Foundation",
-    "icon": "fab fa-python",
-    "tags": [
-      "Web Framework",
-      "Python",
-      "Backend",
-      "MVC"
+    "desenvolvedor": "DSF",
+    "icon": "devicon-django-plain",
+    "licenca": "BSD",
+    "popularidade": "Estável",
+    "casos_uso": [
+      "CMS",
+      "Rapid Dev",
+      "Enterprise"
     ],
-    "exemplo_codigo": "from django.http import HttpResponse\n\ndef index(request):\n    return HttpResponse(\"Hello, world.\")",
+    "tags": [
+      "Backend",
+      "Python",
+      "Web Framework"
+    ],
+    "exemplo_codigo": "class User(models.Model):",
     "links_uteis": [
       {
-        "nome": "Django Docs",
+        "nome": "Docs",
         "url": "https://docs.djangoproject.com/"
       }
     ],
     "tecnologias_relacionadas": [
       "Python",
-      "Flask",
-      "FastAPI"
+      "Flask"
     ]
   },
   {
     "nome": "FastAPI",
-    "descricao": "Framework web moderno e rápido para construir APIs com Python, baseado em tipagem padrão do Python.",
+    "descricao": "Framework web moderno e rápido.",
+    "descricao_detalhada": "FastAPI é um framework web para construção de APIs com Python 3.6+ focado em alta performance.",
     "data_criacao": "2018",
     "link": "https://fastapi.tiangolo.com/",
-    "desenvolvedor": "Sebastián Ramírez",
-    "icon": "fas fa-bolt",
-    "tags": [
-      "Python",
-      "Backend",
+    "desenvolvedor": "Tiangolo",
+    "icon": "devicon-fastapi-plain",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
       "API",
-      "Asynchronous"
+      "ML Serving",
+      "Async"
     ],
-    "exemplo_codigo": "from fastapi import FastAPI\napp = FastAPI()\n\n@app.get(\"/\")\ndef read_root():\n    return {\"Hello\": \"World\"}",
+    "tags": [
+      "Backend",
+      "Python",
+      "API"
+    ],
+    "exemplo_codigo": "@app.get(\"/\")",
     "links_uteis": [
       {
-        "nome": "FastAPI Docs",
+        "nome": "Docs",
         "url": "https://fastapi.tiangolo.com/"
       }
     ],
     "tecnologias_relacionadas": [
       "Python",
-      "Starlette",
-      "Pydantic"
+      "Starlette"
     ]
   },
   {
     "nome": "GraphQL",
-    "descricao": "Linguagem de consulta para APIs desenvolvida pelo Facebook, permitindo a busca exata dos dados necessários.",
+    "descricao": "Linguagem de consulta para API.",
+    "descricao_detalhada": "GraphQL é uma linguagem de consulta para APIs que permite ao cliente solicitar exatamente os dados de que precisa.",
     "data_criacao": "2015",
     "link": "https://graphql.org/",
     "desenvolvedor": "Meta",
-    "icon": "fas fa-project-diagram",
+    "icon": "devicon-graphql-plain",
+    "licenca": "MIT",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Flexible API",
+      "Mobile Backend"
+    ],
     "tags": [
       "API",
       "Query Language",
-      "Data Fetching",
       "Backend"
     ],
-    "exemplo_codigo": "query {\n  user(id: \"1\") {\n    name\n    email\n  }\n}",
+    "exemplo_codigo": "query { user { name } }",
     "links_uteis": [
       {
-        "nome": "GraphQL Docs",
+        "nome": "Docs",
         "url": "https://graphql.org/learn/"
       }
     ],
     "tecnologias_relacionadas": [
       "Apollo",
-      "REST",
-      "API"
+      "REST"
     ]
   },
   {
     "nome": "Prometheus",
-    "descricao": "Toolkit open-source de monitoramento e alerta altamente escalável para ambientes cloud native.",
+    "descricao": "Monitoramento e alerta.",
+    "descricao_detalhada": "Prometheus é um sistema de monitoramento e alerta open-source focado em métricas de séries temporais.",
     "data_criacao": "2012",
     "link": "https://prometheus.io/",
-    "desenvolvedor": "Cloud Native Computing Foundation",
-    "icon": "fas fa-chart-line",
-    "tags": [
+    "desenvolvedor": "CNCF",
+    "icon": "devicon-prometheus-original",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Metrics",
       "Monitoring",
-      "Observability",
-      "DevOps",
-      "Metrics"
+      "K8s"
     ],
-    "exemplo_codigo": "http_requests_total{method=\"post\",handler=\"/messages\"}",
+    "tags": [
+      "DevOps",
+      "Monitoring",
+      "Observability"
+    ],
+    "exemplo_codigo": "http_requests_total",
     "links_uteis": [
       {
-        "nome": "Prometheus Docs",
-        "url": "https://prometheus.io/docs/introduction/overview/"
+        "nome": "Docs",
+        "url": "https://prometheus.io/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "Grafana",
-      "Kubernetes",
-      "Alertmanager"
+      "Kubernetes"
     ]
   },
   {
-    "nome": "Apache Kafka",
-    "descricao": "Plataforma de streaming distribuída para publicação, subscrição, armazenamento e processamento de fluxos de registros.",
-    "data_criacao": "2011",
-    "link": "https://kafka.apache.org/",
-    "desenvolvedor": "Apache Software Foundation",
-    "icon": "fas fa-comments",
-    "tags": [
-      "Data Streaming",
-      "Messaging Queue",
-      "Distributed System",
-      "Big Data"
-    ],
-    "exemplo_codigo": "Properties props = new Properties();\nprops.put(\"bootstrap.servers\", \"localhost:9092\");\nprops.put(\"key.serializer\", \"org.apache.kafka.common.serialization.StringSerializer\");",
-    "links_uteis": [
-      {
-        "nome": "Kafka Docs",
-        "url": "https://kafka.apache.org/documentation/"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "RabbitMQ",
-      "Java",
-      "Big Data"
-    ]
-  },
-  {
-    "nome": "WebAssembly (Wasm)",
-    "descricao": "Formato de instrução binária de baixo nível para a web, permitindo a execução de código de linguagens não-JS no navegador.",
+    "nome": "WebAssembly",
+    "descricao": "Binário para a web.",
+    "descricao_detalhada": "WebAssembly (Wasm) é um formato de instrução binária que permite execução de código em velocidade quase nativa.",
     "data_criacao": "2017",
     "link": "https://webassembly.org/",
     "desenvolvedor": "W3C",
-    "icon": "fas fa-microchip",
+    "icon": "devicon-wasm-original",
+    "licenca": "W3C",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "Web Performance",
+      "Games"
+    ],
     "tags": [
-      "Browser Technology",
+      "Web",
       "Performance",
-      "Compilation",
       "Low Level"
     ],
-    "exemplo_codigo": "(module\n  (func $add (param $lhs i32) (param $rhs i32) (result i32)\n    local.get $lhs\n    local.get $rhs\n    i32.add)\n  (export \"add\" (func $add))\n)",
+    "exemplo_codigo": "(module ...)",
     "links_uteis": [
       {
-        "nome": "Wasm Docs",
+        "nome": "Docs",
         "url": "https://webassembly.org/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "Rust",
-      "C++",
-      "Blazor"
+      "C++"
     ]
   },
   {
     "nome": "Tailwind CSS",
-    "descricao": "Framework CSS utility-first que permite construir designs rapidamente, aplicando classes diretamente no markup.",
+    "descricao": "Framework CSS utilitário.",
+    "descricao_detalhada": "Tailwind é um framework CSS 'utility-first' que permite construir designs personalizados rapidamente.",
     "data_criacao": "2017",
     "link": "https://tailwindcss.com/",
     "desenvolvedor": "Tailwind Labs",
-    "icon": "fab fa-css3",
-    "tags": [
-      "CSS Framework",
-      "Frontend",
+    "icon": "devicon-tailwindcss-plain",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
       "Styling",
+      "Rapid UI"
+    ],
+    "tags": [
+      "Frontend",
+      "CSS",
       "Utility-first"
     ],
-    "exemplo_codigo": "<div class=\"bg-blue-500 text-white p-4 rounded-lg\">\n  Hello Tailwind!\n</div>",
+    "exemplo_codigo": "<div class=\"p-4 bg-blue-500\">",
     "links_uteis": [
       {
-        "nome": "Tailwind Docs",
+        "nome": "Docs",
         "url": "https://tailwindcss.com/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "CSS",
-      "Bootstrap",
-      "PostCSS"
+      "Bootstrap"
     ]
   },
   {
     "nome": "Spring Boot",
-    "descricao": "Framework para facilitar a criação de aplicações Java stand-alone, prontas para produção.",
+    "descricao": "Framework Java produtivo.",
+    "descricao_detalhada": "Spring Boot simplifica a criação de aplicações Spring stand-alone e prontas para produção.",
     "data_criacao": "2014",
     "link": "https://spring.io/projects/spring-boot",
     "desenvolvedor": "VMware",
-    "icon": "fab fa-java",
+    "icon": "devicon-spring-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Enterprise",
+      "Microservices"
+    ],
     "tags": [
-      "Java",
       "Backend",
-      "Microservices",
+      "Java",
       "Enterprise"
     ],
-    "exemplo_codigo": "@RestController\npublic class HelloController {\n    @GetMapping(\"/\")\n    public String index() {\n        return \"Greetings from Spring Boot!\";\n    }\n}",
+    "exemplo_codigo": "@SpringBootApplication",
     "links_uteis": [
       {
-        "nome": "Spring Boot Docs",
+        "nome": "Docs",
         "url": "https://spring.io/projects/spring-boot"
       }
     ],
     "tecnologias_relacionadas": [
       "Java",
-      "Hibernate",
-      "Microservices"
+      "Hibernate"
     ]
   },
   {
-    "nome": "Serverless (FaaS)",
-    "descricao": "Modelo de computação em nuvem onde o provedor gerencia dinamicamente a alocação de recursos da máquina.",
+    "nome": "Serverless",
+    "descricao": "Computação sem servidores.",
+    "descricao_detalhada": "Modelo onde o provedor de nuvem gerencia a alocação de recursos dinamicamente.",
     "data_criacao": "2014",
     "link": "https://aws.amazon.com/serverless/",
-    "desenvolvedor": "Various",
+    "desenvolvedor": "AWS",
     "icon": "fas fa-cloud",
-    "tags": [
-      "Cloud Computing",
-      "Architecture",
-      "FaaS",
+    "licenca": "N/A",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Cloud",
       "Scalability"
     ],
-    "exemplo_codigo": "module.exports.hello = async (event) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({ message: 'Go Serverless!' }),\n  };\n};",
+    "tags": [
+      "Cloud",
+      "Architecture",
+      "DevOps"
+    ],
+    "exemplo_codigo": "exports.handler = async (event) => {}",
     "links_uteis": [
       {
-        "nome": "Serverless Framework",
-        "url": "https://www.serverless.com/"
+        "nome": "Docs",
+        "url": "https://aws.amazon.com/serverless/"
       }
     ],
     "tecnologias_relacionadas": [
       "AWS Lambda",
-      "Azure Functions",
-      "Cloud"
+      "Azure Functions"
     ]
   },
   {
     "nome": "GitHub Actions",
-    "descricao": "Ferramenta de CI/CD e automação que permite construir, testar e deployar código diretamente do GitHub.",
+    "descricao": "Automação de workflow.",
+    "descricao_detalhada": "GitHub Actions permite criar workflows customizados de CI/CD e automação diretamente no repositório GitHub.",
     "data_criacao": "2018",
     "link": "https://github.com/features/actions",
     "desenvolvedor": "GitHub",
-    "icon": "fab fa-github",
-    "tags": [
+    "icon": "devicon-github-original",
+    "licenca": "Proprietária",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
       "CI/CD",
-      "DevOps",
-      "Automation",
-      "Workflow"
+      "Automation"
     ],
-    "exemplo_codigo": "name: CI\non: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n    - uses: actions/checkout@v2\n    - run: echo Hello, world!",
+    "tags": [
+      "DevOps",
+      "CI/CD",
+      "Automation"
+    ],
+    "exemplo_codigo": "on: [push]",
     "links_uteis": [
       {
-        "nome": "GitHub Actions Docs",
+        "nome": "Docs",
         "url": "https://docs.github.com/en/actions"
       }
     ],
     "tecnologias_relacionadas": [
       "Jenkins",
-      "GitLab CI",
-      "DevOps"
+      "GitLab"
     ]
   },
   {
     "nome": "Helm",
-    "descricao": "Gerenciador de pacotes para Kubernetes, facilitando o deploy e gerenciamento de aplicações.",
+    "descricao": "Gerenciador de pacotes K8s.",
+    "descricao_detalhada": "Helm ajuda a definir, instalar e atualizar aplicações Kubernetes complexas usando 'charts'.",
     "data_criacao": "2016",
     "link": "https://helm.sh/",
-    "desenvolvedor": "Cloud Native Computing Foundation",
-    "icon": "fas fa-ship",
-    "tags": [
-      "Kubernetes",
-      "DevOps",
-      "Package Manager",
-      "Orchestration"
+    "desenvolvedor": "CNCF",
+    "icon": "devicon-helm-original",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "K8s Management",
+      "Packaging"
     ],
-    "exemplo_codigo": "helm install my-release bitnami/wordpress",
+    "tags": [
+      "DevOps",
+      "Kubernetes",
+      "Tool"
+    ],
+    "exemplo_codigo": "helm install my-release",
     "links_uteis": [
       {
-        "nome": "Helm Docs",
+        "nome": "Docs",
         "url": "https://helm.sh/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "Kubernetes",
-      "YAML",
-      "Charts"
+      "Docker"
     ]
   },
   {
     "nome": "Redis",
-    "descricao": "Estrutura de dados em memória, utilizada como cache, banco de dados e message broker.",
+    "descricao": "Estrutura de dados em memória.",
+    "descricao_detalhada": "Redis é um armazenamento em memória usado como banco de dados, cache e message broker.",
     "data_criacao": "2009",
     "link": "https://redis.io/",
     "desenvolvedor": "Redis Ltd",
-    "icon": "fas fa-database",
+    "icon": "devicon-redis-plain",
+    "licenca": "BSD",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Caching",
+      "Pub/Sub"
+    ],
     "tags": [
       "Database",
       "Caching",
-      "In-memory",
       "NoSQL"
     ],
-    "exemplo_codigo": "SET mykey \"Hello\"\nGET mykey",
+    "exemplo_codigo": "SET key value",
     "links_uteis": [
       {
-        "nome": "Redis Docs",
+        "nome": "Docs",
         "url": "https://redis.io/documentation"
       }
     ],
     "tecnologias_relacionadas": [
       "Memcached",
-      "Database",
-      "Cache"
+      "Database"
     ]
   },
   {
     "nome": "Deno",
-    "descricao": "Runtime seguro para JavaScript e TypeScript, desenvolvido pelos criadores do Node.js, focando em segurança e padrões web.",
+    "descricao": "Runtime seguro para JS/TS.",
+    "descricao_detalhada": "Deno é um runtime moderno para JavaScript e TypeScript que foca em segurança e produtividade.",
     "data_criacao": "2018",
-    "link": "https://deno.com/",
+    "link": "https://deno.land/",
     "desenvolvedor": "Ryan Dahl",
-    "icon": "fas fa-shield-alt",
+    "icon": "devicon-denojs-original",
+    "licenca": "MIT",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "Backend",
+      "Scripting"
+    ],
     "tags": [
       "Runtime",
-      "JavaScript",
       "TypeScript",
-      "Backend"
+      "JavaScript"
     ],
-    "exemplo_codigo": "import { serve } from \"https://deno.land/std@0.50.0/http/server.ts\";\nconst s = serve({ port: 8000 });\nfor await (const req of s) {\n  req.respond({ body: \"Hello World\\n\" });\n}",
+    "exemplo_codigo": "import { serve } from...",
     "links_uteis": [
       {
-        "nome": "Deno Docs",
+        "nome": "Docs",
         "url": "https://deno.land/manual"
       }
     ],
     "tecnologias_relacionadas": [
       "Node.js",
-      "TypeScript",
-      "Rust"
+      "TypeScript"
     ]
   },
   {
     "nome": "PyTorch",
-    "descricao": "Framework de aprendizado de máquina otimizado para Deep Learning, desenvolvido pelo Facebook AI Research.",
+    "descricao": "Framework de Deep Learning.",
+    "descricao_detalhada": "PyTorch é uma biblioteca de aprendizado de máquina open-source baseada na biblioteca Torch.",
     "data_criacao": "2016",
     "link": "https://pytorch.org/",
     "desenvolvedor": "Meta AI",
-    "icon": "fas fa-brain",
-    "tags": [
-      "Machine Learning",
+    "icon": "devicon-pytorch-original",
+    "licenca": "BSD",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
       "Deep Learning",
-      "AI",
-      "Python"
+      "Research"
     ],
-    "exemplo_codigo": "import torch\nx = torch.rand(5, 3)\nprint(x)",
+    "tags": [
+      "AI/ML",
+      "Python",
+      "Deep Learning"
+    ],
+    "exemplo_codigo": "torch.rand(5, 3)",
     "links_uteis": [
       {
-        "nome": "PyTorch Docs",
-        "url": "https://pytorch.org/docs/stable/index.html"
+        "nome": "Docs",
+        "url": "https://pytorch.org/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "TensorFlow",
-      "NumPy",
-      "AI"
+      "Python"
     ]
   },
   {
     "nome": "TensorFlow",
-    "descricao": "Plataforma open-source para machine learning, com foco em produção e modelos escaláveis.",
+    "descricao": "Plataforma de ML end-to-end.",
+    "descricao_detalhada": "TensorFlow é uma plataforma open-source completa para machine learning, facilitando a construção e deploy.",
     "data_criacao": "2015",
     "link": "https://www.tensorflow.org/",
-    "desenvolvedor": "Google Brain",
-    "icon": "fas fa-brain",
-    "tags": [
-      "Machine Learning",
-      "AI",
-      "Deep Learning",
-      "Google"
+    "desenvolvedor": "Google",
+    "icon": "devicon-tensorflow-original",
+    "licenca": "Apache 2.0",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "ML Production",
+      "Deep Learning"
     ],
-    "exemplo_codigo": "import tensorflow as tf\nmnist = tf.keras.datasets.mnist\n(x_train, y_train), (x_test, y_test) = mnist.load_data()",
+    "tags": [
+      "AI/ML",
+      "Google",
+      "Deep Learning"
+    ],
+    "exemplo_codigo": "tf.keras.Sequential()",
     "links_uteis": [
       {
-        "nome": "TensorFlow Docs",
+        "nome": "Docs",
         "url": "https://www.tensorflow.org/learn"
       }
     ],
     "tecnologias_relacionadas": [
       "PyTorch",
-      "Keras",
-      "Machine Learning"
+      "Keras"
     ]
   },
   {
     "nome": "Solidity",
-    "descricao": "Linguagem de programação orientada a contratos para implementação de lógica em blockchains como Ethereum.",
+    "descricao": "Linguagem para Smart Contracts.",
+    "descricao_detalhada": "Solidity é uma linguagem orientada a objetos para escrever contratos inteligentes em plataformas blockchain.",
     "data_criacao": "2014",
     "link": "https://soliditylang.org/",
-    "desenvolvedor": "Ethereum Foundation",
-    "icon": "fab fa-ethereum",
+    "desenvolvedor": "Ethereum",
+    "icon": "devicon-solidity-plain",
+    "licenca": "GPL",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Smart Contracts",
+      "Blockchain"
+    ],
     "tags": [
       "Blockchain",
-      "Smart Contracts",
       "Web3",
-      "Ethereum"
+      "Smart Contracts"
     ],
-    "exemplo_codigo": "pragma solidity ^0.8.0;\ncontract HelloWorld {\n    string public greet = \"Hello World!\";\n}",
+    "exemplo_codigo": "contract SimpleStorage {}",
     "links_uteis": [
       {
-        "nome": "Solidity Docs",
+        "nome": "Docs",
         "url": "https://docs.soliditylang.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Ethereum",
-      "Web3",
-      "Blockchain"
+      "Web3.js"
     ]
   },
   {
     "nome": "Ethers.js",
-    "descricao": "Biblioteca JavaScript completa e compacta para interagir com o ecossistema Ethereum e criar carteiras.",
-    "data_criacao": "2017",
+    "descricao": "Biblioteca Ethereum.",
+    "descricao_detalhada": "Ethers.js é uma biblioteca completa e compacta para interagir com a Blockchain Ethereum.",
+    "data_criacao": "2016",
     "link": "https://docs.ethers.org/",
     "desenvolvedor": "Richard Moore",
-    "icon": "fab fa-ethereum",
+    "icon": "fas fa-ethereum",
+    "licenca": "MIT",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Web3",
+      "DApps"
+    ],
     "tags": [
       "Web3",
-      "JavaScript",
-      "Ethereum",
-      "Blockchain"
+      "Blockchain",
+      "JavaScript"
     ],
-    "exemplo_codigo": "const provider = new ethers.providers.Web3Provider(window.ethereum);\nconst signer = provider.getSigner();",
+    "exemplo_codigo": "new ethers.providers...",
     "links_uteis": [
       {
-        "nome": "Ethers.js Docs",
-        "url": "https://docs.ethers.org/v5/"
+        "nome": "Docs",
+        "url": "https://docs.ethers.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Web3.js",
-      "Ethereum",
       "Solidity"
     ]
   },
   {
     "nome": "Qubit",
-    "descricao": "A unidade básica de informação na computação quântica, que pode existir em múltiplos estados simultaneamente.",
-    "data_criacao": "2000",
+    "descricao": "Bit quântico.",
+    "descricao_detalhada": "Na computação quântica, um qubit é a unidade básica de informação, capaz de representar 0 e 1 simultaneamente.",
+    "data_criacao": "1995",
     "link": "https://en.wikipedia.org/wiki/Qubit",
     "desenvolvedor": "Physics",
     "icon": "fas fa-atom",
-    "tags": [
+    "licenca": "Concept",
+    "popularidade": "Nicho",
+    "casos_uso": [
       "Quantum Computing",
-      "Concept",
-      "Physics",
-      "Emerging Tech"
+      "Research"
     ],
-    "exemplo_codigo": "# Conceito teórico, sem código direto.\n# Representação de superposição:\n# |ψ⟩ = α|0⟩ + β|1⟩",
+    "tags": [
+      "Quantum",
+      "Physics",
+      "Concept"
+    ],
+    "exemplo_codigo": "N/A",
     "links_uteis": [
       {
-        "nome": "Qiskit (IBM)",
-        "url": "https://qiskit.org/"
+        "nome": "Wiki",
+        "url": "https://en.wikipedia.org/wiki/Qubit"
       }
     ],
     "tecnologias_relacionadas": [
       "Quantum Computing",
-      "Physics",
-      "Qiskit"
+      "Physics"
     ]
   },
   {
-    "nome": "Llama (Meta AI)",
-    "descricao": "Família de Large Language Models (LLMs) desenvolvida pela Meta, conhecida por seu alto desempenho e licença aberta.",
+    "nome": "Llama",
+    "descricao": "LLM da Meta AI.",
+    "descricao_detalhada": "LLaMA é uma família de grandes modelos de linguagem (LLMs) lançada pela Meta AI.",
     "data_criacao": "2023",
-    "link": "https://ai.meta.com/llama/",
+    "link": "https://ai.facebook.com/blog/large-language-model-llama-meta-ai/",
     "desenvolvedor": "Meta AI",
     "icon": "fas fa-robot",
-    "tags": [
-      "AI",
-      "LLM",
-      "Generative AI",
-      "Large Model"
+    "licenca": "Research",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "NLP",
+      "Research",
+      "Chatbots"
     ],
-    "exemplo_codigo": "# Exemplo usando biblioteca transformers\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nmodel = AutoModelForCausalLM.from_pretrained(\"meta-llama/Llama-2-7b\")",
+    "tags": [
+      "AI/ML",
+      "LLM",
+      "Meta"
+    ],
+    "exemplo_codigo": "N/A",
     "links_uteis": [
       {
-        "nome": "Meta AI",
-        "url": "https://ai.meta.com/llama/"
+        "nome": "Blog",
+        "url": "https://ai.facebook.com/blog/large-language-model-llama-meta-ai/"
       }
     ],
     "tecnologias_relacionadas": [
       "GPT-4",
-      "Hugging Face",
-      "AI"
+      "Hugging Face"
     ]
   },
   {
     "nome": "Istio",
-    "descricao": "Malha de serviços (Service Mesh) open-source que fornece uma forma de controlar como microsserviços interagem.",
+    "descricao": "Service Mesh.",
+    "descricao_detalhada": "Istio é uma malha de serviço aberta que fornece uma maneira uniforme de conectar, gerenciar e proteger microsserviços.",
     "data_criacao": "2017",
     "link": "https://istio.io/",
-    "desenvolvedor": "Cloud Native Computing Foundation",
+    "desenvolvedor": "Google, IBM, Lyft",
     "icon": "fas fa-network-wired",
-    "tags": [
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
       "Service Mesh",
-      "Microservices",
+      "Microservices"
+    ],
+    "tags": [
       "DevOps",
+      "Microservices",
       "Networking"
     ],
-    "exemplo_codigo": "apiVersion: networking.istio.io/v1alpha3\nkind: VirtualService\nmetadata:\n  name: my-service",
+    "exemplo_codigo": "apiVersion: networking.istio.io",
     "links_uteis": [
       {
-        "nome": "Istio Docs",
+        "nome": "Docs",
         "url": "https://istio.io/latest/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "Kubernetes",
-      "Envoy",
-      "Service Mesh"
+      "Envoy"
     ]
   },
   {
     "nome": "Blitz.js",
-    "descricao": "Framework fullstack baseado em Next.js que visa a experiência de 'zero-API', simplificando a comunicação frontend/backend.",
+    "descricao": "Framework Fullstack React.",
+    "descricao_detalhada": "Blitz é um framework fullstack construído sobre Next.js que abstrai a camada de API.",
     "data_criacao": "2020",
     "link": "https://blitzjs.com/",
     "desenvolvedor": "Brandon Bayer",
     "icon": "fas fa-bolt",
-    "tags": [
-      "Full Stack",
-      "React",
-      "Framework",
-      "Rapid Development"
+    "licenca": "MIT",
+    "popularidade": "Nicho",
+    "casos_uso": [
+      "Fullstack",
+      "Rapid Dev"
     ],
-    "exemplo_codigo": "import { useQuery } from \"blitz\"\nimport getProject from \"app/projects/queries/getProject\"\n\nconst [project] = useQuery(getProject, { id: 1 })",
+    "tags": [
+      "Fullstack",
+      "React",
+      "Framework"
+    ],
+    "exemplo_codigo": "blitz new my-app",
     "links_uteis": [
       {
-        "nome": "Blitz Docs",
+        "nome": "Docs",
         "url": "https://blitzjs.com/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "Next.js",
-      "React",
-      "Prisma"
+      "React"
     ]
   },
   {
     "nome": "Supabase",
-    "descricao": "Plataforma BaaS (Backend as a Service) open-source que oferece funcionalidades como banco de dados Postgres, autenticação e armazenamento.",
+    "descricao": "Alternativa Open Source ao Firebase.",
+    "descricao_detalhada": "Supabase fornece backend como serviço (BaaS) com banco de dados Postgres, autenticação e APIs em tempo real.",
     "data_criacao": "2020",
     "link": "https://supabase.com/",
-    "desenvolvedor": "Supabase Inc",
-    "icon": "fas fa-database",
+    "desenvolvedor": "Supabase",
+    "icon": "devicon-supabase-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "BaaS",
+      "Postgres",
+      "Auth"
+    ],
     "tags": [
       "BaaS",
       "Database",
-      "Open Source",
-      "API"
+      "Open Source"
     ],
-    "exemplo_codigo": "const { data, error } = await supabase\n  .from('countries')\n  .select()",
+    "exemplo_codigo": "supabase.from('table').select()",
     "links_uteis": [
       {
-        "nome": "Supabase Docs",
+        "nome": "Docs",
         "url": "https://supabase.com/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "PostgreSQL",
-      "Firebase",
-      "React"
+      "Firebase"
     ]
   },
   {
     "nome": "Vite",
-    "descricao": "Ferramenta de build frontend que utiliza ES modules nativos para oferecer desenvolvimento e hot module replacement (HMR) extremamente rápidos.",
+    "descricao": "Build tool de próxima geração.",
+    "descricao_detalhada": "Vite é uma ferramenta de build que oferece um servidor de desenvolvimento extremamente rápido e builds otimizados.",
     "data_criacao": "2020",
     "link": "https://vitejs.dev/",
     "desenvolvedor": "Evan You",
-    "icon": "fas fa-bolt",
-    "tags": [
-      "Build Tool",
-      "Frontend",
-      "Bundler",
-      "JavaScript"
+    "icon": "devicon-vitejs-plain",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Frontend Build",
+      "Dev Server"
     ],
-    "exemplo_codigo": "npm create vite@latest my-vue-app -- --template vue",
+    "tags": [
+      "Frontend",
+      "Build Tool",
+      "Bundler"
+    ],
+    "exemplo_codigo": "npm create vite@latest",
     "links_uteis": [
       {
-        "nome": "Vite Docs",
+        "nome": "Docs",
         "url": "https://vitejs.dev/guide/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Webpack",
-      "Rollup",
-      "Vue.js"
+      "Vue.js",
+      "React"
     ]
   },
   {
     "nome": "NestJS",
-    "descricao": "Framework progressivo para backend baseado em Node.js e TypeScript, construído para escalabilidade e arquitetura modular.",
+    "descricao": "Framework Node.js estruturado.",
+    "descricao_detalhada": "NestJS é um framework para construir aplicações Node.js eficientes e escaláveis, fortemente inspirado no Angular.",
     "data_criacao": "2017",
     "link": "https://nestjs.com/",
-    "desenvolvedor": "Kamil Myśliwiec",
-    "icon": "fab fa-node-js",
-    "tags": [
-      "Backend Framework",
-      "Node.js",
-      "TypeScript",
-      "Microservices"
+    "desenvolvedor": "Kamil Mysliwiec",
+    "icon": "devicon-nestjs-plain",
+    "licenca": "MIT",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Backend",
+      "Microservices",
+      "Enterprise"
     ],
-    "exemplo_codigo": "@Controller('cats')\nexport class CatsController {\n  @Get()\n  findAll(): string {\n    return 'This action returns all cats';\n  }\n}",
+    "tags": [
+      "Backend",
+      "Node.js",
+      "TypeScript"
+    ],
+    "exemplo_codigo": "@Controller()",
     "links_uteis": [
       {
-        "nome": "NestJS Docs",
+        "nome": "Docs",
         "url": "https://docs.nestjs.com/"
       }
     ],
     "tecnologias_relacionadas": [
       "Node.js",
-      "TypeScript",
-      "Express"
+      "Angular"
     ]
   },
   {
     "nome": "Ruby on Rails",
-    "descricao": "Framework web que segue a arquitetura MVC (Model-View-Controller) e promove a convenção sobre a configuração.",
+    "descricao": "Framework web produtivo.",
+    "descricao_detalhada": "Rails é um framework web MVC que segue o princípio 'Convenção sobre Configuração', otimizado para produtividade.",
     "data_criacao": "2004",
     "link": "https://rubyonrails.org/",
-    "desenvolvedor": "David Heinemeier Hansson",
-    "icon": "fab fa-gem",
-    "tags": [
-      "Web Framework",
-      "Ruby",
-      "Backend",
-      "MVC"
+    "desenvolvedor": "DHH",
+    "icon": "devicon-rails-plain",
+    "licenca": "MIT",
+    "popularidade": "Estável",
+    "casos_uso": [
+      "Web App",
+      "MVP",
+      "Startup"
     ],
-    "exemplo_codigo": "class UsersController < ApplicationController\n  def index\n    @users = User.all\n  end\nend",
+    "tags": [
+      "Backend",
+      "Ruby",
+      "Web Framework"
+    ],
+    "exemplo_codigo": "rails new myapp",
     "links_uteis": [
       {
-        "nome": "Rails Guides",
+        "nome": "Guides",
         "url": "https://guides.rubyonrails.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Ruby",
-      "MVC",
-      "ActiveRecord"
+      "MVC"
     ]
   },
   {
     "nome": "C#",
-    "descricao": "Linguagem de programação orientada a objetos, multiparadigma, desenvolvida pela Microsoft, rodando na plataforma .NET.",
+    "descricao": "Linguagem multiparadigma da Microsoft.",
+    "descricao_detalhada": "C# é uma linguagem moderna e segura para tipos, base da plataforma .NET, usada em enterprise, jogos e mobile.",
     "data_criacao": "2000",
-    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+    "link": "https://docs.microsoft.com/en-us/dotnet/csharp/",
     "desenvolvedor": "Microsoft",
-    "icon": "fas fa-code",
+    "icon": "devicon-csharp-plain",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Enterprise",
+      "Game Dev",
+      "Desktop"
+    ],
     "tags": [
       "Programming Language",
       "Microsoft",
-      "Backend",
       ".NET"
     ],
-    "exemplo_codigo": "using System;\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello World!\");\n    }\n}",
+    "exemplo_codigo": "Console.WriteLine(\"Hello\");",
     "links_uteis": [
       {
-        "nome": "C# Docs",
+        "nome": "Docs",
         "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
       }
     ],
     "tecnologias_relacionadas": [
       ".NET",
-      "Unity",
-      "Visual Studio"
-    ]
-  },
-  {
-    "nome": "Unity",
-    "descricao": "Motor de desenvolvimento de jogos 3D e 2D multiplataforma, amplamente usado para realidade virtual e aumentada.",
-    "data_criacao": "2005",
-    "link": "https://unity.com/",
-    "desenvolvedor": "Unity Technologies",
-    "icon": "fab fa-unity",
-    "tags": [
-      "Game Engine",
-      "C#",
-      "3D",
-      "XR",
-      "Development"
-    ],
-    "exemplo_codigo": "void Update() {\n    transform.Translate(Vector3.forward * Time.deltaTime);\n}",
-    "links_uteis": [
-      {
-        "nome": "Unity Manual",
-        "url": "https://docs.unity3d.com/Manual/index.html"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "C#",
-      "Game Dev",
-      "Unreal Engine"
+      "Unity"
     ]
   },
   {
     "nome": "GitOps",
-    "descricao": "Modelo operacional que utiliza o Git como fonte única de verdade para descrever o estado desejado de um sistema.",
+    "descricao": "Operações por Pull Request.",
+    "descricao_detalhada": "GitOps é uma prática de usar Git como fonte única da verdade para infraestrutura e deploy de aplicações.",
     "data_criacao": "2017",
     "link": "https://www.gitops.tech/",
     "desenvolvedor": "Weaveworks",
-    "icon": "fab fa-git-alt",
+    "icon": "devicon-git-plain",
+    "licenca": "Concept",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "CD",
+      "K8s Management"
+    ],
     "tags": [
       "DevOps",
-      "CI/CD",
-      "Automation",
-      "Architecture"
+      "Methodology",
+      "Git"
     ],
-    "exemplo_codigo": "# GitOps é um conceito, não código único.\n# Exemplo de manifesto syncado via ArgoCD:\napiVersion: argoproj.io/v1alpha1\nkind: Application...",
+    "exemplo_codigo": "N/A",
     "links_uteis": [
       {
-        "nome": "OpenGitOps",
-        "url": "https://opengitops.dev/"
+        "nome": "Site",
+        "url": "https://www.gitops.tech/"
       }
     ],
     "tecnologias_relacionadas": [
-      "ArgoCD",
-      "Flux",
+      "Git",
       "Kubernetes"
     ]
   },
   {
     "nome": "Snowflake",
-    "descricao": "Data Warehouse como serviço baseado em nuvem, conhecido por sua arquitetura de separação de armazenamento e computação.",
+    "descricao": "Data Cloud.",
+    "descricao_detalhada": "Snowflake é uma plataforma de data warehouse em nuvem que separa computação de armazenamento.",
     "data_criacao": "2012",
     "link": "https://www.snowflake.com/",
-    "desenvolvedor": "Snowflake Inc.",
+    "desenvolvedor": "Snowflake Inc",
     "icon": "fas fa-snowflake",
-    "tags": [
-      "Data Warehouse",
-      "Cloud Computing",
-      "Data Analytics",
-      "Big Data"
+    "licenca": "Proprietária",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Data Warehousing",
+      "Data Lake"
     ],
-    "exemplo_codigo": "SELECT * FROM \"SNOWFLAKE_SAMPLE_DATA\".\"TPCH_SF1\".\"CUSTOMER\" LIMIT 10;",
+    "tags": [
+      "Big Data",
+      "Cloud",
+      "Database"
+    ],
+    "exemplo_codigo": "SELECT * FROM table",
     "links_uteis": [
       {
-        "nome": "Snowflake Docs",
+        "nome": "Docs",
         "url": "https://docs.snowflake.com/"
       }
     ],
     "tecnologias_relacionadas": [
       "SQL",
-      "Data Warehouse",
-      "Big Data"
+      "BigQuery"
     ]
   },
   {
     "nome": "Microservices",
-    "descricao": "Abordagem arquitetural onde um software é composto por serviços pequenos, independentes e fracamente acoplados.",
-    "data_criacao": "2009",
-    "link": "https://martinfowler.com/articles/microservices.html",
-    "desenvolvedor": "Architecture",
+    "descricao": "Estilo arquitetural.",
+    "descricao_detalhada": "Arquitetura onde uma aplicação é estruturada como uma coleção de serviços pequenos e independentes.",
+    "data_criacao": "2011",
+    "link": "https://microservices.io/",
+    "desenvolvedor": "Community",
     "icon": "fas fa-cubes",
-    "tags": [
+    "licenca": "N/A",
+    "popularidade": "Alta",
+    "casos_uso": [
       "Architecture",
-      "Software Design",
-      "Distributed System",
       "Scalability"
     ],
-    "exemplo_codigo": "# Arquitetura, não código.\n# Serviços comunicando via HTTP/gRPC.",
+    "tags": [
+      "Architecture",
+      "Design",
+      "Backend"
+    ],
+    "exemplo_codigo": "N/A",
     "links_uteis": [
       {
-        "nome": "Martin Fowler",
-        "url": "https://martinfowler.com/articles/microservices.html"
+        "nome": "Docs",
+        "url": "https://microservices.io/"
       }
     ],
     "tecnologias_relacionadas": [
       "Docker",
-      "Kubernetes",
-      "REST"
+      "Kubernetes"
     ]
   },
   {
     "nome": "Ansible",
-    "descricao": "Ferramenta de automação de código aberto para provisionamento de software, gerenciamento de configuração e implantação de aplicativos.",
+    "descricao": "Automação de TI.",
+    "descricao_detalhada": "Ansible é uma ferramenta de automação simples e sem agentes para gerenciamento de configuração e deploy.",
     "data_criacao": "2012",
     "link": "https://www.ansible.com/",
     "desenvolvedor": "Red Hat",
-    "icon": "fas fa-terminal",
-    "tags": [
+    "icon": "devicon-ansible-plain",
+    "licenca": "GPL",
+    "popularidade": "Alta",
+    "casos_uso": [
       "Automation",
+      "Config Mgmt"
+    ],
+    "tags": [
       "DevOps",
-      "Configuration Management",
+      "Automation",
       "IaC"
     ],
-    "exemplo_codigo": "- name: Ensure apache is at the latest version\n  yum:\n    name: httpd\n    state: latest",
+    "exemplo_codigo": "- name: Ensure apache is latest",
     "links_uteis": [
       {
-        "nome": "Ansible Docs",
+        "nome": "Docs",
         "url": "https://docs.ansible.com/"
       }
     ],
     "tecnologias_relacionadas": [
       "Terraform",
-      "DevOps",
-      "Automation"
+      "Chef"
     ]
   },
   {
     "nome": "WebGPU",
-    "descricao": "Uma API gráfica web moderna projetada para expor recursos de hardware avançados e permitir computação paralela na GPU.",
-    "data_criacao": "2020",
+    "descricao": "API gráfica web moderna.",
+    "descricao_detalhada": "WebGPU é uma API futura da web para gráficos acelerados e computação, sucessora do WebGL.",
+    "data_criacao": "2017",
     "link": "https://www.w3.org/TR/webgpu/",
     "desenvolvedor": "W3C",
     "icon": "fas fa-desktop",
-    "tags": [
-      "Graphics API",
-      "Web Standard",
-      "Performance",
-      "3D"
+    "licenca": "W3C",
+    "popularidade": "Emergente",
+    "casos_uso": [
+      "Graphics",
+      "Compute"
     ],
-    "exemplo_codigo": "const adapter = await navigator.gpu.requestAdapter();\nconst device = await adapter.requestDevice();",
+    "tags": [
+      "Web",
+      "Graphics",
+      "Performance"
+    ],
+    "exemplo_codigo": "navigator.gpu.requestAdapter()",
     "links_uteis": [
       {
-        "nome": "WebGPU Explainer",
-        "url": "https://gpuweb.github.io/gpuweb/"
+        "nome": "Spec",
+        "url": "https://www.w3.org/TR/webgpu/"
       }
     ],
     "tecnologias_relacionadas": [
       "WebGL",
-      "Graphics",
       "Rust"
     ]
   },
   {
     "nome": "Kotlin",
-    "descricao": "Linguagem de programação estaticamente tipada que roda na JVM e é totalmente interoperável com Java, sendo a linguagem preferida para Android.",
+    "descricao": "Linguagem moderna para JVM.",
+    "descricao_detalhada": "Kotlin é uma linguagem concisa e segura, totalmente interoperável com Java e oficial para Android.",
     "data_criacao": "2011",
     "link": "https://kotlinlang.org/",
     "desenvolvedor": "JetBrains",
-    "icon": "fab fa-android",
+    "icon": "devicon-kotlin-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Android",
+      "Server-side"
+    ],
     "tags": [
       "Programming Language",
-      "JVM",
       "Android",
-      "Backend"
+      "JVM"
     ],
-    "exemplo_codigo": "fun main() {\n    println(\"Hello, World!\")\n}",
+    "exemplo_codigo": "fun main() { println(\"Hi\") }",
     "links_uteis": [
       {
-        "nome": "Kotlin Docs",
+        "nome": "Docs",
         "url": "https://kotlinlang.org/docs/home.html"
       }
     ],
     "tecnologias_relacionadas": [
       "Java",
-      "Android",
-      "Jetpack Compose"
+      "Android"
     ]
   },
   {
     "nome": "Flutter",
-    "descricao": "UI toolkit do Google para construir aplicações nativas compiladas de forma rápida e eficiente para mobile, web e desktop.",
+    "descricao": "UI Toolkit para mobile e web.",
+    "descricao_detalhada": "Flutter permite criar aplicativos nativos bonitos para mobile, web e desktop a partir de uma única base de código.",
     "data_criacao": "2017",
     "link": "https://flutter.dev/",
     "desenvolvedor": "Google",
-    "icon": "fab fa-google",
-    "tags": [
-      "Mobile Development",
-      "UI Toolkit",
-      "Dart",
+    "icon": "devicon-flutter-plain",
+    "licenca": "BSD",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Mobile",
       "Cross-platform"
     ],
-    "exemplo_codigo": "import 'package:flutter/material.dart';\n\nvoid main() => runApp(MaterialApp(home: Text('Hello World')));",
+    "tags": [
+      "Mobile",
+      "Framework",
+      "Google"
+    ],
+    "exemplo_codigo": "runApp(MyApp());",
     "links_uteis": [
       {
-        "nome": "Flutter Docs",
+        "nome": "Docs",
         "url": "https://flutter.dev/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "Dart",
-      "Mobile",
       "React Native"
     ]
   },
   {
     "nome": "Zig",
-    "descricao": "Linguagem de programação de propósito geral e baixo nível, focada em simplicidade, robustez e substituição de C.",
+    "descricao": "Linguagem de sistemas moderna.",
+    "descricao_detalhada": "Zig é uma linguagem de programação de sistemas focada em robustez, otimização e clareza.",
     "data_criacao": "2016",
     "link": "https://ziglang.org/",
     "desenvolvedor": "Andrew Kelley",
-    "icon": "fas fa-bolt",
-    "tags": [
-      "Systems Programming",
-      "Low Level",
-      "Performance",
-      "Language"
+    "icon": "devicon-zig-original",
+    "licenca": "MIT",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "Systems",
+      "Low Level"
     ],
-    "exemplo_codigo": "const std = @import(\"std\");\n\npub fn main() !void {\n    std.debug.print(\"Hello, {s}!\\n\", .{\"World\"});\n}",
+    "tags": [
+      "Programming Language",
+      "Systems",
+      "Low Level"
+    ],
+    "exemplo_codigo": "const std = @import(\"std\");",
     "links_uteis": [
       {
-        "nome": "Zig Lang",
-        "url": "https://ziglang.org/documentation/"
+        "nome": "Docs",
+        "url": "https://ziglang.org/documentation/master/"
       }
     ],
     "tecnologias_relacionadas": [
       "C",
-      "Rust",
-      "Systems"
+      "Rust"
     ]
   },
   {
-    "nome": "GPT-4 (OpenAI)",
-    "descricao": "Modelo de linguagem grande (LLM) multimodal avançado, capaz de processar texto e imagens para gerar respostas.",
+    "nome": "GPT-4",
+    "descricao": "Modelo de linguagem avançado.",
+    "descricao_detalhada": "GPT-4 é um modelo multimodal de grande escala da OpenAI, capaz de raciocínio complexo e geração de código.",
     "data_criacao": "2023",
     "link": "https://openai.com/gpt-4",
     "desenvolvedor": "OpenAI",
     "icon": "fas fa-robot",
-    "tags": [
-      "AI",
-      "LLM",
-      "Generative AI",
-      "NLP"
+    "licenca": "Proprietária",
+    "popularidade": "Extrema",
+    "casos_uso": [
+      "NLP",
+      "Chatbot",
+      "Code Gen"
     ],
-    "exemplo_codigo": "response = openai.ChatCompletion.create(\n  model=\"gpt-4\",\n  messages=[{\"role\": \"user\", \"content\": \"Hello!\"}]\n)",
+    "tags": [
+      "AI/ML",
+      "LLM",
+      "OpenAI"
+    ],
+    "exemplo_codigo": "openai.ChatCompletion.create()",
     "links_uteis": [
       {
-        "nome": "OpenAI API",
-        "url": "https://platform.openai.com/docs/introduction"
+        "nome": "Product",
+        "url": "https://openai.com/gpt-4"
       }
     ],
     "tecnologias_relacionadas": [
-      "AI",
-      "LLM",
-      "Python"
+      "OpenAI",
+      "Generative AI"
     ]
   },
   {
     "nome": "JavaScript",
-    "descricao": "Linguagem de script essencial para o desenvolvimento web, executada no lado do cliente e do servidor (Node.js).",
+    "descricao": "A linguagem da Web.",
+    "descricao_detalhada": "JavaScript é a linguagem de programação onipresente da web, usada no frontend e backend (Node.js).",
     "data_criacao": "1995",
-    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
-    "desenvolvedor": "Netscape",
-    "icon": "fab fa-js",
-    "tags": [
-      "Linguagem",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "desenvolvedor": "Brendan Eich",
+    "icon": "devicon-javascript-plain",
+    "licenca": "N/A",
+    "popularidade": "Onipresente",
+    "casos_uso": [
+      "Web",
       "Frontend",
-      "Backend",
-      "Web"
+      "Backend"
     ],
-    "exemplo_codigo": "console.log('Hello World');",
+    "tags": [
+      "Programming Language",
+      "Web",
+      "Frontend"
+    ],
+    "exemplo_codigo": "console.log(\"Hello\");",
     "links_uteis": [
       {
-        "nome": "MDN Web Docs",
+        "nome": "MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       }
     ],
     "tecnologias_relacionadas": [
-      "HTML",
-      "CSS",
-      "TypeScript"
+      "TypeScript",
+      "Node.js"
     ]
   },
   {
     "nome": "Angular",
-    "descricao": "Plataforma e framework completo da Google para construir aplicações web e móveis complexas em larga escala.",
+    "descricao": "Plataforma web do Google.",
+    "descricao_detalhada": "Angular é uma plataforma e framework para construção de aplicações web escaláveis.",
     "data_criacao": "2016",
     "link": "https://angular.io/",
     "desenvolvedor": "Google",
-    "icon": "fab fa-angular",
+    "icon": "devicon-angularjs-plain",
+    "licenca": "MIT",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "SPA",
+      "Enterprise"
+    ],
     "tags": [
       "Frontend",
       "Framework",
-      "Google",
-      "TypeScript"
+      "Google"
     ],
-    "exemplo_codigo": "@Component({\n  selector: 'app-root',\n  template: '<h1>Hello Angular</h1>'\n})\nexport class AppComponent {}",
+    "exemplo_codigo": "@Component({})",
     "links_uteis": [
       {
-        "nome": "Angular Docs",
+        "nome": "Docs",
         "url": "https://angular.io/docs"
       }
     ],
     "tecnologias_relacionadas": [
       "TypeScript",
-      "RxJS",
-      "React"
+      "RxJS"
     ]
   },
   {
     "nome": "AWS Lambda",
-    "descricao": "Serviço de computação serverless da AWS que permite executar código sem provisionar ou gerenciar servidores (FaaS).",
+    "descricao": "Computação serverless.",
+    "descricao_detalhada": "AWS Lambda permite executar código sem provisionar ou gerenciar servidores, pagando apenas pelo tempo de computação.",
     "data_criacao": "2014",
     "link": "https://aws.amazon.com/lambda/",
     "desenvolvedor": "AWS",
     "icon": "fab fa-aws",
+    "licenca": "Proprietária",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Serverless",
+      "Backend"
+    ],
     "tags": [
       "Cloud",
       "Serverless",
-      "Funções",
-      "AWS"
+      "Compute"
     ],
-    "exemplo_codigo": "exports.handler = async (event) => {\n    return { statusCode: 200, body: 'Hello from Lambda!' };\n};",
+    "exemplo_codigo": "exports.handler = ...",
     "links_uteis": [
       {
-        "nome": "AWS Lambda Docs",
+        "nome": "Docs",
         "url": "https://docs.aws.amazon.com/lambda/"
       }
     ],
     "tecnologias_relacionadas": [
       "Serverless",
-      "AWS",
-      "Node.js"
+      "AWS"
     ]
   },
   {
     "nome": "Swift",
-    "descricao": "Linguagem de programação poderosa e moderna da Apple para desenvolvimento de aplicativos iOS, macOS e tvOS.",
+    "descricao": "Linguagem da Apple.",
+    "descricao_detalhada": "Swift é uma linguagem de programação rápida e segura para desenvolvimento no ecossistema Apple.",
     "data_criacao": "2014",
-    "link": "https://www.swift.org/",
+    "link": "https://swift.org/",
     "desenvolvedor": "Apple",
-    "icon": "fab fa-swift",
-    "tags": [
-      "Linguagem",
-      "Mobile",
-      "Apple",
-      "Performance"
+    "icon": "devicon-swift-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "iOS",
+      "macOS"
     ],
-    "exemplo_codigo": "print(\"Hello, World!\")",
+    "tags": [
+      "Programming Language",
+      "Mobile",
+      "Apple"
+    ],
+    "exemplo_codigo": "print(\"Hello\")",
     "links_uteis": [
       {
-        "nome": "Swift Docs",
+        "nome": "Docs",
         "url": "https://swift.org/documentation/"
       }
     ],
     "tecnologias_relacionadas": [
-      "iOS",
       "Objective-C",
-      "Apple"
-    ]
-  },
-  {
-    "nome": "Pandas",
-    "descricao": "Biblioteca Python fundamental para manipulação e análise de dados, usando estruturas de dados como DataFrames.",
-    "data_criacao": "2008",
-    "link": "https://pandas.pydata.org/",
-    "desenvolvedor": "NumFOCUS",
-    "icon": "fas fa-table",
-    "tags": [
-      "Ciência de Dados",
-      "Python",
-      "Análise",
-      "Biblioteca"
-    ],
-    "exemplo_codigo": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(df)",
-    "links_uteis": [
-      {
-        "nome": "Pandas Docs",
-        "url": "https://pandas.pydata.org/docs/"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "Python",
-      "NumPy",
-      "Data Science"
+      "iOS"
     ]
   },
   {
     "nome": "Apache Spark",
-    "descricao": "Motor de processamento unificado e distribuído para análise de dados em larga escala e computação em cluster.",
+    "descricao": "Processamento de Big Data.",
+    "descricao_detalhada": "Apache Spark é um mecanismo unificado de análise para processamento de dados em larga escala.",
     "data_criacao": "2014",
     "link": "https://spark.apache.org/",
-    "desenvolvedor": "Apache Software Foundation",
+    "desenvolvedor": "Apache",
     "icon": "fas fa-fire",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Big Data",
+      "Analytics"
+    ],
     "tags": [
       "Big Data",
-      "Processamento",
-      "Cluster",
-      "Apache"
+      "Analytics",
+      "Distributed"
     ],
-    "exemplo_codigo": "val textFile = spark.read.textFile(\"README.md\")\ntextFile.count()",
+    "exemplo_codigo": "spark.read.json()",
     "links_uteis": [
       {
-        "nome": "Spark Docs",
+        "nome": "Docs",
         "url": "https://spark.apache.org/docs/latest/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Big Data",
-      "Scala",
-      "Hadoop"
+      "Hadoop",
+      "Scala"
     ]
   },
   {
     "nome": "Elixir",
-    "descricao": "Linguagem funcional construída sobre a máquina virtual Erlang (BEAM), focada em concorrência, tolerância a falhas e sistemas distribuídos.",
-    "data_criacao": "2012",
+    "descricao": "Linguagem concorrente na BEAM.",
+    "descricao_detalhada": "Elixir é uma linguagem funcional projetada para construir aplicações escaláveis e de fácil manutenção.",
+    "data_criacao": "2011",
     "link": "https://elixir-lang.org/",
     "desenvolvedor": "José Valim",
-    "icon": "fas fa-flask",
-    "tags": [
-      "Linguagem",
-      "Funcional",
-      "Backend",
-      "Concorrência"
+    "icon": "devicon-elixir-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "Distributed Systems",
+      "Web"
     ],
-    "exemplo_codigo": "IO.puts \"Hello World\"",
+    "tags": [
+      "Programming Language",
+      "Functional",
+      "Concurrent"
+    ],
+    "exemplo_codigo": "IO.puts \"Hello\"",
     "links_uteis": [
       {
-        "nome": "Elixir Docs",
+        "nome": "Docs",
         "url": "https://elixir-lang.org/docs.html"
       }
     ],
     "tecnologias_relacionadas": [
       "Erlang",
-      "Phoenix",
-      "Functional"
+      "Phoenix"
     ]
   },
   {
-    "nome": "Phoenix Framework",
-    "descricao": "Framework web de alta performance construído em Elixir, ideal para construir sistemas em tempo real (como chats e dashboards).",
+    "nome": "Phoenix",
+    "descricao": "Framework web para Elixir.",
+    "descricao_detalhada": "Phoenix é um framework web que oferece alta produtividade sem comprometer a velocidade e o tempo real.",
     "data_criacao": "2014",
     "link": "https://www.phoenixframework.org/",
     "desenvolvedor": "Chris McCord",
-    "icon": "fas fa-fire",
-    "tags": [
-      "Backend",
-      "Framework",
-      "Elixir",
-      "Tempo Real"
+    "icon": "devicon-phoenix-plain",
+    "licenca": "MIT",
+    "popularidade": "Moderada",
+    "casos_uso": [
+      "Web",
+      "Real-time"
     ],
-    "exemplo_codigo": "def index(conn, _params) do\n  render(conn, \"index.html\")\nend",
+    "tags": [
+      "Web Framework",
+      "Elixir",
+      "Real-time"
+    ],
+    "exemplo_codigo": "def index(conn, _params) do",
     "links_uteis": [
       {
-        "nome": "Phoenix Docs",
+        "nome": "Docs",
         "url": "https://hexdocs.pm/phoenix/overview.html"
       }
     ],
     "tecnologias_relacionadas": [
       "Elixir",
-      "LiveView",
-      "Web"
+      "Erlang"
     ]
   },
   {
     "nome": "Astro",
-    "descricao": "Framework web moderno focado em velocidade e otimização de performance, utilizando a arquitetura de 'ilhas de componentes'.",
+    "descricao": "Framework web para conteúdo.",
+    "descricao_detalhada": "Astro é um framework web tudo-em-um projetado para velocidade, entregando menos JavaScript.",
     "data_criacao": "2021",
     "link": "https://astro.build/",
     "desenvolvedor": "Astro",
     "icon": "fas fa-rocket",
+    "licenca": "MIT",
+    "popularidade": "Crescente",
+    "casos_uso": [
+      "Static Sites",
+      "Content"
+    ],
     "tags": [
       "Frontend",
-      "Framework",
-      "Performance",
-      "Ilhas de Componentes"
+      "SSG",
+      "Web"
     ],
-    "exemplo_codigo": "---\nconst name = \"Astro\";\n---\n<h1>Hello {name}!</h1>",
+    "exemplo_codigo": "---\nconst name = \"Astro\";\n---",
     "links_uteis": [
       {
-        "nome": "Astro Docs",
+        "nome": "Docs",
         "url": "https://docs.astro.build/"
       }
     ],
     "tecnologias_relacionadas": [
       "React",
-      "Vue",
-      "Static Site"
+      "Vue"
     ]
   },
   {
     "nome": "Prisma",
-    "descricao": "ORM (Object-Relational Mapper) de próxima geração para Node.js e TypeScript que simplifica o acesso ao banco de dados.",
-    "data_criacao": "2018",
+    "descricao": "ORM moderno.",
+    "descricao_detalhada": "Prisma é um ORM de próxima geração para Node.js e TypeScript que simplifica o acesso ao banco de dados.",
+    "data_criacao": "2019",
     "link": "https://www.prisma.io/",
     "desenvolvedor": "Prisma Data",
-    "icon": "fas fa-database",
+    "icon": "devicon-prisma-original",
+    "licenca": "Apache 2.0",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "ORM",
+      "Database Access"
+    ],
     "tags": [
       "Backend",
       "ORM",
-      "TypeScript",
-      "Banco de Dados"
+      "TypeScript"
     ],
-    "exemplo_codigo": "const user = await prisma.user.create({\n  data: { name: 'Alice' },\n})",
+    "exemplo_codigo": "const user = await prisma.user.create()",
     "links_uteis": [
       {
-        "nome": "Prisma Docs",
-        "url": "https://www.prisma.io/docs"
+        "nome": "Docs",
+        "url": "https://www.prisma.io/docs/"
       }
     ],
     "tecnologias_relacionadas": [
       "TypeScript",
-      "Node.js",
-      "Database"
+      "Node.js"
     ]
   },
   {
     "nome": "LangChain",
-    "descricao": "Framework para desenvolver aplicações complexas e contextuais alimentadas por grandes modelos de linguagem (LLMs).",
+    "descricao": "Framework para LLMs.",
+    "descricao_detalhada": "LangChain facilita a construção de aplicações que utilizam modelos de linguagem grandes (LLMs).",
     "data_criacao": "2022",
-    "link": "https://www.langchain.com/",
+    "link": "https://langchain.com/",
     "desenvolvedor": "Harrison Chase",
     "icon": "fas fa-link",
-    "tags": [
-      "IA/ML",
-      "LLMs",
-      "Framework",
-      "GenAI"
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "LLM Apps",
+      "AI"
     ],
-    "exemplo_codigo": "from langchain.llms import OpenAI\nllm = OpenAI(temperature=0.9)",
+    "tags": [
+      "AI/ML",
+      "LLM",
+      "Framework"
+    ],
+    "exemplo_codigo": "new OpenAI()",
     "links_uteis": [
       {
-        "nome": "LangChain Docs",
-        "url": "https://python.langchain.com/docs/get_started/introduction"
+        "nome": "Docs",
+        "url": "https://docs.langchain.com/docs/"
       }
     ],
     "tecnologias_relacionadas": [
-      "LLM",
-      "Python",
-      "OpenAI"
+      "OpenAI",
+      "Python"
     ]
   },
   {
     "nome": "Hugging Face",
-    "descricao": "Plataforma líder em modelos de Machine Learning, conjuntos de dados e bibliotecas para Processamento de Linguagem Natural (NLP).",
+    "descricao": "Hub de IA.",
+    "descricao_detalhada": "Hugging Face é a plataforma central para compartilhamento de modelos de machine learning, datasets e demos.",
     "data_criacao": "2016",
     "link": "https://huggingface.co/",
     "desenvolvedor": "Hugging Face",
     "icon": "fas fa-grin-stars",
-    "tags": [
-      "IA/ML",
-      "NLP",
-      "Modelos",
-      "Comunidade"
+    "licenca": "N/A",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Model Hosting",
+      "Datasets"
     ],
-    "exemplo_codigo": "from transformers import pipeline\nclassifier = pipeline(\"sentiment-analysis\")",
+    "tags": [
+      "AI/ML",
+      "Community",
+      "Platform"
+    ],
+    "exemplo_codigo": "from transformers import pipeline",
     "links_uteis": [
       {
-        "nome": "Hugging Face Docs",
+        "nome": "Docs",
         "url": "https://huggingface.co/docs"
       }
     ],
     "tecnologias_relacionadas": [
-      "AI",
       "Transformers",
       "PyTorch"
     ]
   },
   {
     "nome": "Observabilidade",
-    "descricao": "Conceito de medir o estado interno de um sistema a partir de seus outputs externos (logs, métricas e traces).",
-    "data_criacao": "2000",
-    "link": "https://www.honeycomb.io/observability",
+    "descricao": "Capacidade de entender o sistema.",
+    "descricao_detalhada": "Observabilidade é a medida de quão bem os estados internos de um sistema podem ser inferidos a partir de suas saídas externas.",
+    "data_criacao": "N/A",
+    "link": "https://en.wikipedia.org/wiki/Observability",
     "desenvolvedor": "Concept",
     "icon": "fas fa-eye",
-    "tags": [
-      "Conceito",
-      "DevOps",
-      "Monitoramento",
-      "Arquitetura"
+    "licenca": "Concept",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Monitoring",
+      "Debugging"
     ],
-    "exemplo_codigo": "# Conceito.\n# Logs, Metrics, Traces.",
+    "tags": [
+      "DevOps",
+      "Concept",
+      "Monitoring"
+    ],
+    "exemplo_codigo": "N/A",
     "links_uteis": [
       {
-        "nome": "OpenTelemetry",
-        "url": "https://opentelemetry.io/"
+        "nome": "Wiki",
+        "url": "https://en.wikipedia.org/wiki/Observability"
       }
     ],
     "tecnologias_relacionadas": [
       "Prometheus",
-      "Grafana",
-      "Jaeger"
+      "Grafana"
     ]
   },
   {
     "nome": "Kafkacat",
-    "descricao": "Ferramenta de linha de comando para produzir, consumir e manipular dados em tópicos do Apache Kafka.",
-    "data_criacao": "2013",
+    "descricao": "CLI para Kafka.",
+    "descricao_detalhada": "kafkacat (kcat) é uma ferramenta genérica de linha de comando não-JVM para produção e consumo de mensagens Kafka.",
+    "data_criacao": "2015",
     "link": "https://github.com/edenhill/kcat",
     "desenvolvedor": "Magnus Edenhill",
     "icon": "fas fa-terminal",
-    "tags": [
-      "Ferramenta",
-      "Streaming",
-      "Kafka",
-      "CLI"
+    "licenca": "BSD",
+    "popularidade": "Moderada",
+    "casos_uso": [
+      "Debugging",
+      "Kafka"
     ],
-    "exemplo_codigo": "kcat -b localhost:9092 -t mytopic",
+    "tags": [
+      "Tool",
+      "CLI",
+      "Kafka"
+    ],
+    "exemplo_codigo": "kcat -b broker -t topic",
     "links_uteis": [
       {
-        "nome": "Kcat GitHub",
+        "nome": "Repo",
         "url": "https://github.com/edenhill/kcat"
       }
     ],
     "tecnologias_relacionadas": [
-      "Kafka",
-      "CLI",
-      "Streaming"
+      "Apache Kafka",
+      "CLI"
     ]
   },
   {
     "nome": "Java",
-    "descricao": "Linguagem orientada a objetos e baseada em classes, projetada para ter o menor número possível de dependências.",
+    "descricao": "Linguagem robusta e portável.",
+    "descricao_detalhada": "Java é uma linguagem orientada a objetos projetada para ter o mínimo de dependências de implementação possível.",
     "data_criacao": "1995",
-    "link": "https://docs.oracle.com/en/java/",
+    "link": "https://www.java.com/",
     "desenvolvedor": "Oracle",
-    "icon": "fab fa-java",
-    "tags": [
-      "Backend",
+    "icon": "devicon-java-plain",
+    "licenca": "GPL",
+    "popularidade": "Massiva",
+    "casos_uso": [
       "Enterprise",
-      "Mobile",
-      "Orientada a Objetos"
+      "Android",
+      "Backend"
     ],
-    "exemplo_codigo": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}",
+    "tags": [
+      "Programming Language",
+      "Backend",
+      "Enterprise"
+    ],
+    "exemplo_codigo": "System.out.println(\"Hi\");",
     "links_uteis": [
       {
-        "nome": "Java Docs",
+        "nome": "Docs",
         "url": "https://docs.oracle.com/en/java/"
       }
     ],
     "tecnologias_relacionadas": [
       "Spring Boot",
-      "Kotlin",
-      "JVM"
+      "Kotlin"
     ]
   },
   {
     "nome": "C++",
-    "descricao": "Linguagem de uso geral criada como uma extensão da linguagem C, adicionando recursos de orientação a objetos.",
+    "descricao": "Linguagem de alto desempenho.",
+    "descricao_detalhada": "C++ é uma linguagem de uso geral que oferece recursos de manipulação de memória de baixo nível.",
     "data_criacao": "1985",
-    "link": "https://devdocs.io/cpp/",
+    "link": "https://isocpp.org/",
     "desenvolvedor": "Bjarne Stroustrup",
-    "icon": "fas fa-code",
-    "tags": [
-      "Sistemas",
-      "Performance",
-      "Games",
-      "Baixo Nível"
+    "icon": "devicon-cplusplus-plain",
+    "licenca": "N/A",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Systems",
+      "Game Dev",
+      "Performance"
     ],
-    "exemplo_codigo": "#include <iostream>\nint main() {\n    std::cout << \"Hello World!\";\n    return 0;\n}",
+    "tags": [
+      "Programming Language",
+      "Systems",
+      "High Performance"
+    ],
+    "exemplo_codigo": "std::cout << \"Hello\";",
     "links_uteis": [
       {
-        "nome": "C++ Reference",
+        "nome": "Docs",
         "url": "https://en.cppreference.com/w/"
       }
     ],
     "tecnologias_relacionadas": [
       "C",
-      "Rust",
-      "Systems"
+      "Rust"
     ]
   },
   {
     "nome": "PHP",
-    "descricao": "Linguagem de script open source de uso geral, muito utilizada para o desenvolvimento web e embutida em HTML.",
+    "descricao": "Scripting para web.",
+    "descricao_detalhada": "PHP é uma linguagem de script popular de uso geral que é especialmente adequada para o desenvolvimento web.",
     "data_criacao": "1994",
-    "link": "https://www.php.net/docs.php",
+    "link": "https://www.php.net/",
     "desenvolvedor": "Rasmus Lerdorf",
-    "icon": "fab fa-php",
-    "tags": [
-      "Web",
-      "Backend",
-      "Scripting",
-      "Servidor"
+    "icon": "devicon-php-plain",
+    "licenca": "PHP",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Web Dev",
+      "Backend"
     ],
-    "exemplo_codigo": "<?php\necho \"Hello World!\";\n?>",
+    "tags": [
+      "Programming Language",
+      "Backend",
+      "Web"
+    ],
+    "exemplo_codigo": "echo \"Hello\";",
     "links_uteis": [
       {
-        "nome": "PHP Docs",
+        "nome": "Docs",
         "url": "https://www.php.net/docs.php"
       }
     ],
     "tecnologias_relacionadas": [
       "Laravel",
-      "WordPress",
-      "Web"
+      "WordPress"
     ]
   },
   {
     "nome": "Ruby",
-    "descricao": "Linguagem dinâmica e orientada a objetos, focada na simplicidade e produtividade. Famosa pelo framework Rails.",
+    "descricao": "Linguagem dinâmica e elegante.",
+    "descricao_detalhada": "Ruby é uma linguagem de programação dinâmica e de código aberto com foco na simplicidade e produtividade.",
     "data_criacao": "1995",
-    "link": "https://www.ruby-lang.org/pt/",
+    "link": "https://www.ruby-lang.org/",
     "desenvolvedor": "Yukihiro Matsumoto",
-    "icon": "fab fa-gem",
-    "tags": [
-      "Backend",
-      "Web",
-      "Scripting",
-      "Produtividade"
+    "icon": "devicon-ruby-plain",
+    "licenca": "Ruby",
+    "popularidade": "Moderada",
+    "casos_uso": [
+      "Web Dev",
+      "Scripting"
     ],
-    "exemplo_codigo": "puts \"Hello World\"",
+    "tags": [
+      "Programming Language",
+      "Backend",
+      "Scripting"
+    ],
+    "exemplo_codigo": "puts \"Hello\"",
     "links_uteis": [
       {
-        "nome": "Ruby Docs",
+        "nome": "Docs",
         "url": "https://www.ruby-lang.org/en/documentation/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Rails",
-      "Sinatra",
-      "Scripting"
+      "Ruby on Rails",
+      "Sinatra"
     ]
   },
   {
     "nome": "R",
-    "descricao": "Linguagem e ambiente para computação estatística e gráficos. Muito usada em ciência de dados.",
+    "descricao": "Computação estatística.",
+    "descricao_detalhada": "R é uma linguagem e ambiente para computação estatística e gráficos.",
     "data_criacao": "1993",
     "link": "https://www.r-project.org/",
     "desenvolvedor": "R Core Team",
-    "icon": "fas fa-chart-bar",
-    "tags": [
-      "Ciência de Dados",
-      "Estatística",
-      "Análise",
-      "Visualização"
+    "icon": "devicon-r-plain",
+    "licenca": "GPL",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Statistics",
+      "Data Analysis"
     ],
-    "exemplo_codigo": "print(\"Hello World\")",
+    "tags": [
+      "Programming Language",
+      "Data Science",
+      "Statistics"
+    ],
+    "exemplo_codigo": "print(\"Hello\")",
     "links_uteis": [
       {
-        "nome": "R Project",
-        "url": "https://www.r-project.org/"
+        "nome": "Docs",
+        "url": "https://cran.r-project.org/manuals.html"
       }
     ],
     "tecnologias_relacionadas": [
       "Python",
-      "Statistics",
-      "Data Science"
+      "Julia"
     ]
   },
   {
     "nome": "SQL",
-    "descricao": "Linguagem padrão para armazenar, manipular e recuperar dados em bancos de dados relacionais.",
+    "descricao": "Linguagem de consulta estruturada.",
+    "descricao_detalhada": "SQL é a linguagem padrão para armazenar, manipular e recuperar dados em bancos de dados relacionais.",
     "data_criacao": "1974",
-    "link": "https://developer.mozilla.org/pt-BR/docs/Glossary/SQL",
+    "link": "https://en.wikipedia.org/wiki/SQL",
     "desenvolvedor": "ISO/IEC",
     "icon": "fas fa-database",
-    "tags": [
-      "Banco de Dados",
-      "Query",
-      "Backend",
-      "Dados"
+    "licenca": "Standard",
+    "popularidade": "Onipresente",
+    "casos_uso": [
+      "Database",
+      "Data Analysis"
     ],
-    "exemplo_codigo": "SELECT * FROM table_name;",
+    "tags": [
+      "Database",
+      "Query Language",
+      "Backend"
+    ],
+    "exemplo_codigo": "SELECT * FROM users;",
     "links_uteis": [
       {
-        "nome": "SQL Tutorial",
-        "url": "https://www.w3schools.com/sql/"
+        "nome": "Wiki",
+        "url": "https://en.wikipedia.org/wiki/SQL"
       }
     ],
     "tecnologias_relacionadas": [
       "PostgreSQL",
-      "MySQL",
-      "Database"
+      "MySQL"
     ]
   },
   {
     "nome": "Perl",
-    "descricao": "Família de linguagens de script de alto nível, interpretadas e dinâmicas. Conhecida por sua capacidade de processamento de texto.",
+    "descricao": "Linguagem de processamento de texto.",
+    "descricao_detalhada": "Perl é uma família de linguagens de script de alto nível, interpretadas e dinâmicas.",
     "data_criacao": "1987",
     "link": "https://www.perl.org/",
     "desenvolvedor": "Larry Wall",
-    "icon": "fas fa-code",
-    "tags": [
+    "icon": "devicon-perl-plain",
+    "licenca": "GPL",
+    "popularidade": "Baixa",
+    "casos_uso": [
       "Scripting",
-      "Texto",
-      "Automação",
-      "Web"
+      "Text Processing"
     ],
-    "exemplo_codigo": "print \"Hello World\\n\";",
+    "tags": [
+      "Programming Language",
+      "Scripting",
+      "Legacy"
+    ],
+    "exemplo_codigo": "print \"Hello\";",
     "links_uteis": [
       {
-        "nome": "Perl Docs",
-        "url": "https://www.perl.org/docs.html"
+        "nome": "Docs",
+        "url": "https://perldoc.perl.org/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Scripting",
-      "Regex",
-      "Linux"
+      "Python",
+      "Bash"
     ]
   },
   {
     "nome": "Scala",
-    "descricao": "Linguagem que combina programação orientada a objetos e funcional em uma única linguagem concisa e de alto nível.",
+    "descricao": "Linguagem escalável para JVM.",
+    "descricao_detalhada": "Scala combina programação orientada a objetos e funcional em uma linguagem concisa e de tipagem estática.",
     "data_criacao": "2004",
-    "link": "https://docs.scala-lang.org/",
+    "link": "https://www.scala-lang.org/",
     "desenvolvedor": "Martin Odersky",
-    "icon": "fas fa-code",
-    "tags": [
-      "Funcional",
-      "Orientada a Objetos",
-      "JVM",
+    "icon": "devicon-scala-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Moderada",
+    "casos_uso": [
+      "Big Data",
       "Backend"
     ],
-    "exemplo_codigo": "object Hello extends App {\n  println(\"Hello, World!\")\n}",
+    "tags": [
+      "Programming Language",
+      "JVM",
+      "Functional"
+    ],
+    "exemplo_codigo": "object Hello extends App { println(\"Hi\") }",
     "links_uteis": [
       {
-        "nome": "Scala Docs",
+        "nome": "Docs",
         "url": "https://docs.scala-lang.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Java",
-      "Spark",
-      "Akka"
+      "Spark"
     ]
   },
   {
     "nome": "Dart",
-    "descricao": "Linguagem otimizada para clientes, para desenvolvimento rápido de apps em qualquer plataforma. Base do Flutter.",
+    "descricao": "Linguagem otimizada para UI.",
+    "descricao_detalhada": "Dart é uma linguagem otimizada para clientes para aplicativos rápidos em qualquer plataforma, usada pelo Flutter.",
     "data_criacao": "2011",
-    "link": "https://dart.dev/guides",
+    "link": "https://dart.dev/",
     "desenvolvedor": "Google",
-    "icon": "fas fa-bullseye",
-    "tags": [
+    "icon": "devicon-dart-plain",
+    "licenca": "BSD",
+    "popularidade": "Alta",
+    "casos_uso": [
       "Mobile",
-      "Flutter",
-      "Frontend",
-      "Multiplataforma"
+      "Web"
     ],
-    "exemplo_codigo": "void main() {\n  print('Hello, World!');\n}",
+    "tags": [
+      "Programming Language",
+      "Mobile",
+      "Google"
+    ],
+    "exemplo_codigo": "print('Hello');",
     "links_uteis": [
       {
-        "nome": "Dart Docs",
+        "nome": "Docs",
         "url": "https://dart.dev/guides"
       }
     ],
     "tecnologias_relacionadas": [
       "Flutter",
-      "Mobile",
-      "Google"
+      "JavaScript"
     ]
   },
   {
     "nome": "Lua",
-    "descricao": "Linguagem de script poderosa, eficiente e leve, projetada para ser embutida em aplicações.",
+    "descricao": "Linguagem de script leve.",
+    "descricao_detalhada": "Lua é uma linguagem de script poderosa, eficiente, leve e incorporável.",
     "data_criacao": "1993",
-    "link": "https://www.lua.org/manual/5.4/",
+    "link": "https://www.lua.org/",
     "desenvolvedor": "PUC-Rio",
-    "icon": "fas fa-moon",
+    "icon": "devicon-lua-plain",
+    "licenca": "MIT",
+    "popularidade": "Moderada",
+    "casos_uso": [
+      "Game Dev",
+      "Embedded"
+    ],
     "tags": [
       "Scripting",
-      "Games",
-      "Embarcado",
-      "Leve"
+      "Embedded",
+      "Game Dev"
     ],
-    "exemplo_codigo": "print(\"Hello World\")",
+    "exemplo_codigo": "print(\"Hello\")",
     "links_uteis": [
       {
-        "nome": "Lua Docs",
-        "url": "https://www.lua.org/manual/5.4/"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "Roblox",
-      "Game Dev",
-      "Scripting"
-    ]
-  },
-  {
-    "nome": "Assembly",
-    "descricao": "Linguagem de baixo nível que representa diretamente as instruções da arquitetura da máquina.",
-    "data_criacao": "1949",
-    "link": "https://pt.wikipedia.org/wiki/Linguagem_assembly",
-    "desenvolvedor": "Various",
-    "icon": "fas fa-microchip",
-    "tags": [
-      "Baixo Nível",
-      "Hardware",
-      "Sistemas",
-      "Embarcado"
-    ],
-    "exemplo_codigo": "section .data\nmsg db 'Hello, world!', 0xa\nlen equ $ - msg",
-    "links_uteis": [
-      {
-        "nome": "Assembly Tutorial",
-        "url": "https://www.tutorialspoint.com/assembly_programming/index.htm"
+        "nome": "Docs",
+        "url": "https://www.lua.org/manual/"
       }
     ],
     "tecnologias_relacionadas": [
       "C",
+      "Roblox"
+    ]
+  },
+  {
+    "nome": "Assembly",
+    "descricao": "Linguagem de baixo nível.",
+    "descricao_detalhada": "Linguagem assembly é qualquer linguagem de programação de baixo nível com uma correspondência muito forte entre as instruções e a arquitetura.",
+    "data_criacao": "1949",
+    "link": "https://en.wikipedia.org/wiki/Assembly_language",
+    "desenvolvedor": "Various",
+    "icon": "fas fa-microchip",
+    "licenca": "N/A",
+    "popularidade": "Baixa",
+    "casos_uso": [
+      "Embedded",
+      "OS Dev"
+    ],
+    "tags": [
+      "Low Level",
       "Hardware",
-      "Low Level"
+      "Systems"
+    ],
+    "exemplo_codigo": "MOV AX, 1",
+    "links_uteis": [
+      {
+        "nome": "Wiki",
+        "url": "https://en.wikipedia.org/wiki/Assembly_language"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "C",
+      "Hardware"
     ]
   },
   {
     "nome": "Shell Script",
-    "descricao": "Programa de computador projetado para ser executado pelo shell do Unix/Linux. Essencial para automação.",
+    "descricao": "Scripting para Unix.",
+    "descricao_detalhada": "Scripts de shell são programas projetados para serem executados pelo shell do Unix, usados para automação de arquivos e sistemas.",
     "data_criacao": "1971",
-    "link": "https://www.gnu.org/software/bash/manual/",
-    "desenvolvedor": "Various",
-    "icon": "fas fa-terminal",
-    "tags": [
-      "Automação",
-      "Linux",
-      "Unix",
-      "Scripting"
+    "link": "https://www.gnu.org/software/bash/",
+    "desenvolvedor": "GNU",
+    "icon": "devicon-bash-plain",
+    "licenca": "GPL",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Automation",
+      "SysAdmin"
     ],
-    "exemplo_codigo": "#!/bin/bash\necho \"Hello World\"",
+    "tags": [
+      "Scripting",
+      "DevOps",
+      "Automation"
+    ],
+    "exemplo_codigo": "echo \"Hello\"",
     "links_uteis": [
       {
-        "nome": "Bash Guide",
-        "url": "https://tldp.org/LDP/Bash-Beginners-Guide/html/"
+        "nome": "Docs",
+        "url": "https://www.gnu.org/software/bash/manual/"
       }
     ],
     "tecnologias_relacionadas": [
       "Linux",
-      "DevOps",
-      "Automation"
+      "Python"
     ]
   },
   {
     "nome": "Objective-C",
-    "descricao": "Linguagem orientada a objetos de propósito geral que adiciona mensagens estilo Smalltalk à linguagem C.",
+    "descricao": "Linguagem legada da Apple.",
+    "descricao_detalhada": "Objective-C era a principal linguagem de programação usada pela Apple para OS X e iOS antes do Swift.",
     "data_criacao": "1984",
-    "link": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+    "link": "https://developer.apple.com/",
     "desenvolvedor": "Brad Cox",
-    "icon": "fab fa-apple",
-    "tags": [
-      "Mobile",
-      "iOS",
-      "Apple",
-      "Legado"
+    "icon": "devicon-objectivec-plain",
+    "licenca": "N/A",
+    "popularidade": "Baixa",
+    "casos_uso": [
+      "iOS Legacy",
+      "macOS Legacy"
     ],
-    "exemplo_codigo": "NSLog(@\"Hello, World!\");",
+    "tags": [
+      "Programming Language",
+      "Mobile",
+      "Apple"
+    ],
+    "exemplo_codigo": "NSLog(@\"Hello\");",
     "links_uteis": [
       {
-        "nome": "Objective-C Docs",
-        "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
+        "nome": "Docs",
+        "url": "https://developer.apple.com/documentation/"
       }
     ],
     "tecnologias_relacionadas": [
       "Swift",
-      "iOS",
-      "Apple"
+      "C"
     ]
   },
   {
     "nome": "Visual Basic .NET",
-    "descricao": "Linguagem de programação orientada a objetos implementada na estrutura .NET.",
+    "descricao": "Linguagem .NET acessível.",
+    "descricao_detalhada": "Visual Basic é uma linguagem orientada a objetos implementada no .NET Framework, focada em facilidade de uso.",
     "data_criacao": "2001",
-    "link": "https://learn.microsoft.com/pt-br/dotnet/visual-basic/",
+    "link": "https://docs.microsoft.com/en-us/dotnet/visual-basic/",
     "desenvolvedor": "Microsoft",
-    "icon": "fab fa-windows",
-    "tags": [
-      "Backend",
-      ".NET",
-      "Windows",
-      "Enterprise"
+    "icon": "devicon-visualbasic-plain",
+    "licenca": "MIT",
+    "popularidade": "Baixa",
+    "casos_uso": [
+      "Legacy Enterprise",
+      "Windows"
     ],
-    "exemplo_codigo": "Console.WriteLine(\"Hello World\")",
+    "tags": [
+      "Programming Language",
+      "Microsoft",
+      "Legacy"
+    ],
+    "exemplo_codigo": "Console.WriteLine(\"Hello\")",
     "links_uteis": [
       {
-        "nome": "VB.NET Docs",
-        "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+        "nome": "Docs",
+        "url": "https://docs.microsoft.com/en-us/dotnet/visual-basic/"
       }
     ],
     "tecnologias_relacionadas": [
-      ".NET",
       "C#",
-      "Windows"
+      ".NET"
     ]
   },
   {
     "nome": "MATLAB",
-    "descricao": "Ambiente de computação numérica e linguagem de programação de quarta geração.",
+    "descricao": "Computação numérica.",
+    "descricao_detalhada": "MATLAB é uma plataforma de programação e computação numérica usada para análise de dados, desenvolvimento de algoritmos e modelagem.",
     "data_criacao": "1984",
-    "link": "https://www.mathworks.com/help/matlab/",
+    "link": "https://www.mathworks.com/products/matlab.html",
     "desenvolvedor": "MathWorks",
-    "icon": "fas fa-calculator",
-    "tags": [
-      "Científico",
-      "Matemática",
-      "Engenharia",
-      "Análise"
+    "icon": "devicon-matlab-plain",
+    "licenca": "Proprietária",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Engineering",
+      "Scientific"
     ],
-    "exemplo_codigo": "disp('Hello World')",
+    "tags": [
+      "Tool",
+      "Engineering",
+      "Math"
+    ],
+    "exemplo_codigo": "disp('Hello')",
     "links_uteis": [
       {
-        "nome": "MATLAB Docs",
+        "nome": "Docs",
         "url": "https://www.mathworks.com/help/matlab/"
       }
     ],
     "tecnologias_relacionadas": [
       "Python",
-      "Engineering",
-      "Math"
+      "R"
     ]
   },
   {
     "nome": "Groovy",
-    "descricao": "Linguagem ágil e dinâmica para a plataforma Java, com recursos inspirados em Python, Ruby e Smalltalk.",
+    "descricao": "Linguagem dinâmica para JVM.",
+    "descricao_detalhada": "Groovy é uma linguagem poderosa, opcionalmente tipada e dinâmica para a plataforma Java, usada em scripting e builds.",
     "data_criacao": "2003",
-    "link": "https://groovy-lang.org/documentation.html",
-    "desenvolvedor": "Apache Software Foundation",
-    "icon": "fab fa-java",
-    "tags": [
-      "JVM",
+    "link": "https://groovy-lang.org/",
+    "desenvolvedor": "Apache",
+    "icon": "devicon-groovy-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Moderada",
+    "casos_uso": [
       "Scripting",
-      "Backend",
-      "Dinâmica"
+      "Jenkins"
     ],
-    "exemplo_codigo": "println \"Hello World\"",
+    "tags": [
+      "Programming Language",
+      "JVM",
+      "Scripting"
+    ],
+    "exemplo_codigo": "println \"Hello\"",
     "links_uteis": [
       {
-        "nome": "Groovy Docs",
+        "nome": "Docs",
         "url": "https://groovy-lang.org/documentation.html"
       }
     ],
     "tecnologias_relacionadas": [
       "Java",
-      "Gradle",
-      "JVM"
+      "Jenkins"
     ]
   },
   {
     "nome": "Haskell",
-    "descricao": "Linguagem de programação puramente funcional, padronizada e de propósito geral.",
+    "descricao": "Linguagem puramente funcional.",
+    "descricao_detalhada": "Haskell é uma linguagem de programação puramente funcional, estaticamente tipada e de uso geral, conhecida por seu sistema de tipos.",
     "data_criacao": "1990",
-    "link": "https://www.haskell.org/documentation/",
+    "link": "https://www.haskell.org/",
     "desenvolvedor": "Haskell Committee",
-    "icon": "fas fa-code",
-    "tags": [
-      "Funcional",
-      "Acadêmico",
-      "Tipagem Forte",
-      "Puro"
+    "icon": "devicon-haskell-plain",
+    "licenca": "N/A",
+    "popularidade": "Baixa",
+    "casos_uso": [
+      "Academic",
+      "Fintech"
     ],
-    "exemplo_codigo": "main = putStrLn \"Hello, World!\"",
+    "tags": [
+      "Programming Language",
+      "Functional",
+      "Academic"
+    ],
+    "exemplo_codigo": "putStrLn \"Hello\"",
     "links_uteis": [
       {
-        "nome": "Haskell Docs",
+        "nome": "Docs",
         "url": "https://www.haskell.org/documentation/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Functional",
       "Scala",
       "Elm"
     ]
   },
   {
-    "nome": "Go",
-    "descricao": "Linguagem de programação compilada desenvolvida pelo Google, conhecida por sua simplicidade e eficiência em concorrência e sistemas de rede.",
-    "data_criacao": "2009",
-    "link": "https://golang.org/",
-    "desenvolvedor": "Google",
-    "icon": "fas fa-golang",
-    "tags": [
-      "Linguagem",
-      "Backend",
-      "Concorrência",
-      "Nuvem"
-    ],
-    "exemplo_codigo": "package main\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, Go!\")\n}",
-    "links_uteis": [
-      {
-        "nome": "Go Docs",
-        "url": "https://golang.org/doc/"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "Rust",
-      "Kubernetes",
-      "Docker"
-    ]
-  },
-  {
-    "nome": "Kubernetes",
-    "descricao": "Sistema de orquestração de containers open-source, automatizando a implantação, dimensionamento e gerenciamento de aplicações.",
-    "data_criacao": "2014",
-    "link": "https://kubernetes.io/",
-    "desenvolvedor": "Google",
-    "icon": "fas fa-cubes",
-    "tags": [
-      "Orquestração",
-      "Containers",
-      "Cloud Native",
-      "DevOps"
-    ],
-    "exemplo_codigo": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.14.2\n    ports:\n    - containerPort: 80",
-    "links_uteis": [
-      {
-        "nome": "Kubernetes Docs",
-        "url": "https://kubernetes.io/docs/"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "Docker",
-      "Helm",
-      "Istio"
-    ]
-  },
-  {
     "nome": "Git",
-    "descricao": "Sistema de controle de versão distribuído, projetado para lidar com tudo, desde projetos pequenos a muito grandes, com velocidade e eficiência.",
+    "descricao": "Controle de versão.",
+    "descricao_detalhada": "Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com projetos de todos os tamanhos.",
     "data_criacao": "2005",
     "link": "https://git-scm.com/",
     "desenvolvedor": "Linus Torvalds",
-    "icon": "fab fa-git-alt",
-    "tags": [
-      "Controle de Versão",
-      "Ferramenta",
-      "Colaboração",
-      "Software"
+    "icon": "devicon-git-plain",
+    "licenca": "GPL v2",
+    "popularidade": "Padrão",
+    "casos_uso": [
+      "Version Control",
+      "Collaboration"
     ],
-    "exemplo_codigo": "git init\ngit add .\ngit commit -m \"Initial commit\"",
+    "tags": [
+      "Tool",
+      "Version Control",
+      "DevOps"
+    ],
+    "exemplo_codigo": "git commit -m \"init\"",
     "links_uteis": [
       {
-        "nome": "Git Docs",
+        "nome": "Docs",
         "url": "https://git-scm.com/doc"
       }
     ],
     "tecnologias_relacionadas": [
       "GitHub",
-      "GitLab",
-      "Version Control"
-    ]
-  },
-  {
-    "nome": "Generative AI",
-    "descricao": "Subcampo da IA que se concentra em modelos (como LLMs e modelos de imagem) que podem criar novos conteúdos, como texto, imagens ou código.",
-    "data_criacao": "2020",
-    "link": "https://openai.com/",
-    "desenvolvedor": "Diversos (OpenAI, Google)",
-    "icon": "fas fa-magic",
-    "tags": [
-      "Conceito",
-      "Inteligência Artificial",
-      "LLMs",
-      "Criação de Conteúdo"
-    ],
-    "exemplo_codigo": "# Conceito.\n# Criação de conteúdo via IA.",
-    "links_uteis": [
-      {
-        "nome": "Generative AI Info",
-        "url": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "GPT-4",
-      "Stable Diffusion",
-      "AI"
-    ]
-  },
-  {
-    "nome": "Phoenix",
-    "descricao": "Framework web de alta performance escrito em Elixir, ideal para aplicações em tempo real e de baixa latência.",
-    "data_criacao": "2015",
-    "link": "https://www.phoenixframework.org/",
-    "desenvolvedor": "Plataformatec",
-    "icon": "fas fa-feather-alt",
-    "tags": [
-      "Framework Web",
-      "Elixir",
-      "Backend",
-      "Tempo Real"
-    ],
-    "exemplo_codigo": "def index(conn, _params) do\n  render(conn, \"index.html\")\nend",
-    "links_uteis": [
-      {
-        "nome": "Phoenix Docs",
-        "url": "https://hexdocs.pm/phoenix/overview.html"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "Elixir",
-      "LiveView",
-      "Web"
-    ]
-  },
-  {
-    "nome": "Serverless",
-    "descricao": "Modelo de computação em nuvem onde o provedor gerencia a infraestrutura, permitindo que os desenvolvedores foquem apenas no código (FaaS).",
-    "data_criacao": "2014",
-    "link": "https://aws.amazon.com/serverless/",
-    "desenvolvedor": "Amazon Web Services (AWS)",
-    "icon": "fas fa-cloud",
-    "tags": [
-      "Arquitetura",
-      "Computação em Nuvem",
-      "FaaS",
-      "DevOps"
-    ],
-    "exemplo_codigo": "module.exports.hello = async (event) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({ message: 'Go Serverless!' }),\n  };\n};",
-    "links_uteis": [
-      {
-        "nome": "Serverless Framework",
-        "url": "https://www.serverless.com/"
-      }
-    ],
-    "tecnologias_relacionadas": [
-      "AWS Lambda",
-      "Azure Functions",
-      "Cloud"
+      "GitLab"
     ]
   },
   {
     "nome": "Apache Cassandra",
-    "descricao": "Banco de dados NoSQL de código aberto e distribuído, projetado para lidar com grandes volumes de dados em muitos servidores com alta disponibilidade.",
+    "descricao": "Banco NoSQL Wide-column.",
+    "descricao_detalhada": "Cassandra é um banco de dados NoSQL distribuído projetado para lidar com grandes quantidades de dados em muitos servidores, sem ponto único de falha.",
     "data_criacao": "2008",
     "link": "https://cassandra.apache.org/",
-    "desenvolvedor": "Apache Software Foundation",
-    "icon": "fas fa-database",
+    "desenvolvedor": "Apache",
+    "icon": "devicon-cassandra-plain",
+    "licenca": "Apache 2.0",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Big Data",
+      "High Availability"
+    ],
     "tags": [
-      "Banco de Dados",
+      "Database",
       "NoSQL",
-      "Alta Disponibilidade",
       "Big Data"
     ],
-    "exemplo_codigo": "SELECT * FROM users WHERE id = 123;",
+    "exemplo_codigo": "SELECT * FROM logs",
     "links_uteis": [
       {
-        "nome": "Cassandra Docs",
+        "nome": "Docs",
         "url": "https://cassandra.apache.org/doc/latest/"
       }
     ],
     "tecnologias_relacionadas": [
       "NoSQL",
-      "Database",
-      "Big Data"
+      "Database"
     ]
   },
   {
     "nome": "Neo4j",
-    "descricao": "Sistema de gerenciamento de banco de dados nativo de grafo, focado em armazenar, gerenciar e analisar dados altamente conectados.",
+    "descricao": "Banco de dados em grafo.",
+    "descricao_detalhada": "Neo4j é um sistema de gerenciamento de banco de dados gráfico nativo, ideal para dados altamente conectados.",
     "data_criacao": "2007",
     "link": "https://neo4j.com/",
-    "desenvolvedor": "Neo4j Inc.",
-    "icon": "fas fa-project-diagram",
+    "desenvolvedor": "Neo4j Inc",
+    "icon": "devicon-neo4j-plain",
+    "licenca": "GPL v3",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Graph DB",
+      "Relationships"
+    ],
     "tags": [
-      "Banco de Dados",
-      "Grafo",
-      "Cypher",
+      "Database",
+      "Graph",
       "NoSQL"
     ],
-    "exemplo_codigo": "MATCH (n) RETURN n LIMIT 25",
+    "exemplo_codigo": "MATCH (n) RETURN n",
     "links_uteis": [
       {
-        "nome": "Neo4j Docs",
+        "nome": "Docs",
         "url": "https://neo4j.com/docs/"
       }
     ],
     "tecnologias_relacionadas": [
-      "Graph DB",
-      "Cypher",
+      "NoSQL",
       "Database"
     ]
   },
   {
     "nome": "OAuth 2.0",
-    "descricao": "Protocolo de autorização que permite que aplicações de terceiros obtenham acesso limitado aos serviços HTTP de um usuário.",
+    "descricao": "Protocolo de autorização.",
+    "descricao_detalhada": "OAuth 2.0 é o protocolo padrão da indústria para autorização, permitindo acesso seguro a recursos.",
     "data_criacao": "2012",
     "link": "https://oauth.net/2/",
     "desenvolvedor": "IETF",
     "icon": "fas fa-key",
-    "tags": [
-      "Protocolo",
-      "Segurança",
-      "Autorização",
-      "APIs"
+    "licenca": "Standard",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Auth",
+      "Security"
     ],
-    "exemplo_codigo": "# Protocolo de autorização.\n# Fluxo: Authorization Code, Implicit, etc.",
+    "tags": [
+      "Security",
+      "Protocol",
+      "Web"
+    ],
+    "exemplo_codigo": "N/A",
     "links_uteis": [
       {
-        "nome": "OAuth 2.0",
+        "nome": "Docs",
         "url": "https://oauth.net/2/"
       }
     ],
     "tecnologias_relacionadas": [
       "OpenID Connect",
-      "Security",
-      "API"
+      "JWT"
     ]
   },
   {
     "nome": "CockroachDB",
-    "descricao": "Banco de dados SQL distribuído, tolerante a falhas e escalável horizontalmente, construído para a nuvem.",
+    "descricao": "SQL distribuído.",
+    "descricao_detalhada": "CockroachDB é um banco de dados SQL distribuído nativo da nuvem, projetado para resiliência e consistência.",
     "data_criacao": "2015",
     "link": "https://www.cockroachlabs.com/",
     "desenvolvedor": "Cockroach Labs",
     "icon": "fas fa-database",
-    "tags": [
-      "Banco de Dados",
-      "SQL",
-      "Distribuído",
+    "licenca": "BSL",
+    "popularidade": "Moderada",
+    "casos_uso": [
+      "Distributed SQL",
       "Cloud Native"
     ],
-    "exemplo_codigo": "SELECT * FROM accounts;",
+    "tags": [
+      "Database",
+      "SQL",
+      "Distributed"
+    ],
+    "exemplo_codigo": "SELECT * FROM users",
     "links_uteis": [
       {
-        "nome": "CockroachDB Docs",
+        "nome": "Docs",
         "url": "https://www.cockroachlabs.com/docs/"
       }
     ],
     "tecnologias_relacionadas": [
-      "SQL",
-      "Distributed DB",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Kubernetes"
     ]
   },
   {
     "nome": "WebRTC",
-    "descricao": "Tecnologia que permite comunicação em tempo real peer-to-peer (P2P) para áudio, vídeo e dados em navegadores web e aplicações móveis.",
+    "descricao": "Comunicação em tempo real.",
+    "descricao_detalhada": "WebRTC permite recursos de comunicação em tempo real (RTC) em navegadores e aplicativos móveis através de APIs simples.",
     "data_criacao": "2011",
     "link": "https://webrtc.org/",
-    "desenvolvedor": "Google/W3C",
+    "desenvolvedor": "Google",
     "icon": "fas fa-video",
-    "tags": [
-      "Protocolo",
-      "Tempo Real",
-      "P2P",
-      "Frontend"
+    "licenca": "BSD",
+    "popularidade": "Alta",
+    "casos_uso": [
+      "Video Call",
+      "P2P"
     ],
-    "exemplo_codigo": "const peerConnection = new RTCPeerConnection(configuration);",
+    "tags": [
+      "Protocol",
+      "Real-time",
+      "Web"
+    ],
+    "exemplo_codigo": "new RTCPeerConnection()",
     "links_uteis": [
       {
-        "nome": "WebRTC Docs",
-        "url": "https://webrtc.org/getting-started/overview"
+        "nome": "Docs",
+        "url": "https://webrtc.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Socket.io",
-      "Real-time",
-      "Video"
+      "Web"
     ]
   },
   {
     "nome": "Julia",
-    "descricao": "Linguagem de alto nível e alta performance projetada para computação científica, aprendizado de máquina e análise numérica.",
+    "descricao": "Linguagem de alta performance.",
+    "descricao_detalhada": "Julia é uma linguagem dinâmica de alto nível e alto desempenho para computação técnica.",
     "data_criacao": "2012",
     "link": "https://julialang.org/",
     "desenvolvedor": "MIT",
-    "icon": "fas fa-calculator",
-    "tags": [
-      "Linguagem",
-      "Computação Científica",
+    "icon": "devicon-julia-plain",
+    "licenca": "MIT",
+    "popularidade": "Crescente",
+    "casos_uso": [
       "Data Science",
-      "Performance"
+      "Scientific Computing"
     ],
-    "exemplo_codigo": "println(\"Hello World\")",
+    "tags": [
+      "Programming Language",
+      "Data Science",
+      "High Performance"
+    ],
+    "exemplo_codigo": "println(\"Hello\")",
     "links_uteis": [
       {
-        "nome": "Julia Docs",
-        "url": "https://docs.julialang.org/en/v1/"
+        "nome": "Docs",
+        "url": "https://docs.julialang.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Python",
-      "Data Science",
-      "Performance"
+      "R"
     ]
   },
   {
     "nome": "Jupyter",
-    "descricao": "Conjunto de ferramentas e formatos de arquivo (notebooks) para computação interativa, usado amplamente em ciência de dados e pesquisa.",
+    "descricao": "Computação interativa.",
+    "descricao_detalhada": "Jupyter permite criar e compartilhar documentos com código, equações e visualizações.",
     "data_criacao": "2014",
     "link": "https://jupyter.org/",
     "desenvolvedor": "Project Jupyter",
-    "icon": "fas fa-book",
-    "tags": [
-      "Ferramenta",
+    "icon": "devicon-jupyter-plain",
+    "licenca": "BSD",
+    "popularidade": "Alta",
+    "casos_uso": [
       "Data Science",
-      "Python",
+      "Education"
+    ],
+    "tags": [
+      "Tool",
+      "Data Science",
       "Notebooks"
     ],
-    "exemplo_codigo": "# Executado em células de notebook",
+    "exemplo_codigo": "# Notebook Cell",
     "links_uteis": [
       {
-        "nome": "Jupyter Docs",
-        "url": "https://docs.jupyter.org/en/latest/"
+        "nome": "Docs",
+        "url": "https://docs.jupyter.org/"
       }
     ],
     "tecnologias_relacionadas": [
       "Python",
-      "Data Science",
-      "Notebooks"
+      "Pandas"
     ]
   },
   {
     "nome": "Sass",
-    "descricao": "Pré-processador CSS que adiciona recursos como variáveis, aninhamento, mixins e funções, facilitando a escrita e manutenção de folhas de estilo.",
+    "descricao": "CSS com superpoderes.",
+    "descricao_detalhada": "Sass é a linguagem de extensão CSS mais madura e poderosa, permitindo variáveis, aninhamento e mixins.",
     "data_criacao": "2006",
     "link": "https://sass-lang.com/",
     "desenvolvedor": "Hampton Catlin",
-    "icon": "fab fa-sass",
+    "icon": "devicon-sass-original",
+    "licenca": "MIT",
+    "popularidade": "Muito Alta",
+    "casos_uso": [
+      "Styling",
+      "CSS Preprocessor"
+    ],
     "tags": [
-      "CSS",
-      "Pré-processador",
       "Frontend",
+      "CSS",
       "Design"
     ],
-    "exemplo_codigo": "$primary-color: #333;\nbody {\n  color: $primary-color;\n}",
+    "exemplo_codigo": "$color: red; body { color: $color; }",
     "links_uteis": [
       {
-        "nome": "Sass Docs",
+        "nome": "Docs",
         "url": "https://sass-lang.com/documentation"
       }
     ],
     "tecnologias_relacionadas": [
       "CSS",
-      "Less",
-      "Stylus"
+      "Less"
     ]
   }
 ]

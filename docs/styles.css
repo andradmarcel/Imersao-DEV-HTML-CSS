@@ -50,7 +50,6 @@ body {
     background: radial-gradient(circle at 50% 50%, rgba(11, 11, 11, 0.7) 0%, rgba(11, 11, 11, 0.95) 100%);
     z-index: -1;
     pointer-events: none;
-    /* Removido backdrop-filter daqui pois pode causar lentidão em full-screen em mobiles antigos */
 }
 
 /* Header */
@@ -250,7 +249,6 @@ main {
     flex-direction: column;
     gap: 1rem;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s ease;
-    /* Performance improvement: avisa ao browser que isso vai mudar */
     will-change: transform;
 }
 
@@ -278,19 +276,29 @@ main {
     opacity: 1;
 }
 
+/* --- CONFIGURAÇÃO DE ÍCONES (MODO NEON) --- */
+/* Força TODOS os ícones (Devicon ou FontAwesome) a serem Ciano Neon */
 .card i {
     font-size: 3.5rem;
-    color: var(--cp-neon-cyan);
+    color: var(--cp-neon-cyan) !important;
+    /* Força a cor Neon */
     margin-bottom: 0.5rem;
-    filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.4));
+    /* Efeito de brilho Neon padrão */
+    filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.4)) !important;
     transition: all 0.3s ease;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
 }
 
 .card:hover i {
-    color: var(--cp-neon-pink);
-    filter: drop-shadow(0 0 20px var(--cp-neon-pink));
+    color: var(--cp-neon-pink) !important;
+    /* Muda para Rosa no hover */
+    filter: drop-shadow(0 0 20px var(--cp-neon-pink)) !important;
+    /* Brilho Rosa */
     transform: scale(1.1);
 }
+
+/* --- FIM ÍCONES --- */
 
 .card h2 {
     font-family: var(--font-heading);
@@ -307,7 +315,8 @@ main {
     line-height: 1.6;
 }
 
-.card a {
+.card a,
+.card button.btn-saiba-mais {
     margin-top: auto;
     display: inline-block;
     text-decoration: none;
@@ -323,9 +332,12 @@ main {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    background: transparent;
+    cursor: pointer;
 }
 
-.card a::before {
+.card a::before,
+.card button.btn-saiba-mais::before {
     content: '';
     position: absolute;
     top: 0;
@@ -337,13 +349,35 @@ main {
     z-index: -1;
 }
 
-.card a:hover {
+.card a:hover,
+.card button.btn-saiba-mais:hover {
     color: #000;
     box-shadow: 0 0 20px var(--cp-neon-cyan);
 }
 
-.card a:hover::before {
+.card a:hover::before,
+.card button.btn-saiba-mais:hover::before {
     width: 100%;
+}
+
+.card .info-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 2px solid var(--cp-neon-cyan);
+}
+
+.card .info-meta p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.card .info-meta strong {
+    color: var(--cp-neon-cyan);
+    margin-right: 0.5rem;
 }
 
 /* Footer */
@@ -483,26 +517,6 @@ footer a:hover {
     cursor: pointer;
 }
 
-.card .info-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin: 1rem 0;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.3);
-    border-left: 2px solid var(--cp-neon-cyan);
-}
-
-.card .info-meta p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-.card .info-meta strong {
-    color: var(--cp-neon-cyan);
-    margin-right: 0.5rem;
-}
-
 .loading {
     text-align: center;
     padding: 4rem;
@@ -570,7 +584,6 @@ footer a:hover {
     max-width: 800px;
     max-height: 90vh;
     background: #1a1a2e;
-    /* Dark blue/purple background */
     border: 1px solid rgba(0, 240, 255, 0.2);
     border-radius: 12px;
     padding: 2.5rem;
@@ -651,222 +664,66 @@ footer a:hover {
 
 .modal-meta {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     color: var(--cp-text-dim);
     font-size: 0.95rem;
+    flex-wrap: wrap;
 }
 
 .modal-meta span {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-.modal-meta i {
-    color: var(--cp-neon-purple);
-}
-
-/* Modal Body */
-.modal-description {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #ccc;
-    margin-bottom: 2.5rem;
-}
-
-.section-title {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    color: var(--cp-neon-cyan);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Code Block */
-.code-container {
-    background: #0b0b0b;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 2.5rem;
-    position: relative;
-    overflow-x: auto;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.code-container pre {
-    margin: 0;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    color: #a5ff90;
-    /* Light green for code */
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-/* Grid Layout for Tags & Links */
-.modal-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-}
-
-@media (max-width: 768px) {
-    .modal-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .modal-hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .modal-meta {
-        justify-content: center;
-    }
-}
-
-/* Links List */
-.links-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
-.link-item {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
     background: rgba(255, 255, 255, 0.05);
-    padding: 0.8rem 1.2rem;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.link-item:hover {
-    background: rgba(0, 240, 255, 0.1);
-    border-color: var(--cp-neon-cyan);
-    transform: translateX(5px);
-}
-
-.link-item i {
-    color: var(--cp-neon-cyan);
-}
-
-/* Related Techs */
-.related-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.related-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(189, 0, 255, 0.3);
-    padding: 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.related-card:hover {
-    background: rgba(189, 0, 255, 0.1);
-    border-color: var(--cp-neon-pink);
-    transform: translateY(-5px);
-}
-
-.related-card h4 {
-    color: #fff;
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.related-card p {
-    background: var(--cp-neon-purple);
+    padding: 4px 10px;
     border-radius: 4px;
 }
 
-/* Modal Header */
-.modal-header {
-    margin-bottom: 2rem;
-}
-
-.btn-voltar-link {
-    background: none;
-    border: none;
-    color: var(--cp-neon-cyan);
-    font-family: var(--font-body);
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: color 0.3s ease;
-    padding: 0;
-}
-
-.btn-voltar-link:hover {
-    color: #fff;
-    text-shadow: 0 0 10px var(--cp-neon-cyan);
-}
-
-.modal-hero {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#modal-icon {
-    font-size: 5rem;
-    color: var(--cp-neon-cyan);
-    filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.5));
-}
-
-.modal-title-group h2 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    color: #fff;
-    margin: 0 0 0.5rem 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-
-.modal-meta {
-    display: flex;
-    gap: 1.5rem;
-    color: var(--cp-text-dim);
-    font-size: 0.95rem;
-}
-
-.modal-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 .modal-meta i {
     color: var(--cp-neon-purple);
 }
 
-/* Modal Body */
-.modal-description {
+/* Modal Body Styles */
+.modal-use-cases {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.use-cases-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.use-case-tag {
+    display: inline-block;
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid var(--cp-neon-cyan);
+    color: var(--cp-neon-cyan);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.use-case-tag:hover {
+    background: rgba(0, 240, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+#modal-descricao {
+    font-family: var(--font-body);
     font-size: 1.1rem;
-    line-height: 1.7;
-    color: #ccc;
+    line-height: 1.8;
+    color: #e0e0e0;
     margin-bottom: 2.5rem;
+    text-align: left;
 }
 
 .section-title {
@@ -876,6 +733,16 @@ footer a:hover {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.section-title-sm {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--cp-text-dim);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 /* Code Block */
@@ -894,7 +761,6 @@ footer a:hover {
     margin: 0;
     font-family: 'Fira Code', 'Courier New', monospace;
     color: #a5ff90;
-    /* Light green for code */
     font-size: 0.95rem;
     line-height: 1.5;
 }

@@ -28,7 +28,7 @@
         'ia': ['AI', 'ML', 'Machine Learning', 'Deep Learning', 'LLM', 'NLP', 'Generative AI']
     };
 
-    // Elementos do Modal
+    // Elementos do Modal (Atualizado com novos campos)
     const DOM_MODAL = {
         overlay: document.getElementById('modal-detalhes'),
         btnVoltarTop: document.getElementById('btn-voltar-top'),
@@ -36,6 +36,11 @@
         titulo: document.getElementById('modal-titulo'),
         criacao: document.querySelector('#modal-criacao .text'),
         dev: document.querySelector('#modal-dev .text'),
+        // Novos campos adicionados
+        licenca: document.querySelector('#modal-licenca .text'),
+        popularidade: document.querySelector('#modal-popularidade .text'),
+        casosUso: document.getElementById('modal-casos-uso'),
+
         descricao: document.getElementById('modal-descricao'),
         codigo: document.getElementById('modal-codigo'),
         tags: document.getElementById('modal-tags'),
@@ -46,13 +51,35 @@
     // Função para abrir o modal
     const abrirDetalhes = (dado) => {
         console.log('Abrindo detalhes para:', dado.nome);
-        // Popula os dados
+
+        // Popula os dados básicos
         DOM_MODAL.icon.className = dado.icon;
         DOM_MODAL.titulo.textContent = dado.nome;
         DOM_MODAL.criacao.textContent = `Criado em ${dado.data_criacao}`;
         DOM_MODAL.dev.textContent = `Desenvolvido por ${dado.desenvolvedor}`;
-        DOM_MODAL.descricao.textContent = dado.descricao;
+
+        // Popula Novos Dados (Metadados)
+        DOM_MODAL.licenca.textContent = dado.licenca || 'N/A';
+        DOM_MODAL.popularidade.textContent = dado.popularidade || 'Desconhecida';
+
+        // Lógica da Descrição (Detalhada ou Fallback)
+        // Usamos innerHTML para permitir formatação básica se vier do JSON
+        DOM_MODAL.descricao.innerHTML = dado.descricao_detalhada || dado.descricao;
+
         DOM_MODAL.codigo.textContent = dado.exemplo_codigo || '// Código não disponível';
+
+        // Renderiza Casos de Uso (Novo)
+        DOM_MODAL.casosUso.innerHTML = '';
+        if (dado.casos_uso && dado.casos_uso.length) {
+            dado.casos_uso.forEach(uso => {
+                const span = document.createElement('span');
+                span.className = 'use-case-tag'; // Classe CSS que criamos
+                span.textContent = uso;
+                DOM_MODAL.casosUso.appendChild(span);
+            });
+        } else {
+            DOM_MODAL.casosUso.innerHTML = '<span style="color: var(--cp-text-dim); font-size: 0.9rem;">Uso geral</span>';
+        }
 
         // Tags
         DOM_MODAL.tags.innerHTML = '';
@@ -88,19 +115,28 @@
 
                 const div = document.createElement('div');
                 div.classList.add('related-card');
+
+                // Fallback seguro para a descrição no card relacionado
+                const descCurta = techRelacionada
+                    ? (techRelacionada.descricao.substring(0, 60) + '...')
+                    : 'Ver detalhes';
+
                 div.innerHTML = `
                     <h4>${nomeTech}</h4>
-                    <p>${techRelacionada ? techRelacionada.descricao.substring(0, 60) + '...' : 'Ver detalhes'}</p>
+                    <p>${descCurta}</p>
                     <i class="fas fa-arrow-right arrow"></i>
                 `;
 
                 // Click para abrir a relacionada
                 div.addEventListener('click', () => {
                     if (techRelacionada) {
-                        abrirDetalhes(techRelacionada);
+                        // Pequeno delay para transição suave entre modais
+                        DOM_MODAL.overlay.classList.remove('active');
+                        setTimeout(() => {
+                            abrirDetalhes(techRelacionada);
+                        }, 200);
                     } else {
-                        // Se não achar pelo nome exato (pode acontecer), tenta busca aproximada ou avisa
-                        // Tenta buscar no state
+                        // Tenta buscar no state caso o nome não seja exato
                         const found = state.dados.find(d => d.nome.toLowerCase() === nomeTech.toLowerCase());
                         if (found) abrirDetalhes(found);
                     }
@@ -112,7 +148,7 @@
 
         // Mostra o modal
         DOM_MODAL.overlay.classList.remove('hidden');
-        // Pequeno delay para a transição CSS funcionar (display: none -> block -> opacity)
+        // Pequeno delay para a transição CSS funcionar
         requestAnimationFrame(() => {
             DOM_MODAL.overlay.classList.add('active');
         });
@@ -129,7 +165,7 @@
         }, 300); // Tempo da transição CSS
     };
 
-    // Função segura para criar cards (Evita XSS e melhora performance)
+    // Função segura para criar cards
     const criarCard = (dado) => {
         const article = document.createElement('article');
         article.classList.add('card');
@@ -137,25 +173,29 @@
         // Ícone
         const icon = document.createElement('i');
         icon.className = dado.icon;
-        icon.setAttribute('aria-hidden', 'true'); // Acessibilidade: ícone decorativo
+        icon.setAttribute('aria-hidden', 'true');
 
         // Título
         const h2 = document.createElement('h2');
-        h2.textContent = dado.nome; // textContent previne injeção de HTML
+        h2.textContent = dado.nome;
 
-        // Descrição
+        // Descrição (sempre usa a curta no card para manter padrão visual)
         const pDesc = document.createElement('p');
         pDesc.textContent = dado.descricao;
 
-        // Meta Info (Criação estruturada)
+        // Meta Info
         const divMeta = document.createElement('div');
         divMeta.classList.add('info-meta');
 
         const pCriacao = document.createElement('p');
-        pCriacao.innerHTML = `<strong>Criação:</strong> ${dado.data_criacao}`; // Seguro pois ano_criacao é numérico/controlado
+        pCriacao.innerHTML = `<strong>Criação:</strong> ${dado.data_criacao}`;
 
         const pDev = document.createElement('p');
-        pDev.innerHTML = `<strong>Desenvolvedor:</strong> ${dado.desenvolvedor}`; // Seguro pois assumimos controle do JSON, mas textContent seria mais estrito
+        // Usando createTextNode para mais segurança (Best Practice)
+        const strongDev = document.createElement('strong');
+        strongDev.textContent = 'Dev: ';
+        pDev.appendChild(strongDev);
+        pDev.appendChild(document.createTextNode(dado.desenvolvedor));
 
         divMeta.append(pCriacao, pDev);
 
@@ -168,18 +208,19 @@
                 const span = document.createElement('span');
                 span.classList.add('tag');
                 span.textContent = tag;
-                span.dataset.tag = tag; // Útil para o event delegation
-                span.setAttribute('role', 'button'); // Acessibilidade
-                span.setAttribute('tabindex', '0'); // Acessibilidade
+                span.dataset.tag = tag;
+                span.setAttribute('role', 'button');
+                span.setAttribute('tabindex', '0');
                 divTags.appendChild(span);
             });
         }
 
-        // Botão Saiba Mais (Agora abre modal)
+        // Botão Saiba Mais
         const btn = document.createElement('button');
         btn.textContent = "Saiba mais";
-        btn.classList.add('btn-saiba-mais'); // Classe para estilo se precisar, mas vamos usar o estilo do 'a'
-        // Vamos estilizar como o link anterior
+        btn.classList.add('btn-saiba-mais');
+
+        // Estilo inline mantido para garantir compatibilidade imediata
         btn.style.cssText = `
             margin-top: auto;
             display: inline-block;
@@ -200,7 +241,6 @@
             cursor: pointer;
         `;
 
-        // Efeito hover via JS ou CSS global? Melhor CSS global, mas aqui inline para garantir compatibilidade rápida
         btn.onmouseenter = () => {
             btn.style.color = '#000';
             btn.style.background = 'var(--cp-neon-cyan)';
@@ -213,7 +253,7 @@
         };
 
         btn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Evita bolha se tiver click no card
+            e.stopPropagation();
             abrirDetalhes(dado);
         });
 
@@ -226,7 +266,6 @@
     };
 
     const renderizar = (lista) => {
-        // Limpa o container de forma segura
         DOM.container.innerHTML = '';
 
         // Atualiza contador
@@ -240,7 +279,6 @@
             return;
         }
 
-        // DocumentFragment: Insere tudo de uma vez no DOM (Muito mais rápido)
         const fragment = document.createDocumentFragment();
         lista.forEach(item => fragment.appendChild(criarCard(item)));
         DOM.container.appendChild(fragment);
@@ -253,7 +291,7 @@
 
         // Filtrar
         let resultados = state.dados.filter(dado => {
-            // Filtro de Texto
+            // Filtro de Texto (Nome, Descrição ou Tags)
             const matchTexto = dado.nome.toLowerCase().includes(termo) ||
                 dado.descricao.toLowerCase().includes(termo) ||
                 (dado.tags && dado.tags.some(tag => tag.toLowerCase().includes(termo)));
@@ -285,7 +323,7 @@
         // Busca em tempo real
         DOM.inputBusca.addEventListener('input', processarDados);
 
-        // Botão Pesquisar (opcional com input event, mas bom ter)
+        // Botão Pesquisar
         DOM.btnSearch.addEventListener('click', processarDados);
 
         // Ordenação
@@ -300,23 +338,20 @@
         // Categorias
         DOM.botoesCategoria.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove active de todos
                 DOM.botoesCategoria.forEach(b => b.classList.remove('active'));
-                // Adiciona active ao clicado
                 btn.classList.add('active');
-                // Atualiza estado
                 state.categoriaSelecionada = btn.dataset.category;
-                // Reprocessa
                 processarDados();
             });
         });
 
-        // Event Delegation para as Tags (Performance)
-        // Ao invés de um listener por tag, usamos um no container pai
+        // Event Delegation para as Tags
         DOM.container.addEventListener('click', (e) => {
             if (e.target.classList.contains('tag')) {
                 DOM.inputBusca.value = e.target.dataset.tag;
                 processarDados();
+                // Scroll suave para o topo para ver os resultados
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
 
@@ -345,22 +380,26 @@
 
     const init = async () => {
         try {
+            // Tenta carregar data.json
+            // Nota: Se estiver usando GitHub Pages na pasta docs, o caminho pode precisar de ajuste dependendo de onde o index está.
+            // Como os arquivos estão na mesma pasta (docs/), 'data.json' deve funcionar.
             const response = await fetch('data.json');
+            if (!response.ok) throw new Error('Falha na rede');
+
             state.dados = await response.json();
 
             setupListeners();
             processarDados(); // Render inicial
         } catch (error) {
             console.error('Erro crítico na aplicação:', error);
-            // Tenta buscar no caminho relativo caso o servidor esteja na raiz
-            try {
-                const response = await fetch('docs/data.json');
-                state.dados = await response.json();
-                setupListeners();
-                processarDados();
-            } catch (e) {
-                DOM.container.innerHTML = '<p style="color: var(--cp-neon-pink); text-align: center;">Erro ao carregar dados. Verifique o console.</p>';
-            }
+            DOM.container.innerHTML = `
+                <div style="text-align: center; padding: 2rem;">
+                    <p style="color: var(--cp-neon-pink); font-size: 1.2rem;">
+                        <i class="fas fa-exclamation-triangle"></i> Erro ao carregar dados.
+                    </p>
+                    <p style="color: var(--cp-text-dim);">Verifique se o arquivo data.json está na mesma pasta ou check o console.</p>
+                </div>
+            `;
         }
     };
 

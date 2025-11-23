@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -68,6 +72,7 @@
             <a href="https://www.linkedin.com/in/andradmarcel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
     </footer>
+
     <div id="modal-detalhes" class="modal hidden" aria-hidden="true">
         <div class="modal-overlay-bg"></div>
         <div class="modal-content">
@@ -79,14 +84,30 @@
                 <i id="modal-icon" class=""></i>
                 <div class="modal-title-group">
                     <h2 id="modal-titulo"></h2>
+
                     <div class="modal-meta">
-                        <span id="modal-criacao"><i class="far fa-calendar-alt"></i> <span class="text"></span></span>
-                        <span id="modal-dev"><i class="fas fa-briefcase"></i> <span class="text"></span></span>
+                        <span id="modal-criacao" title="Data de lançamento">
+                            <i class="far fa-calendar-alt"></i> <span class="text"></span>
+                        </span>
+                        <span id="modal-licenca" title="Licença de uso">
+                            <i class="fas fa-balance-scale"></i> <span class="text"></span>
+                        </span>
+                        <span id="modal-popularidade" title="Popularidade no mercado">
+                            <i class="fas fa-fire-alt"></i> <span class="text"></span>
+                        </span>
+                        <span id="modal-dev" title="Desenvolvedor">
+                            <i class="fas fa-briefcase"></i> <span class="text"></span>
+                        </span>
                     </div>
                 </div>
             </div>
 
             <div class="modal-body">
+                <div class="modal-use-cases">
+                    <h3 class="section-title-sm">Indicado para:</h3>
+                    <div id="modal-casos-uso" class="use-cases-tags"></div>
+                </div>
+
                 <p id="modal-descricao" class="modal-description"></p>
 
                 <h3 class="section-title">Exemplo de Código</h3>
