@@ -28,6 +28,107 @@
         'ia': ['AI', 'ML', 'Machine Learning', 'Deep Learning', 'LLM', 'NLP', 'Generative AI']
     };
 
+    // Elementos do Modal
+    const DOM_MODAL = {
+        overlay: document.getElementById('modal-detalhes'),
+        btnVoltarTop: document.getElementById('btn-voltar-top'),
+        icon: document.getElementById('modal-icon'),
+        titulo: document.getElementById('modal-titulo'),
+        criacao: document.querySelector('#modal-criacao .text'),
+        dev: document.querySelector('#modal-dev .text'),
+        descricao: document.getElementById('modal-descricao'),
+        codigo: document.getElementById('modal-codigo'),
+        tags: document.getElementById('modal-tags'),
+        links: document.getElementById('modal-links'),
+        relacionados: document.getElementById('modal-relacionados')
+    };
+
+    // Função para abrir o modal
+    const abrirDetalhes = (dado) => {
+        console.log('Abrindo detalhes para:', dado.nome);
+        // Popula os dados
+        DOM_MODAL.icon.className = dado.icon;
+        DOM_MODAL.titulo.textContent = dado.nome;
+        DOM_MODAL.criacao.textContent = `Criado em ${dado.data_criacao}`;
+        DOM_MODAL.dev.textContent = `Desenvolvido por ${dado.desenvolvedor}`;
+        DOM_MODAL.descricao.textContent = dado.descricao;
+        DOM_MODAL.codigo.textContent = dado.exemplo_codigo || '// Código não disponível';
+
+        // Tags
+        DOM_MODAL.tags.innerHTML = '';
+        if (dado.tags) {
+            dado.tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.classList.add('tag');
+                span.textContent = tag;
+                DOM_MODAL.tags.appendChild(span);
+            });
+        }
+
+        // Links Úteis
+        DOM_MODAL.links.innerHTML = '';
+        if (dado.links_uteis) {
+            dado.links_uteis.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.classList.add('link-item');
+                a.innerHTML = `<i class="fas fa-external-link-alt"></i> ${link.nome}`;
+                DOM_MODAL.links.appendChild(a);
+            });
+        }
+
+        // Tecnologias Relacionadas
+        DOM_MODAL.relacionados.innerHTML = '';
+        if (dado.tecnologias_relacionadas) {
+            dado.tecnologias_relacionadas.forEach(nomeTech => {
+                // Encontra o objeto da tech relacionada
+                const techRelacionada = state.dados.find(t => t.nome === nomeTech);
+
+                const div = document.createElement('div');
+                div.classList.add('related-card');
+                div.innerHTML = `
+                    <h4>${nomeTech}</h4>
+                    <p>${techRelacionada ? techRelacionada.descricao.substring(0, 60) + '...' : 'Ver detalhes'}</p>
+                    <i class="fas fa-arrow-right arrow"></i>
+                `;
+
+                // Click para abrir a relacionada
+                div.addEventListener('click', () => {
+                    if (techRelacionada) {
+                        abrirDetalhes(techRelacionada);
+                    } else {
+                        // Se não achar pelo nome exato (pode acontecer), tenta busca aproximada ou avisa
+                        // Tenta buscar no state
+                        const found = state.dados.find(d => d.nome.toLowerCase() === nomeTech.toLowerCase());
+                        if (found) abrirDetalhes(found);
+                    }
+                });
+
+                DOM_MODAL.relacionados.appendChild(div);
+            });
+        }
+
+        // Mostra o modal
+        DOM_MODAL.overlay.classList.remove('hidden');
+        // Pequeno delay para a transição CSS funcionar (display: none -> block -> opacity)
+        requestAnimationFrame(() => {
+            DOM_MODAL.overlay.classList.add('active');
+        });
+
+        // Trava o scroll do body
+        document.body.style.overflow = 'hidden';
+    };
+
+    const fecharDetalhes = () => {
+        DOM_MODAL.overlay.classList.remove('active');
+        setTimeout(() => {
+            DOM_MODAL.overlay.classList.add('hidden');
+            document.body.style.overflow = ''; // Destrava scroll
+        }, 300); // Tempo da transição CSS
+    };
+
     // Função segura para criar cards (Evita XSS e melhora performance)
     const criarCard = (dado) => {
         const article = document.createElement('article');
@@ -74,17 +175,52 @@
             });
         }
 
-        // Link
-        const link = document.createElement('a');
-        link.href = dado.link;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer"; // Segurança obrigatória para target blank
-        link.textContent = "Saiba mais";
+        // Botão Saiba Mais (Agora abre modal)
+        const btn = document.createElement('button');
+        btn.textContent = "Saiba mais";
+        btn.classList.add('btn-saiba-mais'); // Classe para estilo se precisar, mas vamos usar o estilo do 'a'
+        // Vamos estilizar como o link anterior
+        btn.style.cssText = `
+            margin-top: auto;
+            display: inline-block;
+            text-decoration: none;
+            color: var(--cp-neon-cyan);
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: 1px solid var(--cp-neon-cyan);
+            padding: 0.8rem 1.5rem;
+            width: fit-content;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background: transparent;
+            cursor: pointer;
+        `;
+
+        // Efeito hover via JS ou CSS global? Melhor CSS global, mas aqui inline para garantir compatibilidade rápida
+        btn.onmouseenter = () => {
+            btn.style.color = '#000';
+            btn.style.background = 'var(--cp-neon-cyan)';
+            btn.style.boxShadow = '0 0 20px var(--cp-neon-cyan)';
+        };
+        btn.onmouseleave = () => {
+            btn.style.color = 'var(--cp-neon-cyan)';
+            btn.style.background = 'transparent';
+            btn.style.boxShadow = 'none';
+        };
+
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evita bolha se tiver click no card
+            abrirDetalhes(dado);
+        });
 
         // Montagem do card
         article.append(icon, h2, pDesc, divMeta);
         if (divTags) article.appendChild(divTags);
-        article.appendChild(link);
+        article.appendChild(btn);
 
         return article;
     };
@@ -191,6 +327,20 @@
                 processarDados();
             }
         });
+
+        // Listeners do Modal
+        DOM_MODAL.btnVoltarTop.addEventListener('click', fecharDetalhes);
+        DOM_MODAL.overlay.addEventListener('click', (e) => {
+            if (e.target === DOM_MODAL.overlay || e.target.classList.contains('modal-overlay-bg')) {
+                fecharDetalhes();
+            }
+        });
+        // Tecla ESC para fechar
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && DOM_MODAL.overlay.classList.contains('active')) {
+                fecharDetalhes();
+            }
+        });
     };
 
     const init = async () => {
@@ -202,7 +352,15 @@
             processarDados(); // Render inicial
         } catch (error) {
             console.error('Erro crítico na aplicação:', error);
-            DOM.container.innerHTML = '<p style="color: var(--cp-neon-pink); text-align: center;">Erro ao carregar dados. Verifique o console.</p>';
+            // Tenta buscar no caminho relativo caso o servidor esteja na raiz
+            try {
+                const response = await fetch('docs/data.json');
+                state.dados = await response.json();
+                setupListeners();
+                processarDados();
+            } catch (e) {
+                DOM.container.innerHTML = '<p style="color: var(--cp-neon-pink); text-align: center;">Erro ao carregar dados. Verifique o console.</p>';
+            }
         }
     };
 

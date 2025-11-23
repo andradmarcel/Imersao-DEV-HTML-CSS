@@ -12,13 +12,29 @@ Uma aplicação web interativa e moderna para explorar, aprender e descobrir inf
 
 ## ✨ Funcionalidades
 
-*   **🔍 Busca Inteligente**: Pesquise por nome, descrição ou tags das tecnologias.
+### 🔍 Busca e Filtragem
+*   **🔍 Busca Inteligente**: Pesquise por nome, descrição ou tags das tecnologias em tempo real.
 *   **📂 Categorias**: Filtre rapidamente por Linguagens, Frameworks, Bancos de Dados, DevOps e IA.
-*   **🏷️ Tags Interativas**: Clique nas tags para filtrar tecnologias relacionadas (ex: `backend`, `mobile`, `web`).
-*   **🔃 Ordenação Dinâmica**: Ordene os resultados por Nome (A-Z) ou Ano de Criação (Mais recente/Mais antigo).
+*   **🏷️ Tags Interativas Clicáveis**: Clique em qualquer tag nos cards para buscar automaticamente tecnologias relacionadas.
+*   **🧹 Botão Limpar**: Limpe a busca com um único clique e volte a visualizar todos os resultados.
+*   **📊 Contador de Resultados**: Veja quantos resultados foram encontrados em tempo real.
+*   **🔃 Ordenação Dinâmica**: Ordene os resultados por:
+    *   Nome (A-Z)
+    *   Ano de Criação (Mais recente)
+    *   Ano de Criação (Mais antigo)
+
+### 📖 Modal de Detalhes
+*   **📋 Visualização Completa**: Clique em "Saiba mais" para ver informações detalhadas sobre cada tecnologia.
+*   **💻 Código de Exemplo**: Visualize exemplos de código para cada linguagem/framework.
+*   **🔗 Links Úteis**: Acesso direto à documentação oficial e recursos importantes.
+*   **🔄 Tecnologias Relacionadas**: Navegue entre tecnologias relacionadas diretamente do modal.
+*   **⌨️ Navegação por Teclado**: Feche o modal pressionando a tecla `ESC` ou clique fora dele.
+
+### 🎨 Experiência do Usuário
 *   **📱 Design Responsivo**: Layout adaptável para desktops, tablets e dispositivos móveis.
-*   **🎨 Tema Cyberpunk**: Interface visual rica com efeitos de neon, glassmorphism e animações suaves.
-*   **⚡ Carregamento Dinâmico**: Dados carregados via JSON para fácil manutenção e escalabilidade.
+*   **🎨 Tema Cyberpunk 2077**: Interface visual premium com efeitos de neon, glassmorphism e animações suaves.
+*   **⚡ Carregamento Dinâmico**: Dados carregados via JSON (95 tecnologias) para fácil manutenção e escalabilidade.
+*   **♿ Acessibilidade**: Tags com suporte a navegação por teclado (Tab + Enter).
 
 ---
 

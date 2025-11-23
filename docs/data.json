@@ -11,6 +11,22 @@
       "JavaScript",
       "UI Library",
       "Web Development"
+    ],
+    "exemplo_codigo": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  return (\n    <button onClick={() => setCount(count + 1)}>\n      Clicked {count} times\n    </button>\n  );\n}",
+    "links_uteis": [
+      {
+        "nome": "Documentação Oficial",
+        "url": "https://react.dev/"
+      },
+      {
+        "nome": "GitHub",
+        "url": "https://github.com/facebook/react"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Next.js",
+      "Vue.js",
+      "Angular"
     ]
   },
   {
@@ -26,6 +42,22 @@
       "Data Science",
       "Scripting",
       "AI/ML"
+    ],
+    "exemplo_codigo": "def greet(name):\n    return f'Hello, {name}!'\n\nprint(greet('World'))",
+    "links_uteis": [
+      {
+        "nome": "Python.org",
+        "url": "https://www.python.org/"
+      },
+      {
+        "nome": "Docs",
+        "url": "https://docs.python.org/3/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Django",
+      "FastAPI",
+      "Pandas"
     ]
   },
   {
@@ -40,6 +72,18 @@
       "Orchestration",
       "Cloud Native",
       "Containerization"
+    ],
+    "exemplo_codigo": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.14.2\n    ports:\n    - containerPort: 80",
+    "links_uteis": [
+      {
+        "nome": "Kubernetes Docs",
+        "url": "https://kubernetes.io/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Docker",
+      "Helm",
+      "Istio"
     ]
   },
   {
@@ -54,6 +98,18 @@
       "DevOps",
       "Virtualization",
       "Tools"
+    ],
+    "exemplo_codigo": "FROM node:14\nWORKDIR /app\nCOPY . .\nRUN npm install\nCMD [\"node\", \"index.js\"]",
+    "links_uteis": [
+      {
+        "nome": "Docker Docs",
+        "url": "https://docs.docker.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Kubernetes",
+      "Podman",
+      "Containerd"
     ]
   },
   {
@@ -68,6 +124,18 @@
       "Static Typing",
       "Frontend",
       "Backend"
+    ],
+    "exemplo_codigo": "interface User {\n  id: number;\n  name: string;\n}\n\nfunction logUser(user: User) {\n  console.log(`User: ${user.name}`);\n}",
+    "links_uteis": [
+      {
+        "nome": "TypeScript Lang",
+        "url": "https://www.typescriptlang.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "JavaScript",
+      "Node.js",
+      "Angular"
     ]
   },
   {
@@ -82,6 +150,18 @@
       "Backend",
       "Systems Programming",
       "Cloud Computing"
+    ],
+    "exemplo_codigo": "package main\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, Go!\")\n}",
+    "links_uteis": [
+      {
+        "nome": "Go Docs",
+        "url": "https://golang.org/doc/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Rust",
+      "Kubernetes",
+      "Docker"
     ]
   },
   {
@@ -96,6 +176,18 @@
       "Performance",
       "Memory Safety",
       "Low Level"
+    ],
+    "exemplo_codigo": "fn main() {\n    println!(\"Hello, world!\");\n}",
+    "links_uteis": [
+      {
+        "nome": "Rust Lang",
+        "url": "https://www.rust-lang.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Go",
+      "C++",
+      "WebAssembly"
     ]
   },
   {
@@ -110,6 +202,18 @@
       "Backend",
       "JavaScript",
       "Server Side"
+    ],
+    "exemplo_codigo": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.end('Hello World');\n});\n\nserver.listen(3000);",
+    "links_uteis": [
+      {
+        "nome": "Node.js Docs",
+        "url": "https://nodejs.org/en/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "JavaScript",
+      "Express",
+      "NestJS"
     ]
   },
   {
@@ -124,6 +228,18 @@
       "SQL",
       "Relational",
       "Open Source"
+    ],
+    "exemplo_codigo": "SELECT * FROM users WHERE active = true;",
+    "links_uteis": [
+      {
+        "nome": "PostgreSQL Docs",
+        "url": "https://www.postgresql.org/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "SQL",
+      "MySQL",
+      "Supabase"
     ]
   },
   {
@@ -138,6 +254,18 @@
       "NoSQL",
       "Document Store",
       "Scalability"
+    ],
+    "exemplo_codigo": "db.collection('users').find({ active: true })",
+    "links_uteis": [
+      {
+        "nome": "MongoDB Docs",
+        "url": "https://www.mongodb.com/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "NoSQL",
+      "Node.js",
+      "Express"
     ]
   },
   {
@@ -152,6 +280,18 @@
       "React",
       "Full Stack",
       "SSR"
+    ],
+    "exemplo_codigo": "export default function Page() {\n  return <h1>Hello, Next.js!</h1>\n}",
+    "links_uteis": [
+      {
+        "nome": "Next.js Docs",
+        "url": "https://nextjs.org/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "React",
+      "Vercel",
+      "TypeScript"
     ]
   },
   {
@@ -166,6 +306,18 @@
       "IaC",
       "Cloud Computing",
       "Provisioning"
+    ],
+    "exemplo_codigo": "resource \"aws_instance\" \"web\" {\n  ami           = \"ami-12345678\"\n  instance_type = \"t2.micro\"\n}",
+    "links_uteis": [
+      {
+        "nome": "Terraform Docs",
+        "url": "https://www.terraform.io/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Ansible",
+      "AWS",
+      "Kubernetes"
     ]
   },
   {
@@ -180,6 +332,18 @@
       "Compiler",
       "JavaScript",
       "UI"
+    ],
+    "exemplo_codigo": "<script>\n  let count = 0;\n</script>\n\n<button on:click={() => count += 1}>\n  Clicks: {count}\n</button>",
+    "links_uteis": [
+      {
+        "nome": "Svelte Docs",
+        "url": "https://svelte.dev/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Vue.js",
+      "React",
+      "Vite"
     ]
   },
   {
@@ -194,6 +358,18 @@
       "JavaScript",
       "UI Library",
       "Web Development"
+    ],
+    "exemplo_codigo": "<template>\n  <button @click=\"count++\">Count is: {{ count }}</button>\n</template>\n<script>\nexport default {\n  data() {\n    return { count: 0 }\n  }\n}\n</script>",
+    "links_uteis": [
+      {
+        "nome": "Vue.js Docs",
+        "url": "https://vuejs.org/guide/introduction.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "React",
+      "Angular",
+      "Nuxt.js"
     ]
   },
   {
@@ -208,6 +384,18 @@
       "Python",
       "Backend",
       "MVC"
+    ],
+    "exemplo_codigo": "from django.http import HttpResponse\n\ndef index(request):\n    return HttpResponse(\"Hello, world.\")",
+    "links_uteis": [
+      {
+        "nome": "Django Docs",
+        "url": "https://docs.djangoproject.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "Flask",
+      "FastAPI"
     ]
   },
   {
@@ -222,6 +410,18 @@
       "Backend",
       "API",
       "Asynchronous"
+    ],
+    "exemplo_codigo": "from fastapi import FastAPI\napp = FastAPI()\n\n@app.get(\"/\")\ndef read_root():\n    return {\"Hello\": \"World\"}",
+    "links_uteis": [
+      {
+        "nome": "FastAPI Docs",
+        "url": "https://fastapi.tiangolo.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "Starlette",
+      "Pydantic"
     ]
   },
   {
@@ -236,6 +436,18 @@
       "Query Language",
       "Data Fetching",
       "Backend"
+    ],
+    "exemplo_codigo": "query {\n  user(id: \"1\") {\n    name\n    email\n  }\n}",
+    "links_uteis": [
+      {
+        "nome": "GraphQL Docs",
+        "url": "https://graphql.org/learn/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Apollo",
+      "REST",
+      "API"
     ]
   },
   {
@@ -250,6 +462,18 @@
       "Observability",
       "DevOps",
       "Metrics"
+    ],
+    "exemplo_codigo": "http_requests_total{method=\"post\",handler=\"/messages\"}",
+    "links_uteis": [
+      {
+        "nome": "Prometheus Docs",
+        "url": "https://prometheus.io/docs/introduction/overview/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Grafana",
+      "Kubernetes",
+      "Alertmanager"
     ]
   },
   {
@@ -263,6 +487,18 @@
       "Data Streaming",
       "Messaging Queue",
       "Distributed System",
+      "Big Data"
+    ],
+    "exemplo_codigo": "Properties props = new Properties();\nprops.put(\"bootstrap.servers\", \"localhost:9092\");\nprops.put(\"key.serializer\", \"org.apache.kafka.common.serialization.StringSerializer\");",
+    "links_uteis": [
+      {
+        "nome": "Kafka Docs",
+        "url": "https://kafka.apache.org/documentation/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "RabbitMQ",
+      "Java",
       "Big Data"
     ]
   },
@@ -278,6 +514,18 @@
       "Performance",
       "Compilation",
       "Low Level"
+    ],
+    "exemplo_codigo": "(module\n  (func $add (param $lhs i32) (param $rhs i32) (result i32)\n    local.get $lhs\n    local.get $rhs\n    i32.add)\n  (export \"add\" (func $add))\n)",
+    "links_uteis": [
+      {
+        "nome": "Wasm Docs",
+        "url": "https://webassembly.org/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Rust",
+      "C++",
+      "Blazor"
     ]
   },
   {
@@ -292,6 +540,18 @@
       "Frontend",
       "Styling",
       "Utility-first"
+    ],
+    "exemplo_codigo": "<div class=\"bg-blue-500 text-white p-4 rounded-lg\">\n  Hello Tailwind!\n</div>",
+    "links_uteis": [
+      {
+        "nome": "Tailwind Docs",
+        "url": "https://tailwindcss.com/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "CSS",
+      "Bootstrap",
+      "PostCSS"
     ]
   },
   {
@@ -306,6 +566,18 @@
       "Backend",
       "Microservices",
       "Enterprise"
+    ],
+    "exemplo_codigo": "@RestController\npublic class HelloController {\n    @GetMapping(\"/\")\n    public String index() {\n        return \"Greetings from Spring Boot!\";\n    }\n}",
+    "links_uteis": [
+      {
+        "nome": "Spring Boot Docs",
+        "url": "https://spring.io/projects/spring-boot"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Java",
+      "Hibernate",
+      "Microservices"
     ]
   },
   {
@@ -320,6 +592,18 @@
       "Architecture",
       "FaaS",
       "Scalability"
+    ],
+    "exemplo_codigo": "module.exports.hello = async (event) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({ message: 'Go Serverless!' }),\n  };\n};",
+    "links_uteis": [
+      {
+        "nome": "Serverless Framework",
+        "url": "https://www.serverless.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "AWS Lambda",
+      "Azure Functions",
+      "Cloud"
     ]
   },
   {
@@ -334,6 +618,18 @@
       "DevOps",
       "Automation",
       "Workflow"
+    ],
+    "exemplo_codigo": "name: CI\non: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n    - uses: actions/checkout@v2\n    - run: echo Hello, world!",
+    "links_uteis": [
+      {
+        "nome": "GitHub Actions Docs",
+        "url": "https://docs.github.com/en/actions"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Jenkins",
+      "GitLab CI",
+      "DevOps"
     ]
   },
   {
@@ -348,6 +644,18 @@
       "DevOps",
       "Package Manager",
       "Orchestration"
+    ],
+    "exemplo_codigo": "helm install my-release bitnami/wordpress",
+    "links_uteis": [
+      {
+        "nome": "Helm Docs",
+        "url": "https://helm.sh/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Kubernetes",
+      "YAML",
+      "Charts"
     ]
   },
   {
@@ -362,6 +670,18 @@
       "Caching",
       "In-memory",
       "NoSQL"
+    ],
+    "exemplo_codigo": "SET mykey \"Hello\"\nGET mykey",
+    "links_uteis": [
+      {
+        "nome": "Redis Docs",
+        "url": "https://redis.io/documentation"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Memcached",
+      "Database",
+      "Cache"
     ]
   },
   {
@@ -376,6 +696,18 @@
       "JavaScript",
       "TypeScript",
       "Backend"
+    ],
+    "exemplo_codigo": "import { serve } from \"https://deno.land/std@0.50.0/http/server.ts\";\nconst s = serve({ port: 8000 });\nfor await (const req of s) {\n  req.respond({ body: \"Hello World\\n\" });\n}",
+    "links_uteis": [
+      {
+        "nome": "Deno Docs",
+        "url": "https://deno.land/manual"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Node.js",
+      "TypeScript",
+      "Rust"
     ]
   },
   {
@@ -390,6 +722,18 @@
       "Deep Learning",
       "AI",
       "Python"
+    ],
+    "exemplo_codigo": "import torch\nx = torch.rand(5, 3)\nprint(x)",
+    "links_uteis": [
+      {
+        "nome": "PyTorch Docs",
+        "url": "https://pytorch.org/docs/stable/index.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "TensorFlow",
+      "NumPy",
+      "AI"
     ]
   },
   {
@@ -404,6 +748,18 @@
       "AI",
       "Deep Learning",
       "Google"
+    ],
+    "exemplo_codigo": "import tensorflow as tf\nmnist = tf.keras.datasets.mnist\n(x_train, y_train), (x_test, y_test) = mnist.load_data()",
+    "links_uteis": [
+      {
+        "nome": "TensorFlow Docs",
+        "url": "https://www.tensorflow.org/learn"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "PyTorch",
+      "Keras",
+      "Machine Learning"
     ]
   },
   {
@@ -418,6 +774,18 @@
       "Smart Contracts",
       "Web3",
       "Ethereum"
+    ],
+    "exemplo_codigo": "pragma solidity ^0.8.0;\ncontract HelloWorld {\n    string public greet = \"Hello World!\";\n}",
+    "links_uteis": [
+      {
+        "nome": "Solidity Docs",
+        "url": "https://docs.soliditylang.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Ethereum",
+      "Web3",
+      "Blockchain"
     ]
   },
   {
@@ -432,6 +800,18 @@
       "JavaScript",
       "Ethereum",
       "Blockchain"
+    ],
+    "exemplo_codigo": "const provider = new ethers.providers.Web3Provider(window.ethereum);\nconst signer = provider.getSigner();",
+    "links_uteis": [
+      {
+        "nome": "Ethers.js Docs",
+        "url": "https://docs.ethers.org/v5/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Web3.js",
+      "Ethereum",
+      "Solidity"
     ]
   },
   {
@@ -446,6 +826,18 @@
       "Concept",
       "Physics",
       "Emerging Tech"
+    ],
+    "exemplo_codigo": "# Conceito teórico, sem código direto.\n# Representação de superposição:\n# |ψ⟩ = α|0⟩ + β|1⟩",
+    "links_uteis": [
+      {
+        "nome": "Qiskit (IBM)",
+        "url": "https://qiskit.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Quantum Computing",
+      "Physics",
+      "Qiskit"
     ]
   },
   {
@@ -460,6 +852,18 @@
       "LLM",
       "Generative AI",
       "Large Model"
+    ],
+    "exemplo_codigo": "# Exemplo usando biblioteca transformers\nfrom transformers import AutoTokenizer, AutoModelForCausalLM\nmodel = AutoModelForCausalLM.from_pretrained(\"meta-llama/Llama-2-7b\")",
+    "links_uteis": [
+      {
+        "nome": "Meta AI",
+        "url": "https://ai.meta.com/llama/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "GPT-4",
+      "Hugging Face",
+      "AI"
     ]
   },
   {
@@ -474,6 +878,18 @@
       "Microservices",
       "DevOps",
       "Networking"
+    ],
+    "exemplo_codigo": "apiVersion: networking.istio.io/v1alpha3\nkind: VirtualService\nmetadata:\n  name: my-service",
+    "links_uteis": [
+      {
+        "nome": "Istio Docs",
+        "url": "https://istio.io/latest/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Kubernetes",
+      "Envoy",
+      "Service Mesh"
     ]
   },
   {
@@ -488,6 +904,18 @@
       "React",
       "Framework",
       "Rapid Development"
+    ],
+    "exemplo_codigo": "import { useQuery } from \"blitz\"\nimport getProject from \"app/projects/queries/getProject\"\n\nconst [project] = useQuery(getProject, { id: 1 })",
+    "links_uteis": [
+      {
+        "nome": "Blitz Docs",
+        "url": "https://blitzjs.com/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Next.js",
+      "React",
+      "Prisma"
     ]
   },
   {
@@ -502,6 +930,18 @@
       "Database",
       "Open Source",
       "API"
+    ],
+    "exemplo_codigo": "const { data, error } = await supabase\n  .from('countries')\n  .select()",
+    "links_uteis": [
+      {
+        "nome": "Supabase Docs",
+        "url": "https://supabase.com/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "PostgreSQL",
+      "Firebase",
+      "React"
     ]
   },
   {
@@ -516,6 +956,18 @@
       "Frontend",
       "Bundler",
       "JavaScript"
+    ],
+    "exemplo_codigo": "npm create vite@latest my-vue-app -- --template vue",
+    "links_uteis": [
+      {
+        "nome": "Vite Docs",
+        "url": "https://vitejs.dev/guide/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Webpack",
+      "Rollup",
+      "Vue.js"
     ]
   },
   {
@@ -530,6 +982,18 @@
       "Node.js",
       "TypeScript",
       "Microservices"
+    ],
+    "exemplo_codigo": "@Controller('cats')\nexport class CatsController {\n  @Get()\n  findAll(): string {\n    return 'This action returns all cats';\n  }\n}",
+    "links_uteis": [
+      {
+        "nome": "NestJS Docs",
+        "url": "https://docs.nestjs.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Node.js",
+      "TypeScript",
+      "Express"
     ]
   },
   {
@@ -544,6 +1008,18 @@
       "Ruby",
       "Backend",
       "MVC"
+    ],
+    "exemplo_codigo": "class UsersController < ApplicationController\n  def index\n    @users = User.all\n  end\nend",
+    "links_uteis": [
+      {
+        "nome": "Rails Guides",
+        "url": "https://guides.rubyonrails.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Ruby",
+      "MVC",
+      "ActiveRecord"
     ]
   },
   {
@@ -558,6 +1034,18 @@
       "Microsoft",
       "Backend",
       ".NET"
+    ],
+    "exemplo_codigo": "using System;\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello World!\");\n    }\n}",
+    "links_uteis": [
+      {
+        "nome": "C# Docs",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      ".NET",
+      "Unity",
+      "Visual Studio"
     ]
   },
   {
@@ -573,6 +1061,18 @@
       "3D",
       "XR",
       "Development"
+    ],
+    "exemplo_codigo": "void Update() {\n    transform.Translate(Vector3.forward * Time.deltaTime);\n}",
+    "links_uteis": [
+      {
+        "nome": "Unity Manual",
+        "url": "https://docs.unity3d.com/Manual/index.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "C#",
+      "Game Dev",
+      "Unreal Engine"
     ]
   },
   {
@@ -587,6 +1087,18 @@
       "CI/CD",
       "Automation",
       "Architecture"
+    ],
+    "exemplo_codigo": "# GitOps é um conceito, não código único.\n# Exemplo de manifesto syncado via ArgoCD:\napiVersion: argoproj.io/v1alpha1\nkind: Application...",
+    "links_uteis": [
+      {
+        "nome": "OpenGitOps",
+        "url": "https://opengitops.dev/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "ArgoCD",
+      "Flux",
+      "Kubernetes"
     ]
   },
   {
@@ -600,6 +1112,18 @@
       "Data Warehouse",
       "Cloud Computing",
       "Data Analytics",
+      "Big Data"
+    ],
+    "exemplo_codigo": "SELECT * FROM \"SNOWFLAKE_SAMPLE_DATA\".\"TPCH_SF1\".\"CUSTOMER\" LIMIT 10;",
+    "links_uteis": [
+      {
+        "nome": "Snowflake Docs",
+        "url": "https://docs.snowflake.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "SQL",
+      "Data Warehouse",
       "Big Data"
     ]
   },
@@ -615,6 +1139,18 @@
       "Software Design",
       "Distributed System",
       "Scalability"
+    ],
+    "exemplo_codigo": "# Arquitetura, não código.\n# Serviços comunicando via HTTP/gRPC.",
+    "links_uteis": [
+      {
+        "nome": "Martin Fowler",
+        "url": "https://martinfowler.com/articles/microservices.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Docker",
+      "Kubernetes",
+      "REST"
     ]
   },
   {
@@ -629,6 +1165,18 @@
       "DevOps",
       "Configuration Management",
       "IaC"
+    ],
+    "exemplo_codigo": "- name: Ensure apache is at the latest version\n  yum:\n    name: httpd\n    state: latest",
+    "links_uteis": [
+      {
+        "nome": "Ansible Docs",
+        "url": "https://docs.ansible.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Terraform",
+      "DevOps",
+      "Automation"
     ]
   },
   {
@@ -643,6 +1191,18 @@
       "Web Standard",
       "Performance",
       "3D"
+    ],
+    "exemplo_codigo": "const adapter = await navigator.gpu.requestAdapter();\nconst device = await adapter.requestDevice();",
+    "links_uteis": [
+      {
+        "nome": "WebGPU Explainer",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "WebGL",
+      "Graphics",
+      "Rust"
     ]
   },
   {
@@ -657,6 +1217,18 @@
       "JVM",
       "Android",
       "Backend"
+    ],
+    "exemplo_codigo": "fun main() {\n    println(\"Hello, World!\")\n}",
+    "links_uteis": [
+      {
+        "nome": "Kotlin Docs",
+        "url": "https://kotlinlang.org/docs/home.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Java",
+      "Android",
+      "Jetpack Compose"
     ]
   },
   {
@@ -671,6 +1243,18 @@
       "UI Toolkit",
       "Dart",
       "Cross-platform"
+    ],
+    "exemplo_codigo": "import 'package:flutter/material.dart';\n\nvoid main() => runApp(MaterialApp(home: Text('Hello World')));",
+    "links_uteis": [
+      {
+        "nome": "Flutter Docs",
+        "url": "https://flutter.dev/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Dart",
+      "Mobile",
+      "React Native"
     ]
   },
   {
@@ -685,6 +1269,18 @@
       "Low Level",
       "Performance",
       "Language"
+    ],
+    "exemplo_codigo": "const std = @import(\"std\");\n\npub fn main() !void {\n    std.debug.print(\"Hello, {s}!\\n\", .{\"World\"});\n}",
+    "links_uteis": [
+      {
+        "nome": "Zig Lang",
+        "url": "https://ziglang.org/documentation/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "C",
+      "Rust",
+      "Systems"
     ]
   },
   {
@@ -699,6 +1295,18 @@
       "LLM",
       "Generative AI",
       "NLP"
+    ],
+    "exemplo_codigo": "response = openai.ChatCompletion.create(\n  model=\"gpt-4\",\n  messages=[{\"role\": \"user\", \"content\": \"Hello!\"}]\n)",
+    "links_uteis": [
+      {
+        "nome": "OpenAI API",
+        "url": "https://platform.openai.com/docs/introduction"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "AI",
+      "LLM",
+      "Python"
     ]
   },
   {
@@ -713,6 +1321,18 @@
       "Frontend",
       "Backend",
       "Web"
+    ],
+    "exemplo_codigo": "console.log('Hello World');",
+    "links_uteis": [
+      {
+        "nome": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "HTML",
+      "CSS",
+      "TypeScript"
     ]
   },
   {
@@ -727,6 +1347,18 @@
       "Framework",
       "Google",
       "TypeScript"
+    ],
+    "exemplo_codigo": "@Component({\n  selector: 'app-root',\n  template: '<h1>Hello Angular</h1>'\n})\nexport class AppComponent {}",
+    "links_uteis": [
+      {
+        "nome": "Angular Docs",
+        "url": "https://angular.io/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "TypeScript",
+      "RxJS",
+      "React"
     ]
   },
   {
@@ -741,6 +1373,18 @@
       "Serverless",
       "Funções",
       "AWS"
+    ],
+    "exemplo_codigo": "exports.handler = async (event) => {\n    return { statusCode: 200, body: 'Hello from Lambda!' };\n};",
+    "links_uteis": [
+      {
+        "nome": "AWS Lambda Docs",
+        "url": "https://docs.aws.amazon.com/lambda/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Serverless",
+      "AWS",
+      "Node.js"
     ]
   },
   {
@@ -755,6 +1399,18 @@
       "Mobile",
       "Apple",
       "Performance"
+    ],
+    "exemplo_codigo": "print(\"Hello, World!\")",
+    "links_uteis": [
+      {
+        "nome": "Swift Docs",
+        "url": "https://swift.org/documentation/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "iOS",
+      "Objective-C",
+      "Apple"
     ]
   },
   {
@@ -769,6 +1425,18 @@
       "Python",
       "Análise",
       "Biblioteca"
+    ],
+    "exemplo_codigo": "import pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(df)",
+    "links_uteis": [
+      {
+        "nome": "Pandas Docs",
+        "url": "https://pandas.pydata.org/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "NumPy",
+      "Data Science"
     ]
   },
   {
@@ -783,6 +1451,18 @@
       "Processamento",
       "Cluster",
       "Apache"
+    ],
+    "exemplo_codigo": "val textFile = spark.read.textFile(\"README.md\")\ntextFile.count()",
+    "links_uteis": [
+      {
+        "nome": "Spark Docs",
+        "url": "https://spark.apache.org/docs/latest/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Big Data",
+      "Scala",
+      "Hadoop"
     ]
   },
   {
@@ -797,6 +1477,18 @@
       "Funcional",
       "Backend",
       "Concorrência"
+    ],
+    "exemplo_codigo": "IO.puts \"Hello World\"",
+    "links_uteis": [
+      {
+        "nome": "Elixir Docs",
+        "url": "https://elixir-lang.org/docs.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Erlang",
+      "Phoenix",
+      "Functional"
     ]
   },
   {
@@ -811,6 +1503,18 @@
       "Framework",
       "Elixir",
       "Tempo Real"
+    ],
+    "exemplo_codigo": "def index(conn, _params) do\n  render(conn, \"index.html\")\nend",
+    "links_uteis": [
+      {
+        "nome": "Phoenix Docs",
+        "url": "https://hexdocs.pm/phoenix/overview.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Elixir",
+      "LiveView",
+      "Web"
     ]
   },
   {
@@ -825,6 +1529,18 @@
       "Framework",
       "Performance",
       "Ilhas de Componentes"
+    ],
+    "exemplo_codigo": "---\nconst name = \"Astro\";\n---\n<h1>Hello {name}!</h1>",
+    "links_uteis": [
+      {
+        "nome": "Astro Docs",
+        "url": "https://docs.astro.build/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "React",
+      "Vue",
+      "Static Site"
     ]
   },
   {
@@ -839,6 +1555,18 @@
       "ORM",
       "TypeScript",
       "Banco de Dados"
+    ],
+    "exemplo_codigo": "const user = await prisma.user.create({\n  data: { name: 'Alice' },\n})",
+    "links_uteis": [
+      {
+        "nome": "Prisma Docs",
+        "url": "https://www.prisma.io/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "TypeScript",
+      "Node.js",
+      "Database"
     ]
   },
   {
@@ -853,6 +1581,18 @@
       "LLMs",
       "Framework",
       "GenAI"
+    ],
+    "exemplo_codigo": "from langchain.llms import OpenAI\nllm = OpenAI(temperature=0.9)",
+    "links_uteis": [
+      {
+        "nome": "LangChain Docs",
+        "url": "https://python.langchain.com/docs/get_started/introduction"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "LLM",
+      "Python",
+      "OpenAI"
     ]
   },
   {
@@ -867,6 +1607,18 @@
       "NLP",
       "Modelos",
       "Comunidade"
+    ],
+    "exemplo_codigo": "from transformers import pipeline\nclassifier = pipeline(\"sentiment-analysis\")",
+    "links_uteis": [
+      {
+        "nome": "Hugging Face Docs",
+        "url": "https://huggingface.co/docs"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "AI",
+      "Transformers",
+      "PyTorch"
     ]
   },
   {
@@ -881,6 +1633,18 @@
       "DevOps",
       "Monitoramento",
       "Arquitetura"
+    ],
+    "exemplo_codigo": "# Conceito.\n# Logs, Metrics, Traces.",
+    "links_uteis": [
+      {
+        "nome": "OpenTelemetry",
+        "url": "https://opentelemetry.io/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Prometheus",
+      "Grafana",
+      "Jaeger"
     ]
   },
   {
@@ -895,6 +1659,18 @@
       "Streaming",
       "Kafka",
       "CLI"
+    ],
+    "exemplo_codigo": "kcat -b localhost:9092 -t mytopic",
+    "links_uteis": [
+      {
+        "nome": "Kcat GitHub",
+        "url": "https://github.com/edenhill/kcat"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Kafka",
+      "CLI",
+      "Streaming"
     ]
   },
   {
@@ -909,6 +1685,18 @@
       "Enterprise",
       "Mobile",
       "Orientada a Objetos"
+    ],
+    "exemplo_codigo": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}",
+    "links_uteis": [
+      {
+        "nome": "Java Docs",
+        "url": "https://docs.oracle.com/en/java/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Spring Boot",
+      "Kotlin",
+      "JVM"
     ]
   },
   {
@@ -923,6 +1711,18 @@
       "Performance",
       "Games",
       "Baixo Nível"
+    ],
+    "exemplo_codigo": "#include <iostream>\nint main() {\n    std::cout << \"Hello World!\";\n    return 0;\n}",
+    "links_uteis": [
+      {
+        "nome": "C++ Reference",
+        "url": "https://en.cppreference.com/w/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "C",
+      "Rust",
+      "Systems"
     ]
   },
   {
@@ -937,6 +1737,18 @@
       "Backend",
       "Scripting",
       "Servidor"
+    ],
+    "exemplo_codigo": "<?php\necho \"Hello World!\";\n?>",
+    "links_uteis": [
+      {
+        "nome": "PHP Docs",
+        "url": "https://www.php.net/docs.php"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Laravel",
+      "WordPress",
+      "Web"
     ]
   },
   {
@@ -951,6 +1763,18 @@
       "Web",
       "Scripting",
       "Produtividade"
+    ],
+    "exemplo_codigo": "puts \"Hello World\"",
+    "links_uteis": [
+      {
+        "nome": "Ruby Docs",
+        "url": "https://www.ruby-lang.org/en/documentation/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Rails",
+      "Sinatra",
+      "Scripting"
     ]
   },
   {
@@ -965,6 +1789,18 @@
       "Estatística",
       "Análise",
       "Visualização"
+    ],
+    "exemplo_codigo": "print(\"Hello World\")",
+    "links_uteis": [
+      {
+        "nome": "R Project",
+        "url": "https://www.r-project.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "Statistics",
+      "Data Science"
     ]
   },
   {
@@ -979,6 +1815,18 @@
       "Query",
       "Backend",
       "Dados"
+    ],
+    "exemplo_codigo": "SELECT * FROM table_name;",
+    "links_uteis": [
+      {
+        "nome": "SQL Tutorial",
+        "url": "https://www.w3schools.com/sql/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "PostgreSQL",
+      "MySQL",
+      "Database"
     ]
   },
   {
@@ -993,6 +1841,18 @@
       "Texto",
       "Automação",
       "Web"
+    ],
+    "exemplo_codigo": "print \"Hello World\\n\";",
+    "links_uteis": [
+      {
+        "nome": "Perl Docs",
+        "url": "https://www.perl.org/docs.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Scripting",
+      "Regex",
+      "Linux"
     ]
   },
   {
@@ -1007,6 +1867,18 @@
       "Orientada a Objetos",
       "JVM",
       "Backend"
+    ],
+    "exemplo_codigo": "object Hello extends App {\n  println(\"Hello, World!\")\n}",
+    "links_uteis": [
+      {
+        "nome": "Scala Docs",
+        "url": "https://docs.scala-lang.org/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Java",
+      "Spark",
+      "Akka"
     ]
   },
   {
@@ -1021,6 +1893,18 @@
       "Flutter",
       "Frontend",
       "Multiplataforma"
+    ],
+    "exemplo_codigo": "void main() {\n  print('Hello, World!');\n}",
+    "links_uteis": [
+      {
+        "nome": "Dart Docs",
+        "url": "https://dart.dev/guides"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Flutter",
+      "Mobile",
+      "Google"
     ]
   },
   {
@@ -1035,6 +1919,18 @@
       "Games",
       "Embarcado",
       "Leve"
+    ],
+    "exemplo_codigo": "print(\"Hello World\")",
+    "links_uteis": [
+      {
+        "nome": "Lua Docs",
+        "url": "https://www.lua.org/manual/5.4/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Roblox",
+      "Game Dev",
+      "Scripting"
     ]
   },
   {
@@ -1049,6 +1945,18 @@
       "Hardware",
       "Sistemas",
       "Embarcado"
+    ],
+    "exemplo_codigo": "section .data\nmsg db 'Hello, world!', 0xa\nlen equ $ - msg",
+    "links_uteis": [
+      {
+        "nome": "Assembly Tutorial",
+        "url": "https://www.tutorialspoint.com/assembly_programming/index.htm"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "C",
+      "Hardware",
+      "Low Level"
     ]
   },
   {
@@ -1063,6 +1971,18 @@
       "Linux",
       "Unix",
       "Scripting"
+    ],
+    "exemplo_codigo": "#!/bin/bash\necho \"Hello World\"",
+    "links_uteis": [
+      {
+        "nome": "Bash Guide",
+        "url": "https://tldp.org/LDP/Bash-Beginners-Guide/html/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Linux",
+      "DevOps",
+      "Automation"
     ]
   },
   {
@@ -1077,6 +1997,18 @@
       "iOS",
       "Apple",
       "Legado"
+    ],
+    "exemplo_codigo": "NSLog(@\"Hello, World!\");",
+    "links_uteis": [
+      {
+        "nome": "Objective-C Docs",
+        "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Swift",
+      "iOS",
+      "Apple"
     ]
   },
   {
@@ -1091,6 +2023,18 @@
       ".NET",
       "Windows",
       "Enterprise"
+    ],
+    "exemplo_codigo": "Console.WriteLine(\"Hello World\")",
+    "links_uteis": [
+      {
+        "nome": "VB.NET Docs",
+        "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      ".NET",
+      "C#",
+      "Windows"
     ]
   },
   {
@@ -1105,6 +2049,18 @@
       "Matemática",
       "Engenharia",
       "Análise"
+    ],
+    "exemplo_codigo": "disp('Hello World')",
+    "links_uteis": [
+      {
+        "nome": "MATLAB Docs",
+        "url": "https://www.mathworks.com/help/matlab/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "Engineering",
+      "Math"
     ]
   },
   {
@@ -1119,6 +2075,18 @@
       "Scripting",
       "Backend",
       "Dinâmica"
+    ],
+    "exemplo_codigo": "println \"Hello World\"",
+    "links_uteis": [
+      {
+        "nome": "Groovy Docs",
+        "url": "https://groovy-lang.org/documentation.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Java",
+      "Gradle",
+      "JVM"
     ]
   },
   {
@@ -1133,6 +2101,18 @@
       "Acadêmico",
       "Tipagem Forte",
       "Puro"
+    ],
+    "exemplo_codigo": "main = putStrLn \"Hello, World!\"",
+    "links_uteis": [
+      {
+        "nome": "Haskell Docs",
+        "url": "https://www.haskell.org/documentation/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Functional",
+      "Scala",
+      "Elm"
     ]
   },
   {
@@ -1147,6 +2127,18 @@
       "Backend",
       "Concorrência",
       "Nuvem"
+    ],
+    "exemplo_codigo": "package main\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, Go!\")\n}",
+    "links_uteis": [
+      {
+        "nome": "Go Docs",
+        "url": "https://golang.org/doc/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Rust",
+      "Kubernetes",
+      "Docker"
     ]
   },
   {
@@ -1161,6 +2153,18 @@
       "Containers",
       "Cloud Native",
       "DevOps"
+    ],
+    "exemplo_codigo": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.14.2\n    ports:\n    - containerPort: 80",
+    "links_uteis": [
+      {
+        "nome": "Kubernetes Docs",
+        "url": "https://kubernetes.io/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Docker",
+      "Helm",
+      "Istio"
     ]
   },
   {
@@ -1175,6 +2179,18 @@
       "Ferramenta",
       "Colaboração",
       "Software"
+    ],
+    "exemplo_codigo": "git init\ngit add .\ngit commit -m \"Initial commit\"",
+    "links_uteis": [
+      {
+        "nome": "Git Docs",
+        "url": "https://git-scm.com/doc"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "GitHub",
+      "GitLab",
+      "Version Control"
     ]
   },
   {
@@ -1189,6 +2205,18 @@
       "Inteligência Artificial",
       "LLMs",
       "Criação de Conteúdo"
+    ],
+    "exemplo_codigo": "# Conceito.\n# Criação de conteúdo via IA.",
+    "links_uteis": [
+      {
+        "nome": "Generative AI Info",
+        "url": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "GPT-4",
+      "Stable Diffusion",
+      "AI"
     ]
   },
   {
@@ -1203,6 +2231,18 @@
       "Elixir",
       "Backend",
       "Tempo Real"
+    ],
+    "exemplo_codigo": "def index(conn, _params) do\n  render(conn, \"index.html\")\nend",
+    "links_uteis": [
+      {
+        "nome": "Phoenix Docs",
+        "url": "https://hexdocs.pm/phoenix/overview.html"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Elixir",
+      "LiveView",
+      "Web"
     ]
   },
   {
@@ -1217,6 +2257,18 @@
       "Computação em Nuvem",
       "FaaS",
       "DevOps"
+    ],
+    "exemplo_codigo": "module.exports.hello = async (event) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({ message: 'Go Serverless!' }),\n  };\n};",
+    "links_uteis": [
+      {
+        "nome": "Serverless Framework",
+        "url": "https://www.serverless.com/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "AWS Lambda",
+      "Azure Functions",
+      "Cloud"
     ]
   },
   {
@@ -1230,6 +2282,18 @@
       "Banco de Dados",
       "NoSQL",
       "Alta Disponibilidade",
+      "Big Data"
+    ],
+    "exemplo_codigo": "SELECT * FROM users WHERE id = 123;",
+    "links_uteis": [
+      {
+        "nome": "Cassandra Docs",
+        "url": "https://cassandra.apache.org/doc/latest/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "NoSQL",
+      "Database",
       "Big Data"
     ]
   },
@@ -1245,6 +2309,18 @@
       "Grafo",
       "Cypher",
       "NoSQL"
+    ],
+    "exemplo_codigo": "MATCH (n) RETURN n LIMIT 25",
+    "links_uteis": [
+      {
+        "nome": "Neo4j Docs",
+        "url": "https://neo4j.com/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Graph DB",
+      "Cypher",
+      "Database"
     ]
   },
   {
@@ -1259,6 +2335,18 @@
       "Segurança",
       "Autorização",
       "APIs"
+    ],
+    "exemplo_codigo": "# Protocolo de autorização.\n# Fluxo: Authorization Code, Implicit, etc.",
+    "links_uteis": [
+      {
+        "nome": "OAuth 2.0",
+        "url": "https://oauth.net/2/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "OpenID Connect",
+      "Security",
+      "API"
     ]
   },
   {
@@ -1273,6 +2361,18 @@
       "SQL",
       "Distribuído",
       "Cloud Native"
+    ],
+    "exemplo_codigo": "SELECT * FROM accounts;",
+    "links_uteis": [
+      {
+        "nome": "CockroachDB Docs",
+        "url": "https://www.cockroachlabs.com/docs/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "SQL",
+      "Distributed DB",
+      "PostgreSQL"
     ]
   },
   {
@@ -1287,6 +2387,18 @@
       "Tempo Real",
       "P2P",
       "Frontend"
+    ],
+    "exemplo_codigo": "const peerConnection = new RTCPeerConnection(configuration);",
+    "links_uteis": [
+      {
+        "nome": "WebRTC Docs",
+        "url": "https://webrtc.org/getting-started/overview"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Socket.io",
+      "Real-time",
+      "Video"
     ]
   },
   {
@@ -1299,6 +2411,18 @@
     "tags": [
       "Linguagem",
       "Computação Científica",
+      "Data Science",
+      "Performance"
+    ],
+    "exemplo_codigo": "println(\"Hello World\")",
+    "links_uteis": [
+      {
+        "nome": "Julia Docs",
+        "url": "https://docs.julialang.org/en/v1/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
       "Data Science",
       "Performance"
     ]
@@ -1315,6 +2439,18 @@
       "Data Science",
       "Python",
       "Notebooks"
+    ],
+    "exemplo_codigo": "# Executado em células de notebook",
+    "links_uteis": [
+      {
+        "nome": "Jupyter Docs",
+        "url": "https://docs.jupyter.org/en/latest/"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "Python",
+      "Data Science",
+      "Notebooks"
     ]
   },
   {
@@ -1329,6 +2465,18 @@
       "Pré-processador",
       "Frontend",
       "Design"
+    ],
+    "exemplo_codigo": "$primary-color: #333;\nbody {\n  color: $primary-color;\n}",
+    "links_uteis": [
+      {
+        "nome": "Sass Docs",
+        "url": "https://sass-lang.com/documentation"
+      }
+    ],
+    "tecnologias_relacionadas": [
+      "CSS",
+      "Less",
+      "Stylus"
     ]
   }
 ]

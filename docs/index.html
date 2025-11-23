@@ -68,6 +68,52 @@
             <a href="https://www.linkedin.com/in/andradmarcel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
     </footer>
+    <div id="modal-detalhes" class="modal hidden" aria-hidden="true">
+        <div class="modal-overlay-bg"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="btn-voltar-top" class="btn-voltar-link"><i class="fas fa-arrow-left"></i> Voltar</button>
+            </div>
+
+            <div class="modal-hero">
+                <i id="modal-icon" class=""></i>
+                <div class="modal-title-group">
+                    <h2 id="modal-titulo"></h2>
+                    <div class="modal-meta">
+                        <span id="modal-criacao"><i class="far fa-calendar-alt"></i> <span class="text"></span></span>
+                        <span id="modal-dev"><i class="fas fa-briefcase"></i> <span class="text"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p id="modal-descricao" class="modal-description"></p>
+
+                <h3 class="section-title">Exemplo de Código</h3>
+                <div class="code-container">
+                    <pre><code id="modal-codigo"></code></pre>
+                </div>
+
+                <div class="modal-grid">
+                    <div class="modal-section">
+                        <h3 class="section-title">Tags</h3>
+                        <div id="modal-tags" class="tags"></div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3 class="section-title">Links Úteis</h3>
+                        <div id="modal-links" class="links-list"></div>
+                    </div>
+                </div>
+
+                <div class="modal-section full-width">
+                    <h3 class="section-title">Tecnologias Relacionadas</h3>
+                    <div id="modal-relacionados" class="related-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
