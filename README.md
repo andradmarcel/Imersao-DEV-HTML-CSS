@@ -23,7 +23,9 @@ Uma aplicação web interativa e moderna para explorar, aprender e descobrir inf
 
 ### 📖 Modal de Detalhes
 *   **📋 Visualização Completa**: Clique em "Saiba mais" para ver informações detalhadas sobre cada tecnologia.
-*   **💻 Código de Exemplo**: Visualize exemplos de código para cada linguagem/framework.
+*   **📊 Metadados Expandidos**: Visualize licença, popularidade, desenvolvedor e ano de criação.
+*   **🎯 Casos de Uso**: Veja para que cada tecnologia é indicada (SPA, API, Data Science, etc.).
+*   **💻 Código de Exemplo**: Visualize exemplos de código específicos para cada linguagem/framework.
 *   **🔗 Links Úteis**: Acesso direto à documentação oficial e recursos importantes.
 *   **🔄 Tecnologias Relacionadas**: Navegue entre tecnologias relacionadas diretamente do modal.
 *   **⌨️ Navegação por Teclado**: Feche o modal pressionando a tecla `ESC` ou clique fora dele.
@@ -31,7 +33,7 @@ Uma aplicação web interativa e moderna para explorar, aprender e descobrir inf
 ### 🎨 Experiência do Usuário
 *   **📱 Design Responsivo**: Layout adaptável para desktops, tablets e dispositivos móveis.
 *   **🎨 Tema Cyberpunk 2077**: Interface visual premium com efeitos de neon, glassmorphism e animações suaves.
-*   **⚡ Carregamento Dinâmico**: Dados carregados via JSON (95 tecnologias) para fácil manutenção e escalabilidade.
+*   **⚡ Carregamento Dinâmico**: Dados carregados via JSON (90 tecnologias) para fácil manutenção e escalabilidade.
 *   **♿ Acessibilidade**: Tags com suporte a navegação por teclado (Tab + Enter).
 
 ---
@@ -62,10 +64,11 @@ Este projeto foi desenvolvido utilizando tecnologias web modernas, sem dependên
 /
 ├── docs/                # Código fonte e GitHub Pages
 │   ├── assets/          # Imagens e recursos estáticos
+│   │   └── background.jpg  # Imagem de fundo Cyberpunk
 │   ├── app.js           # Lógica principal da aplicação
-│   ├── data.json        # Base de dados (95 tecnologias)
+│   ├── data.json        # Base de dados (90 tecnologias)
 │   ├── index.html       # Página principal
-│   └── styles.css       # Estilos (tema Cyberpunk)
+│   └── styles.css       # Estilos (tema Cyberpunk 2077)
 └── README.md            # Documentação do projeto
 ```
 
